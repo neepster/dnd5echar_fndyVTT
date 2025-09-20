@@ -1,0 +1,1343 @@
+{
+  "name": "Half-Orc Monk 9",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 10,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "tools": {
+      "jewelers-tools": {
+        "value": 1,
+        "ability": "int",
+        "bonuses": {
+          "check": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0
+      },
+      "spell2": {
+        "value": 0
+      },
+      "spell3": {
+        "value": 0
+      },
+      "spell4": {
+        "value": 0
+      },
+      "spell5": {
+        "value": 0
+      },
+      "spell6": {
+        "value": 0
+      },
+      "spell7": {
+        "value": 0
+      },
+      "spell8": {
+        "value": 0
+      },
+      "spell9": {
+        "value": 0
+      },
+      "pact": {
+        "value": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "walk": 30,
+        "units": "ft",
+        "hover": false,
+        "ignoredDifficultTerrain": []
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "blindsight": 0,
+        "darkvision": 60,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1,
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 1
+        }
+      },
+      "loyalty": {},
+      "hp": {
+        "value": 66,
+        "max": 66,
+        "temp": 0,
+        "tempmax": 0,
+        "bonuses": {
+          "level": "",
+          "overall": ""
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {},
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Neutral Good",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "Half-Orc",
+      "background": "Acolyte",
+      "originalClass": "Monk",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "gender": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "skin": "",
+      "age": "",
+      "weight": ""
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "orc"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [],
+        "custom": ""
+      },
+      "toolProf": {
+        "value": [
+          "jewelers-tools"
+        ],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": []
+  },
+  "items": [
+    {
+      "_id": "1296dba35fc5cd2c",
+      "name": "Monk",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "monk",
+        "levels": 9,
+        "hd": {
+          "denomination": "d8",
+          "additional": "",
+          "spent": 0
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "spellcasting": {
+          "ability": "",
+          "progression": "none",
+          "preparation": {
+            "formula": ""
+          }
+        },
+        "subclass": "open-hand"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "34d2b738d149b695",
+      "name": "Open Hand",
+      "type": "subclass",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.</p>"
+        },
+        "identifier": "open-hand",
+        "classIdentifier": "monk",
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "970acebb98efda80",
+      "name": "Half-Orc",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p><p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p><p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.</p><p>You gain proficiency in the Intimidation skill.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "add3db9c5fb69a30",
+      "name": "Darkvision",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "0ff7938214382ccf",
+      "name": "Savage Attacks",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9ee8288867e21648",
+      "name": "Relentless Endurance",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "faadb6765f08379b",
+      "name": "Menacing",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You gain proficiency in the Intimidation skill.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e1ab968debaf5127",
+      "name": "Acolyte",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a147b6a8d058e1b9",
+      "name": "Shelter of the Faithful",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": {
+          "book": "Acolyte",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "249f9582e055eee1",
+      "name": "Unarmored Defense",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bce174a6381e9470",
+      "name": "Martial Arts",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two- handed or heavy property.</p><p>You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:</p><p>- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</p><p>- You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of Table: The Monk.</p><p>- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.</p><p>Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a63bb053f529d4ac",
+      "name": "Ki",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of Table: The Monk.</p><p>You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p><p>When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p><p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p><p>Ki save DC = 8 + your proficiency bonus + your Wisdom modifier</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "506a1028d7da38fb",
+      "name": "Flurry of Blows",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "067db40e9d9bc2b6",
+      "name": "Patient Defense",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e51f4e2b064cd69b",
+      "name": "Step of the Wind",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1b424a6cdc28c168",
+      "name": "Unarmored Movement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.</p><p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a09e07bd5dc49676",
+      "name": "Monastic Tradition",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "daf384ed7cab468b",
+      "name": "Deflect Missiles",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p><p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "00f0d7fdacd355d4",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 4",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c168ecbc6896a38e",
+      "name": "Slow Fall",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 4",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "fb86122d1b43cbc3",
+      "name": "Extra Attack",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 5",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d620004311586b84",
+      "name": "Stunning Strike",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 5",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "14667ff862ca183a",
+      "name": "Ki Empowered Strikes",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 6",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5db42c13da985946",
+      "name": "Monastic Tradition feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 6",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1b801b90e9580164",
+      "name": "Evasion",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 7",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "182ea2b3e4e56f80",
+      "name": "Stillness of Mind",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 7",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "23f84bea5384e761",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 8",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a8ae8d72e77acad2",
+      "name": "Unarmored Movement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.</p><p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Monk 9",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "7be742a0622d2697",
+      "name": "Open Hand Technique",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting when you choose this tradition at 3rd level, you can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:</p><p>- It must succeed on a Dexterity saving throw or be knocked prone.</p><p>- It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.</p><p>- It can't take reactions until the end of your next turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Open Hand",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "10e2cd948720061f",
+      "name": "Wholeness of Body",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Open Hand",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "exportSource": {
+        "world": "",
+        "system": "dnd5e",
+        "type": "character"
+      }
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Half-Orc Monk 9",
+    "actorLink": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "displayName": 0,
+    "displayBars": 0,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0,
+      "brightness": 0,
+      "color": null,
+      "contrast": 0,
+      "saturation": 0
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "11",
+    "createdTime": 1758408001442,
+    "modifiedTime": 1758408001442,
+    "lastModifiedBy": null
+  }
+}

@@ -1,0 +1,1256 @@
+{
+  "name": "Johngoman",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 50,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 9,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 15,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "tools": {},
+    "spells": {
+      "spell1": {
+        "value": 2
+      },
+      "spell2": {
+        "value": 0
+      },
+      "spell3": {
+        "value": 0
+      },
+      "spell4": {
+        "value": 0
+      },
+      "spell5": {
+        "value": 0
+      },
+      "spell6": {
+        "value": 0
+      },
+      "spell7": {
+        "value": 0
+      },
+      "spell8": {
+        "value": 0
+      },
+      "spell9": {
+        "value": 0
+      },
+      "pact": {
+        "value": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "walk": 30,
+        "units": "ft",
+        "hover": false,
+        "ignoredDifficultTerrain": []
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "blindsight": 0,
+        "darkvision": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "int",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1,
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 1
+        }
+      },
+      "loyalty": {},
+      "hp": {
+        "value": 8,
+        "max": 8,
+        "temp": 0,
+        "tempmax": 0,
+        "bonuses": {
+          "level": "",
+          "overall": ""
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {},
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Lawful Neutral",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "Human",
+      "background": "Acolyte",
+      "originalClass": "Wizard",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "gender": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "skin": "",
+      "age": "",
+      "weight": ""
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "dwarvish"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [],
+        "custom": ""
+      },
+      "toolProf": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": []
+  },
+  "items": [
+    {
+      "_id": "fbe69c1ab29a11f4",
+      "name": "Wizard",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "wizard",
+        "levels": 1,
+        "hd": {
+          "denomination": "d6",
+          "additional": "",
+          "spent": 0
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "spellcasting": {
+          "ability": "int",
+          "progression": "full",
+          "preparation": {
+            "formula": ""
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b9f48ee0b93114de",
+      "name": "Human",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "ef0f87deec5190f4",
+      "name": "Acolyte",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d2450978be9faaf4",
+      "name": "Shelter of the Faithful",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": {
+          "book": "Acolyte",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "7a07256242ab182d",
+      "name": "Spellcasting: Wizard",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "73dba276ad4c1fba",
+      "name": "Arcane Recovery",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p><p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "92554dc35738c64f",
+      "name": "Burning Hands",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.</p><p>The fire ignites any flammable objects in the area that aren't being worn or carried.</p>"
+        },
+        "level": 1,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "66ce8319809806f1",
+      "name": "Dancing Lights",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p>"
+        },
+        "level": 0,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A bit of phosphorus or wychwood, or a glowworm."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "120"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d19c23c1cc69052b",
+      "name": "Grease",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Slick grease covers the ground in a 10-foot square centered on a point within range and turns it into difficult terrain for the duration.</p><p>When the grease appears, each creature standing in its area must succeed on a dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a dexterity saving throw or fall prone.</p>"
+        },
+        "level": 1,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A bit of pork rind or butter."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6d6bba551bf51383",
+      "name": "Mage Hand",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p>"
+        },
+        "level": 0,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "55ed157d643ca297",
+      "name": "Magic Missile",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.</p>"
+        },
+        "level": 1,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "120"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5b3ef5b6a175c23a",
+      "name": "Prestidigitation",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p><p>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p><p>You instantaneously light or snuff out a candle, a torch, or a small campfire.</p><p>You instantaneously clean or soil an object no larger than 1 cubic foot.</p><p>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p><p>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p><p>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p><p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "10"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "009e13ad99ff5bdd",
+      "name": "Shield",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile.</p>"
+        },
+        "level": 1,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "exportSource": {
+        "world": "",
+        "system": "dnd5e",
+        "type": "character"
+      }
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Johngoman",
+    "actorLink": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "displayName": 0,
+    "displayBars": 0,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0,
+      "brightness": 0,
+      "color": null,
+      "contrast": 0,
+      "saturation": 0
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "11",
+    "createdTime": 1758408730951,
+    "modifiedTime": 1758408730951,
+    "lastModifiedBy": null
+  }
+}

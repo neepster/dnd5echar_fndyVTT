@@ -1,0 +1,2315 @@
+{
+  "name": "Timmykins",
+  "type": "character",
+  "img": "",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 8,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 16,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 13,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 16,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "tools": {},
+    "spells": {
+      "spell1": {
+        "value": 4
+      },
+      "spell2": {
+        "value": 3
+      },
+      "spell3": {
+        "value": 3
+      },
+      "spell4": {
+        "value": 3
+      },
+      "spell5": {
+        "value": 2
+      },
+      "spell6": {
+        "value": 1
+      },
+      "spell7": {
+        "value": 1
+      },
+      "spell8": {
+        "value": 1
+      },
+      "spell9": {
+        "value": 0
+      },
+      "pact": {
+        "value": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": ""
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "walk": 30,
+        "units": "ft",
+        "hover": false,
+        "ignoredDifficultTerrain": []
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "blindsight": 0,
+        "darkvision": 60,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "int",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1,
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 1
+        }
+      },
+      "loyalty": {},
+      "hp": {
+        "value": 82,
+        "max": 82,
+        "temp": 0,
+        "tempmax": 0,
+        "bonuses": {
+          "level": "",
+          "overall": ""
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {},
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Neutral Evil",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "Elf",
+      "background": "Acolyte",
+      "originalClass": "Wizard",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "gender": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "skin": "",
+      "age": "",
+      "weight": ""
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "elvish"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [],
+        "custom": ""
+      },
+      "toolProf": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": []
+  },
+  "items": [
+    {
+      "_id": "bbfad077aec43cda",
+      "name": "Wizard",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "wizard",
+        "levels": 16,
+        "hitDice": {
+          "denomination": "d6",
+          "additional": "",
+          "spent": 0
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "spellcasting": {
+          "ability": "int",
+          "progression": "full",
+          "preparation": {
+            "formula": ""
+          }
+        },
+        "subclass": "evocation"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2373ce4e927558ef",
+      "name": "Evocation",
+      "type": "subclass",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants.</p>"
+        },
+        "identifier": "evocation",
+        "classIdentifier": "wizard",
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a6aff334ee8f81e2",
+      "name": "Elf",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p><p>You have advantage on saving throws against being charmed, and magic cannot put you to sleep.</p><p>Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep.</p><p>You have proficiency in the Perception skill.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bfa0cdaceb383be5",
+      "name": "High Elf",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": "Elf"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "294742ca1a883ce1",
+      "name": "Darkvision",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6516453335ea2d4a",
+      "name": "Fey Ancestry",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have advantage on saving throws against being charmed, and magic cannot put you to sleep.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "04a25196008c918c",
+      "name": "Trance",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "03d839aff3ccecbe",
+      "name": "Keen Senses",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have proficiency in the Perception skill.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c78163a639a14dd3",
+      "name": "Elf Weapon Training",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "High Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "ffc624d61138d050",
+      "name": "High Elf Cantrip",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You know one cantrip of your choice form the wizard spell list. Intelligence is your spellcasting ability for it.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "High Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "376b06bf7556fb93",
+      "name": "Extra Language",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You can speak, read, and write one extra language of your choice.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "High Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "18901efa4433d8bb",
+      "name": "Acolyte",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "528dca5691ddc176",
+      "name": "Shelter of the Faithful",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": {
+          "book": "Acolyte",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "347ece28a0d1dfab",
+      "name": "Spellcasting: Wizard",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d26c936d84ca1858",
+      "name": "Arcane Recovery",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p><p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a0a423873c446e36",
+      "name": "Arcane Tradition",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p><p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "149ae1f10093bcfa",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 4",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3ff14c745b6e64c7",
+      "name": "Arcane Tradition feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p><p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 6",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "0e196464bb5536ce",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 8",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9a0b98a2f2765e9e",
+      "name": "Arcane Tradition feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p><p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 10",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b376e031a0283c8e",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 12",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f24970c50f6558cc",
+      "name": "Arcane Tradition feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p><p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 14",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3b50695207d9ca11",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Wizard 16",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "095626f38799a3ec",
+      "name": "Evocation Savant",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Evocation",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9bc8c69d08594c16",
+      "name": "Sculpt Spells",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Evocation",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "87b4c9a330a1e207",
+      "name": "Potent Cantrip",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Evocation",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "7a9129bae98f74c1",
+      "name": "Empowered Evocation",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 10th level, you can add your Intelligence modifier to one damage roll of any wizard evocation spell you cast.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Evocation",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9cd876299c2d36e0",
+      "name": "Overchannel",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 14th level, you can increase the power of your simpler spells. When you cast a wizard spell of 1st through 5th level that deals damage, you can deal maximum damage with that spell.</p><p>The first time you do so, you suffer no adverse effect. If you use this feature again before you finish a long rest, you take 2d12 necrotic damage for each level of the spell, immediately after you cast it. Each time you use this feature again before finishing a long rest, the necrotic damage per spell level increases by 1d12. This damage ignores resistance and immunity.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Evocation",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "aeb0e91dbd76f7f8",
+      "name": "Animate Dead",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell creates an undead servant. Choose a pile of bones or a corpse of a Medium or Small humanoid within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the GM has the creature's game statistics).</p><p>On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.</p><p>The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends. This use of the spell reasserts your control over up to four creatures you have animated with this spell, rather than animating a new one.</p>"
+        },
+        "level": 3,
+        "school": "necromancy",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A drop of blood, a piece of flesh, and a pinch of bone dust."
+        },
+        "activation": {
+          "type": "1 minute",
+          "cost": 1
+        },
+        "range": {
+          "value": "10 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f215eb0882a19ccc",
+      "name": "Arcane Sword",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create a sword-shaped plane of force that hovers within range. It lasts for the duration.</p><p>When the sword appears, you make a melee spell attack against a target of your choice within 5 feet of the sword. On a hit, the target takes 3d10 force damage. Until the spell ends, you can use a bonus action on each of your turns to move the sword up to 20 feet to a spot you can see and repeat this attack against the same target or a different one.</p>"
+        },
+        "level": 7,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A miniature platinum sword with a grip and pommel of copper and zinc, worth 250 gp."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "60 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 1 minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4a9c01876ef4646d",
+      "name": "Chill Touch",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.</p><p>If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.</p><p>This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>"
+        },
+        "level": 0,
+        "school": "necromancy",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "120 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "1 round"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "930f196e5a4bc812",
+      "name": "Comprehend Languages",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>For the duration, you understand the literal meaning of any spoken language that you hear. You also understand any written language that you see, but you must be touching the surface on which the words are written. It takes about 1 minute to read one page of text.</p><p>This spell doesn't decode secret messages in a text or a glyph, such as an arcane sigil, that isn't part of a written language.</p>"
+        },
+        "level": 1,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": true,
+          "concentration": false,
+          "material": "A pinch of soot and salt."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Self",
+          "units": ""
+        },
+        "duration": {
+          "value": "1 hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "63fc6b1aad4fc436",
+      "name": "Control Water",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Until the spell ends, you control any freestanding water inside an area you choose that is a cube up to 100 feet on a side. You can choose from any of the following effects when you cast this spell. As an action on your turn, you can repeat the same effect or choose a different one.</p><p>***Flood.*** You cause the water level of all standing water in the area to rise by as much as 20 feet. If the area includes a shore, the flooding water spills over onto dry land.</p><p>If you choose an area in a large body of water, you instead create a 20-foot tall wave that travels from one side of the area to the other and then crashes down. Any Huge or smaller vehicles in the wave's path are carried with it to the other side. Any Huge or smaller vehicles struck by the wave have a 25 percent chance of capsizing.</p><p>The water level remains elevated until the spell ends or you choose a different effect. If this effect produced a wave, the wave repeats on the start of your next turn while the flood effect lasts.</p><p>***Part Water.*** You cause water in the area to move apart and create a trench. The trench extends across the spell's area, and the separated water forms a wall to either side. The trench remains until the spell ends or you choose a different effect. The water then slowly fills in the trench over the course of the next round until the normal water level is restored.</p><p>***Redirect Flow.*** You cause flowing water in the area to move in a direction you choose, even if the water has to flow over obstacles, up walls, or in other unlikely directions. The water in the area moves as you direct it, but once it moves beyond the spell's area, it resumes its flow based on the terrain conditions. The water continues to move in the direction you chose until the spell ends or you choose a different effect.</p><p>***Whirlpool.*** This effect requires a body of water at least 50 feet square and 25 feet deep. You cause a whirlpool to form in the center of the area. The whirlpool forms a vortex that is 5 feet wide at the base, up to 50 feet wide at the top, and 25 feet tall. Any creature or object in the water and within 25 feet of the vortex is pulled 10 feet toward it. A creature can swim away from the vortex by making a Strength (Athletics) check against your spell save DC.</p><p>When a creature enters the vortex for the first time on a turn or starts its turn there, it must make a strength saving throw. On a failed save, the creature takes 2d8 bludgeoning damage and is caught in the vortex until the spell ends. On a successful save, the creature takes half damage, and isn't caught in the vortex. A creature caught in the vortex can use its action to try to swim away from the vortex as described above, but has disadvantage on the Strength (Athletics) check to do so.</p><p>The first time each turn that an object enters the vortex, the object takes 2d8 bludgeoning damage; this damage occurs each round it remains in the vortex.</p>"
+        },
+        "level": 4,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A drop of water and a pinch of dust."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "300 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 10 minutes"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e0d25d4885302915",
+      "name": "Dimension Door",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You teleport yourself from your current location to any other spot within range. You arrive at exactly the spot desired. It can be a place you can see, one you can visualize, or one you can describe by stating distance and direction, such as \"200 feet straight downward\" or \"upward to the northwest at a 45-degree angle, 300 feet.\"</p><p>You can bring along objects as long as their weight doesn't exceed what you can carry. You can also bring one willing creature of your size or smaller who is carrying gear up to its carrying capacity. The creature must be within 5 feet of you when you cast this spell.</p><p>If you would arrive in a place already occupied by an object or a creature, you and any creature traveling with you each take 4d6 force damage, and the spell fails to teleport you.</p>"
+        },
+        "level": 4,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "500 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "26c11eb0196895e2",
+      "name": "Etherealness",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You step into the border regions of the Ethereal Plane, in the area where it overlaps with your current plane. You remain in the Border Ethereal for the duration or until you use your action to dismiss the spell. During this time, you can move in any direction. If you move up or down, every foot of movement costs an extra foot. You can see and hear the plane you originated from, but everything there looks gray, and you can't see anything more than 60 feet away.</p><p>While on the Ethereal Plane, you can only affect and be affected by other creatures on that plane. Creatures that aren't on the Ethereal Plane can't perceive you and can't interact with you, unless a special ability or magic has given them the ability to do so.</p><p>You ignore all objects and effects that aren't on the Ethereal Plane, allowing you to move through objects you perceive on the plane you originated from.</p><p>When the spell ends, you immediately return to the plane you originated from in the spot you currently occupy. If you occupy the same spot as a solid object or creature when this happens, you are immediately shunted to the nearest unoccupied space that you can occupy and take force damage equal to twice the number of feet you are moved.</p><p>This spell has no effect if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes.</p>"
+        },
+        "level": 7,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Self",
+          "units": ""
+        },
+        "duration": {
+          "value": "8 hours"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "70afd3634afeab00",
+      "name": "Fire Bolt",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
+        },
+        "level": 0,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "120 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "7a6699102f3779d6",
+      "name": "Fire Shield",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Thin and vaporous flame surround your body for the duration of the spell, radiating a bright light bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell using an action to make it disappear.</p><p>The flames are around you a heat shield or cold, your choice. The heat shield gives you cold damage resistance and the cold resistance to fire damage.</p><p>In addition, whenever a creature within 5 feet of you hits you with a melee attack, flames spring from the shield. The attacker then suffers 2d8 points of fire damage or cold, depending on the model.</p>"
+        },
+        "level": 4,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A little phosphorus or a firefly."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Self",
+          "units": ""
+        },
+        "duration": {
+          "value": "10 minutes"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2ec9e3708d40d6ec",
+      "name": "Flesh to Stone",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You attempt to turn one creature that you can see within range into stone. If the target's body is made of flesh, the creature must make a constitution saving throw. On a failed save, it is restrained as its flesh begins to harden. On a successful save, the creature isn't affected.</p><p>A creature restrained by this spell must make another constitution saving throw at the end of each of its turns. If it successfully saves against this spell three times, the spell ends. If it fails its saves three times, it is turned to stone and subjected to the petrified condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.</p><p>If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.</p><p>If you maintain your concentration on this spell for the entire possible duration, the creature is turned to stone until the effect is removed.</p>"
+        },
+        "level": 6,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A pinch of lime, water, and earth."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "60 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 1 minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f5ced5e11b50bb54",
+      "name": "Illusory Script",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You write on parchment, paper, or some other suitable writing material and imbue it with a potent illusion that lasts for the duration.</p><p>To you and any creatures you designate when you cast the spell, the writing appears normal, written in your hand, and conveys whatever meaning you intended when you wrote the text. To all others, the writing appears as if it were written in an unknown or magical script that is unintelligible. Alternatively, you can cause the writing to appear to be an entirely different message, written in a different hand and language, though the language must be one you know.</p><p>Should the spell be dispelled, the original script and the illusion both disappear.</p><p>A creature with truesight can read the hidden message.</p>"
+        },
+        "level": 1,
+        "school": "illusion",
+        "components": {
+          "v": false,
+          "s": true,
+          "m": true,
+          "ritual": true,
+          "concentration": false,
+          "material": "A lead-based ink worth at least 10gp, which this spell consumes."
+        },
+        "activation": {
+          "type": "1 minute",
+          "cost": 1
+        },
+        "range": {
+          "value": "Touch",
+          "units": ""
+        },
+        "duration": {
+          "value": "10 days"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1a82e5990abfe213",
+      "name": "Incendiary Cloud",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A swirling cloud of smoke shot through with white-hot embers appears in a 20-foot-radius sphere centered on a point within range. The cloud spreads around corners and is heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.</p><p>When the cloud appears, each creature in it must make a dexterity saving throw. A creature takes 10d8 fire damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there.</p><p>The cloud moves 10 feet directly away from you in a direction that you choose at the start of each of your turns.</p>"
+        },
+        "level": 8,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "150 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 1 minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9dbe1896169dc9bc",
+      "name": "Knock",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Choose an object that you can see within range. The object can be a door, a box, a chest, a set of manacles, a padlock, or another object that contains a mundane or magical means that prevents access.</p><p>A target that is held shut by a mundane lock or that is stuck or barred becomes unlocked, unstuck, or unbarred. If the object has multiple locks, only one of them is unlocked.</p><p>If you choose a target that is held shut with arcane lock, that spell is suppressed for 10 minutes, during which time the target can be opened and shut normally.</p><p>When you cast the spell, a loud knock, audible from as far away as 300 feet, emanates from the target object.</p>"
+        },
+        "level": 2,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "60 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4f71fbf8057d707e",
+      "name": "Mage Hand",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.</p><p>You can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.</p><p>The hand can't attack, activate magic items, or carry more than 10 pounds.</p>"
+        },
+        "level": 0,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "30 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "1 minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9efbdb6cb4f8690b",
+      "name": "Magnificent Mansion",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You conjure an extradimensional dwelling in range that lasts for the duration. You choose where its one entrance is located. The entrance shimmers faintly and is 5 feet wide and 10 feet tall. You and any creature you designate when you cast the spell can enter the extradimensional dwelling as long as the portal remains open. You can open or close the portal if you are within 30 feet of it. While closed, the portal is invisible.</p><p>Beyond the portal is a magnificent foyer with numerous chambers beyond. The atmosphere is clean, fresh, and warm.</p><p>You can create any floor plan you like, but the space can't exceed 50 cubes, each cube being 10 feet on each side. The place is furnished and decorated as you choose. It contains sufficient food to serve a nine course banquet for up to 100 people. A staff of 100 near-transparent servants attends all who enter. You decide the visual appearance of these servants and their attire. They are completely obedient to your orders. Each servant can perform any task a normal human servant could perform, but they can't attack or take any action that would directly harm another creature. Thus the servants can fetch things, clean, mend, fold clothes, light fires, serve food, pour wine, and so on. The servants can go anywhere in the mansion but can't leave it. Furnishings and other objects created by this spell dissipate into smoke if removed from the mansion. When the spell ends, any creatures inside the extradimensional space are expelled into the open spaces nearest to the entrance.</p>"
+        },
+        "level": 7,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A miniature portal carved from ivory, a small piece of polished marble, and a tiny silver spoon, each item worth at least 5 gp."
+        },
+        "activation": {
+          "type": "1 minute",
+          "cost": 1
+        },
+        "range": {
+          "value": "300 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "24 hours"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d42335c08da8493d",
+      "name": "Mending",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell repairs a single break or tear in an object you touch, such as a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no longer than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p><p>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "Two lodestones."
+        },
+        "activation": {
+          "type": "1 minute",
+          "cost": 1
+        },
+        "range": {
+          "value": "Touch",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "129cc9be8d3b4b47",
+      "name": "Misty Step",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see.</p>"
+        },
+        "level": 2,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 bonus action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Self",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a926a676566cb3ae",
+      "name": "Project Image",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create an illusory copy of yourself that lasts for the duration. The copy can appear at any location within range that you have seen before, regardless of intervening obstacles. The illusion looks and sounds like you but is intangible. If the illusion takes any damage, it disappears, and the spell ends.</p><p>You can use your action to move this illusion up to twice your speed, and make it gesture, speak, and behave in whatever way you choose. It mimics your mannerisms perfectly.</p><p>You can see through its eyes and hear through its ears as if you were in its space. On your turn as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings.</p><p>Physical interaction with the image reveals it to be an illusion, because things can pass through it. A creature that uses its action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.</p>"
+        },
+        "level": 7,
+        "school": "illusion",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A small replica of you made from materials worth at least 5 gp."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "500 miles",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 24 hours"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c0fb2e134d3223cc",
+      "name": "Ray of Enfeeblement",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A black beam of enervating energy springs from your finger toward a creature within range. Make a ranged spell attack against the target. On a hit, the target deals only half damage with weapon attacks that use Strength until the spell ends.</p><p>At the end of each of the target's turns, it can make a constitution saving throw against the spell. On a success, the spell ends.</p>"
+        },
+        "level": 2,
+        "school": "necromancy",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "60 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 1 minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "59cb6a8fd827b935",
+      "name": "Ray of Frost",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A frigid beam of blue-white light streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, it takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.</p><p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>"
+        },
+        "level": 0,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "60 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3d3ddb1306670121",
+      "name": "Remove Curse",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.</p>"
+        },
+        "level": 3,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Touch",
+          "units": ""
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b44f8599c747c6c3",
+      "name": "See Invisibility",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>For the duration of the spell, you see invisible creatures and objects as if they were visible, and you can see through Ethereal. The ethereal objects and creatures appear ghostly translucent.</p>"
+        },
+        "level": 2,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A dash of talc and a small amount of silver powder."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Self",
+          "units": ""
+        },
+        "duration": {
+          "value": "1 hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "75fcd3739d5acdce",
+      "name": "Spider Climb",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.</p>"
+        },
+        "level": 2,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A drop of bitumen and a spider."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "Touch",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 1 hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b83cc8020af7fdce",
+      "name": "Wall of Ice",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create a wall of ice on a solid surface within range. You can form it into a hemispherical dome or a sphere with a radius of up to 10 feet, or you can shape a flat surface made up of ten 10-foot-square panels. Each panel must be contiguous with another panel. In any form, the wall is 1 foot thick and lasts for the duration.</p><p>If the wall cuts through a creature's space when it appears, the creature within its area is pushed to one side of the wall and must make a dexterity saving throw. On a failed save, the creature takes 10d6 cold damage, or half as much damage on a successful save.</p><p>The wall is an object that can be damaged and thus breached. It has AC 12 and 30 hit points per 10-foot section, and it is vulnerable to fire damage. Reducing a 10-foot section of wall to 0 hit points destroys it and leaves behind a sheet of frigid air in the space the wall occupied. A creature moving through the sheet of frigid air for the first time on a turn must make a constitution saving throw. That creature takes 5d6 cold damage on a failed save, or half as much damage on a successful one.</p>"
+        },
+        "level": 6,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A small piece of quartz."
+        },
+        "activation": {
+          "type": "1 action",
+          "cost": 1
+        },
+        "range": {
+          "value": "120 feet",
+          "units": ""
+        },
+        "duration": {
+          "value": "Up to 10 minutes"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "exportSource": {
+        "world": "",
+        "system": "dnd5e",
+        "type": "character"
+      }
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Timmykins",
+    "actorLink": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "displayName": 0,
+    "displayBars": 0,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0,
+      "brightness": 0,
+      "color": null,
+      "contrast": 0,
+      "saturation": 0
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "11",
+    "createdTime": 1758392314047,
+    "modifiedTime": 1758392314047,
+    "lastModifiedBy": null
+  }
+}

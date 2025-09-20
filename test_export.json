@@ -1,0 +1,1143 @@
+{
+  "name": "Human Barbarian 10",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 275,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 11,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "tools": {},
+    "spells": {
+      "spell1": {
+        "value": 0
+      },
+      "spell2": {
+        "value": 0
+      },
+      "spell3": {
+        "value": 0
+      },
+      "spell4": {
+        "value": 0
+      },
+      "spell5": {
+        "value": 0
+      },
+      "spell6": {
+        "value": 0
+      },
+      "spell7": {
+        "value": 0
+      },
+      "spell8": {
+        "value": 0
+      },
+      "spell9": {
+        "value": 0
+      },
+      "pact": {
+        "value": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 12,
+        "formula": ""
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "walk": 30,
+        "units": "ft",
+        "hover": false,
+        "ignoredDifficultTerrain": []
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "blindsight": 0,
+        "darkvision": 0,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1,
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 1
+        }
+      },
+      "loyalty": {},
+      "hp": {
+        "value": 95,
+        "max": 95,
+        "temp": 0,
+        "tempmax": 0,
+        "bonuses": {
+          "level": "",
+          "overall": ""
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {},
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Lawful Neutral",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "Human",
+      "background": "Acolyte",
+      "originalClass": "Barbarian",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "gender": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "skin": "",
+      "age": "",
+      "weight": ""
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "halfling"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [
+          "light-armor",
+          "medium-armor",
+          "shields"
+        ],
+        "custom": ""
+      },
+      "toolProf": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": []
+  },
+  "items": [
+    {
+      "_id": "c9992be0eca4f96c",
+      "name": "Barbarian",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "barbarian",
+        "levels": 10,
+        "hd": {
+          "denomination": "d12",
+          "additional": "",
+          "spent": 0
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "spellcasting": {
+          "ability": "",
+          "progression": "none",
+          "preparation": {
+            "formula": ""
+          }
+        },
+        "subclass": "berserker"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "eafde6308b00bd57",
+      "name": "Berserker",
+      "type": "subclass",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>For some barbarians, rage is a means to an end--that end being violence. The Path of the Berserker is a path of untrammeled fury, slick with blood. As you enter the berserker's rage, you thrill in the chaos of battle, heedless of your own health or well-being.</p>"
+        },
+        "identifier": "berserker",
+        "classIdentifier": "barbarian",
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9719240026dd00d7",
+      "name": "Human",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3f92c5fe275c568d",
+      "name": "Acolyte",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "439cb110815dd366",
+      "name": "Shelter of the Faithful",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": {
+          "book": "Acolyte",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c09254c02c93a160",
+      "name": "Rage",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor:</p><p>- You have advantage on Strength checks and Strength saving throws.</p><p>- When you make a melee weapon Attack using Strength, you gain a +2 bonus to the damage roll. This bonus increases as you level.</p><p>- You have Resistance to bludgeoning, piercing, and slashing damage.</p><p>If you are able to cast Spells, you can't cast them or concentrate on them while raging.</p><p>Your rage lasts for 1 minute. It ends early if you are knocked Unconscious or if Your Turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on Your Turn as a Bonus Action.</p><p>Once you have raged the maximum number of times for your barbarian level, you must finish a Long Rest before you can rage again. You may rage 2 times at 1st level, 3 at 3rd, 4 at 6th, 5 at 12th, and 6 at 17th.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "42c86615a772c1de",
+      "name": "Unarmored Defense",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c96c2748e6d4e74b",
+      "name": "Reckless Attack",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a4af546b9f668e84",
+      "name": "Danger Sense",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 2nd level, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger. You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can't be blinded, deafened, or incapacitated.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "72270869a6aeeb06",
+      "name": "Primal Path",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "329c2e2834bb8ade",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 4",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3870d59c6de32ae5",
+      "name": "Extra Attack",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 5",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f8e2356eb44eaec6",
+      "name": "Fast Movement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 5th level, your speed increases by 10 feet while you aren't wearing heavy armor.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 5",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "901190452a27f20f",
+      "name": "Path feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 6",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e0dc50f6041a8fd0",
+      "name": "Feral Instinct",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>By 7th level, your instincts are so honed that you have advantage on initiative rolls.</p><p>Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 7",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "757370b79df0e75c",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 8",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "546e93c4dd8a2814",
+      "name": "Brutal Critical (1 die)",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack. This increases to two additional dice at 13th level and three additional dice at 17th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 9",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5a92b38e9296ee3a",
+      "name": "Path feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Barbarian 10",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "fad33e91ba2d9d00",
+      "name": "Frenzy",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A).</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Berserker",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "cf13eed711a126f6",
+      "name": "Mindless Rage",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 6th level, you can't be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Berserker",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9cf61f22a9adb78d",
+      "name": "Intimidating Presence",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.</p><p>If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Berserker",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "exportSource": {
+        "world": "",
+        "system": "dnd5e",
+        "type": "character"
+      }
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Human Barbarian 10",
+    "actorLink": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "displayName": 0,
+    "displayBars": 0,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0,
+      "brightness": 0,
+      "color": null,
+      "contrast": 0,
+      "saturation": 0
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "11",
+    "createdTime": 1758409228089,
+    "modifiedTime": 1758409228089,
+    "lastModifiedBy": null
+  }
+}

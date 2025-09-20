@@ -1,0 +1,2976 @@
+{
+  "name": "Half-Orc Paladin 19",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 610,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rwak": {
+        "attack": "",
+        "damage": ""
+      },
+      "msak": {
+        "attack": "",
+        "damage": ""
+      },
+      "rsak": {
+        "attack": "",
+        "damage": ""
+      },
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
+      },
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "his": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "tools": {},
+    "spells": {
+      "spell1": {
+        "value": 4
+      },
+      "spell2": {
+        "value": 3
+      },
+      "spell3": {
+        "value": 3
+      },
+      "spell4": {
+        "value": 3
+      },
+      "spell5": {
+        "value": 2
+      },
+      "spell6": {
+        "value": 0
+      },
+      "spell7": {
+        "value": 0
+      },
+      "spell8": {
+        "value": 0
+      },
+      "spell9": {
+        "value": 0
+      },
+      "pact": {
+        "value": 0
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 10,
+        "formula": ""
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "walk": 30,
+        "units": "ft",
+        "hover": false,
+        "ignoredDifficultTerrain": []
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "blindsight": 0,
+        "darkvision": 60,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "cha",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1,
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 1
+        }
+      },
+      "loyalty": {},
+      "hp": {
+        "value": 156,
+        "max": 156,
+        "temp": 0,
+        "tempmax": 0,
+        "bonuses": {
+          "level": "",
+          "overall": ""
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {},
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Chaotic Evil",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "Half-Orc",
+      "background": "Acolyte",
+      "originalClass": "Paladin",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "gender": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "skin": "",
+      "age": "",
+      "weight": ""
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "orc"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [
+          "all-armor",
+          "shields"
+        ],
+        "custom": ""
+      },
+      "toolProf": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": []
+  },
+  "items": [
+    {
+      "_id": "f4d5cb20aa08e50e",
+      "name": "Paladin",
+      "type": "class",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "paladin",
+        "levels": 19,
+        "hd": {
+          "denomination": "d10",
+          "additional": "",
+          "spent": 0
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "spellcasting": {
+          "ability": "cha",
+          "progression": "half",
+          "preparation": {
+            "formula": ""
+          }
+        },
+        "subclass": "devotion"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bcaf2879839354be",
+      "name": "Devotion",
+      "type": "subclass",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.</p>"
+        },
+        "identifier": "devotion",
+        "classIdentifier": "paladin",
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "15ca0d9e0c4106f8",
+      "name": "Half-Orc",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p><p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p><p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.</p><p>You gain proficiency in the Intimidation skill.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "825fac5cbea93f71",
+      "name": "Darkvision",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "95a8ffcae3d9bf0a",
+      "name": "Savage Attacks",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c667f5df93dbb3a1",
+      "name": "Relentless Endurance",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "fe54d79edd58031f",
+      "name": "Menacing",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You gain proficiency in the Intimidation skill.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Half-Orc",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "af3133bd6b99f4f2",
+      "name": "Acolyte",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5f3eda00ca4e447d",
+      "name": "Shelter of the Faithful",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": {
+          "book": "Acolyte",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "af3813d2c801f54b",
+      "name": "Divine Sense",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</p><p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5fc0702560cd0610",
+      "name": "Lay on Hands",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</p><p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p><p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p><p>This feature has no effect on undead and constructs.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "55d9d693183b37fc",
+      "name": "Fighting Style",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b5e312e9a8273034",
+      "name": "Spellcasting: Paladin",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "165b254ac6ab5cd5",
+      "name": "Divine Smite",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "76df2f5617151fcd",
+      "name": "Divine Health",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>By 3rd level, the divine magic flowing through you makes you immune to disease.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5bb32b5b38023faa",
+      "name": "Sacred Oath",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.</p><p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c9cb52da2a762899",
+      "name": "Oath Spells",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p><p>If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "66a682e84a2bdd6b",
+      "name": "Channel Divinity",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.</p><p>When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.</p><p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9b909a9b43e4bdb0",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 4",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d21ad67628677b8f",
+      "name": "Extra Attack",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 5",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a89aa78df365e88f",
+      "name": "Aura of Protection",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</p><p>At 18th level, the range of this aura increases to 30 feet.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 6",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b9671a6881cf5cda",
+      "name": "Sacred Oath feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.</p><p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 7",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "32da85d115e7db42",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 8",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "392cd131e3f162e2",
+      "name": "Aura of Courage",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 10th level, you and friendly creatures within 10 feet of you can't be frightened while you are conscious.</p><p>At 18th level, the range of this aura increases to 30 feet.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 10",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6f92004be54514a0",
+      "name": "Improved Divine Smite",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage. If you also use your Divine Smite with an attack, you add this damage to the extra damage of your Divine Smite.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 11",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e183456c09dc4a07",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 12",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a9f71aef554b872e",
+      "name": "Cleansing Touch",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.</p><p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 14",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "daad483cc6501274",
+      "name": "Sacred Oath feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.</p><p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 15",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9611dd29b58f365c",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 16",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "659ad703dd8e74dd",
+      "name": "Aura improvements",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 18th level, the range of your auras increase to 30 feet.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 18",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "83010cecfda56be2",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 19",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bb86b04e42e61d04",
+      "name": "Channel Divinity: Sacred Weapon",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p><p>You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Devotion",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "61fb1a6cc5de0c83",
+      "name": "Channel Divinity: Turn the Unholy",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Devotion",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a730fef982913cf6",
+      "name": "Aura of Devotion",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 7th level, you and friendly creatures within 10 feet of you can't be charmed while you are conscious.</p><p>At 18th level, the range of this aura increases to 30 feet.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Devotion",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "0cc8b8c6dfb586d6",
+      "name": "Purity of Spirit",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Beginning at 15th level, you are always under the effects of a protection from evil and good spell.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Devotion",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b5d3a2b88c305953",
+      "name": "Aid",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target's hit point maximum and current hit points increase by 5 for the duration.</p>"
+        },
+        "level": 2,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A tiny strip of white cloth."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f0c85cb69457b106",
+      "name": "Banishment",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You attempt to send one creature that you can see within range to another plane of existence. The target must succeed on a charisma saving throw or be banished.</p><p>If the target is native to the plane of existence you're on, you banish the target to a harmless demiplane. While there, the target is incapacitated. The target remains there until the spell ends, at which point the target reappears in the space it left or in the nearest unoccupied space if that space is occupied.</p><p>If the target is native to a different plane of existence than the one you're on, the target is banished with a faint popping noise, returning to its home plane. If the spell ends before 1 minute has passed, the target reappears in the space it left or in the nearest unoccupied space if that space is occupied. Otherwise, the target doesn't return.</p>"
+        },
+        "level": 4,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "An item distasteful to the target."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1c06fb58f619b7c9",
+      "name": "Branding Smite",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>The next time you hit a creature with a weapon attack before this spell ends, the weapon gleams with astral radiance as you strike. The attack deals an extra 2d6 radiant damage to the target, which becomes visible if it's invisible, and the target sheds dim light in a 5-foot radius and can't become invisible until the spell ends.</p>"
+        },
+        "level": 2,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "ff4ace59b4ecd50c",
+      "name": "Daylight",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.</p><p>If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.</p><p>If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>"
+        },
+        "level": 3,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b3a460bbc02eeac1",
+      "name": "Death Ward",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch a creature and grant it a measure of protection from death.</p><p>The first time the target would drop to 0 hit points as a result of taking damage, the target instead drops to 1 hit point, and the spell ends.</p><p>If the spell is still in effect when the target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends.</p>"
+        },
+        "level": 4,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "8",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "8ebee1145705cfeb",
+      "name": "Detect Magic",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+        },
+        "level": 1,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": true,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1133253aacc759cc",
+      "name": "Detect Poison and Disease",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+        },
+        "level": 1,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": true,
+          "concentration": true,
+          "material": "A yew leaf."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "dd814a68fc007da4",
+      "name": "Dispel Evil and Good",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Shimmering energy surrounds and protects you from fey, undead, and creatures originating from beyond the Material Plane. For the duration, celestials, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.</p><p>You can end the spell early by using either of the following special functions.</p><p>***Break Enchantment.*** As your action, you touch a creature you can reach that is charmed, frightened, or possessed by a celestial, an elemental, a fey, a fiend, or an undead. The creature you touch is no longer charmed, frightened, or possessed by such creatures.</p><p>***Dismissal.*** As your action, make a melee spell attack against a celestial, an elemental, a fey, a fiend, or an undead you can reach. On a hit, you attempt to drive the creature back to its home plane. The creature must succeed on a charisma saving throw or be sent back to its home plane (if it isn't there already). If they aren't on their home plane, undead are sent to the Shadowfell, and fey are sent to the Feywild.</p>"
+        },
+        "level": 5,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "Holy water or powdered silver and iron."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b51f1d5721027948",
+      "name": "Divine Favor",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.</p>"
+        },
+        "level": 1,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3b638ab99555aac7",
+      "name": "Find Steed",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You summon a spirit that assumes the form of an unusually intelligent, strong, and loyal steed, creating a long-lasting bond with it. Appearing in an unoccupied space within range, the steed takes on a form that you choose, such as a warhorse, a pony, a camel, an elk, or a mastiff. (Your GM might allow other animals to be summoned as steeds.) The steed has the statistics of the chosen form, though it is a celestial, fey, or fiend (your choice) instead of its normal type. Additionally, if your steed has an Intelligence of 5 or less, its Intelligence becomes 6, and it gains the ability to understand one language of your choice that you speak.</p><p>Your steed serves you as a mount, both in combat and out, and you have an instinctive bond with it that allows you to fight as a seamless unit. While mounted on your steed, you can make any spell you cast that targets only you also target your steed.</p><p>When the steed drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your steed at any time as an action, causing it to disappear. In either case, casting this spell again summons the same steed, restored to its hit point maximum.</p><p>While your steed is within 1 mile of you, you can communicate with it telepathically.</p><p>You can't have more than one steed bonded by this spell at a time. As an action, you can release the steed from its bond at any time, causing it to disappear.</p>"
+        },
+        "level": 2,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "minute",
+          "value": 10,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f80f905e869618a3",
+      "name": "Flame Strike",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A vertical column of divine fire roars down from the heavens in a location you specify. Each creature in a 10-foot-radius, 40-foot-high cylinder centered on a point within range must make a dexterity saving throw. A creature takes 4d6 fire damage and 4d6 radiant damage on a failed save, or half as much damage on a successful one.</p>"
+        },
+        "level": 5,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "Pinch of sulfur."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2a9d74f4c2efaafa",
+      "name": "Freedom of Movement",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch a willing creature. For the duration, the target's movement is unaffected by difficult terrain, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained.</p><p>The target can also spend 5 feet of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled. Finally, being underwater imposes no penalties on the target's movement or attacks.</p>"
+        },
+        "level": 4,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A leather strap, bound around the arm or a similar appendage."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b1ff791c45337d93",
+      "name": "Lesser Restoration",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned.</p>"
+        },
+        "level": 2,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "87bf060c882a0831",
+      "name": "Locate Creature",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Describe or name a creature that is familiar to you. You sense the direction to the creature's location, as long as that creature is within 1,000 feet of you. If the creature is moving, you know the direction of its movement.</p><p>The spell can locate a specific creature known to you, or the nearest creature of a specific kind (such as a human or a unicorn), so long as you have seen such a creature up close--within 30 feet--at least once. If the creature you described or named is in a different form, such as being under the effects of a polymorph spell, this spell doesn't locate the creature.</p><p>This spell can't locate a creature if running water at least 10 feet wide blocks a direct path between you and the creature.</p>"
+        },
+        "level": 4,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A bit of fur from a bloodhound."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e885d4090df10cbe",
+      "name": "Locate Object",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Describe or name an object that is familiar to you. You sense the direction to the object's location, as long as that object is within 1,000 feet of you. If the object is in motion, you know the direction of its movement.</p><p>The spell can locate a specific object known to you, as long as you have seen it up close--within 30 feet--at least once. Alternatively, the spell can locate the nearest object of a particular kind, such as a certain kind of apparel, jewelry, furniture, tool, or weapon.</p><p>This spell can't locate an object if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.</p>"
+        },
+        "level": 2,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A forked twig."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "254e36b0873c153a",
+      "name": "Magic Weapon",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch a nonmagical weapon. Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>"
+        },
+        "level": 2,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "3913a178ac892284",
+      "name": "Protection from Evil and Good",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>"
+        },
+        "level": 1,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "Holy water or powdered silver and iron, which the spell consumes."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2c590d728d75ceb3",
+      "name": "Purify Food and Drink",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.</p>"
+        },
+        "level": 1,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": true,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "10"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b8c3ee7545c3dc98",
+      "name": "Raise Dead",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.</p><p>This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life.</p><p>This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival--its head, for instance--the spell automatically fails.</p><p>Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.</p>"
+        },
+        "level": 5,
+        "school": "necromancy",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A diamond worth at least 500gp, which the spell consumes."
+        },
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "0ffac9473dc7c11e",
+      "name": "Remove Curse",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>At your touch, all curses affecting one creature or object end. If the object is a cursed magic item, its curse remains, but the spell breaks its owner's attunement to the object so it can be removed or discarded.</p>"
+        },
+        "level": 3,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "26a83a21ae77140b",
+      "name": "Shield of Faith",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p>"
+        },
+        "level": 1,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A small parchment with a bit of holy text written on it."
+        },
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f241253838dcdd42",
+      "name": "Chain Mail",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "chain-mail",
+        "quantity": 1,
+        "weight": {
+          "value": 55,
+          "units": "lb"
+        },
+        "price": {
+          "value": 75,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 16,
+          "dex": 0
+        },
+        "type": {
+          "value": "heavy",
+          "baseItem": "chain-mail"
+        },
+        "strength": 13,
+        "stealth": "disadvantage"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "757e50e8347e4f84",
+      "name": "Shield",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "shield",
+        "quantity": 1,
+        "weight": {
+          "value": 6,
+          "units": "lb"
+        },
+        "price": {
+          "value": 10,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 2,
+          "dex": 0
+        },
+        "type": {
+          "value": "shield",
+          "baseItem": "shield"
+        },
+        "strength": 0,
+        "stealth": ""
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "102695240f7e9e31",
+      "name": "Longsword",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "longsword",
+        "quantity": 1,
+        "weight": {
+          "value": 3,
+          "units": "lb"
+        },
+        "price": {
+          "value": 15,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8",
+              "slashing"
+            ]
+          ],
+          "versatile": "1d10"
+        },
+        "properties": [
+          "versatile"
+        ],
+        "proficient": null,
+        "ability": "str",
+        "attackType": "mwak",
+        "type": {
+          "value": "martialM",
+          "baseItem": "longsword"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f8f9544ee7927d5a",
+      "name": "Warhammer",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "warhammer",
+        "quantity": 1,
+        "weight": {
+          "value": 2,
+          "units": "lb"
+        },
+        "price": {
+          "value": 15,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": "1d10"
+        },
+        "properties": [
+          "versatile"
+        ],
+        "proficient": null,
+        "ability": "str",
+        "attackType": "mwak",
+        "type": {
+          "value": "martialM",
+          "baseItem": "warhammer"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bfd07a17c256b048",
+      "name": "Priest's Pack",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "priests-pack",
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": ""
+        },
+        "price": {
+          "value": 19,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bfef3942e7055936",
+      "name": "Holy water (flask)",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "holy-water-flask",
+        "quantity": 1,
+        "weight": {
+          "value": 1,
+          "units": "lb"
+        },
+        "price": {
+          "value": 25,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
+    }
+  ],
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "exportSource": {
+        "world": "",
+        "system": "dnd5e",
+        "type": "character"
+      }
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "name": "Half-Orc Paladin 19",
+    "actorLink": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "alphaThreshold": 0.75
+    },
+    "width": 1,
+    "height": 1,
+    "displayName": 0,
+    "displayBars": 0,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0,
+      "brightness": 0,
+      "color": null,
+      "contrast": 0,
+      "saturation": 0
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "11",
+    "createdTime": 1758410743986,
+    "modifiedTime": 1758410743986,
+    "lastModifiedBy": null
+  }
+}

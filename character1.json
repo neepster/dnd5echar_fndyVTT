@@ -1,0 +1,787 @@
+{
+  "name": "Dwarf Warlock 3",
+  "type": "character",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 8,
+        "mod": -1,
+        "prof": 0,
+        "save": -1
+      },
+      "dex": {
+        "value": 13,
+        "mod": 1,
+        "prof": 0,
+        "save": 1
+      },
+      "con": {
+        "value": 16,
+        "mod": 3,
+        "prof": 0,
+        "save": 3
+      },
+      "int": {
+        "value": 10,
+        "mod": 0,
+        "prof": 0,
+        "save": 0
+      },
+      "wis": {
+        "value": 13,
+        "mod": 1,
+        "prof": 0,
+        "save": 1
+      },
+      "cha": {
+        "value": 15,
+        "mod": 2,
+        "prof": 0,
+        "save": 2
+      }
+    },
+    "attributes": {
+      "ac": {
+        "value": 11,
+        "base": 11
+      },
+      "hp": {
+        "value": 27,
+        "max": 27,
+        "temp": 0,
+        "tempmax": 0
+      },
+      "init": {
+        "mod": 1,
+        "value": 1
+      },
+      "movement": {
+        "walk": 25
+      },
+      "prof": 2,
+      "spellcasting": {
+        "ability": "cha"
+      },
+      "spellcastingAbility": "cha"
+    },
+    "details": {
+      "alignment": "chaotic-good",
+      "background": "Acolyte",
+      "biography": {
+        "value": ""
+      },
+      "class": "Warlock 3",
+      "level": 3,
+      "race": "Dwarf",
+      "xp": {
+        "value": 0,
+        "min": 0,
+        "max": 355000
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      },
+      "ani": {
+        "ability": "wis",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      },
+      "arc": {
+        "ability": "int",
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "prof": 0,
+        "total": 0,
+        "passive": 10
+      },
+      "ath": {
+        "ability": "str",
+        "value": 0,
+        "bonus": 0,
+        "mod": -1,
+        "prof": 0,
+        "total": -1,
+        "passive": 9
+      },
+      "dec": {
+        "ability": "cha",
+        "value": 1,
+        "bonus": 0,
+        "mod": 2,
+        "prof": 2,
+        "total": 4,
+        "passive": 14
+      },
+      "his": {
+        "ability": "int",
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "prof": 0,
+        "total": 0,
+        "passive": 10
+      },
+      "ins": {
+        "ability": "wis",
+        "value": 1,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 2,
+        "total": 3,
+        "passive": 13
+      },
+      "itm": {
+        "ability": "cha",
+        "value": 0,
+        "bonus": 0,
+        "mod": 2,
+        "prof": 0,
+        "total": 2,
+        "passive": 12
+      },
+      "inv": {
+        "ability": "int",
+        "value": 1,
+        "bonus": 0,
+        "mod": 0,
+        "prof": 2,
+        "total": 2,
+        "passive": 12
+      },
+      "med": {
+        "ability": "wis",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      },
+      "nat": {
+        "ability": "int",
+        "value": 0,
+        "bonus": 0,
+        "mod": 0,
+        "prof": 0,
+        "total": 0,
+        "passive": 10
+      },
+      "prc": {
+        "ability": "wis",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      },
+      "prf": {
+        "ability": "cha",
+        "value": 0,
+        "bonus": 0,
+        "mod": 2,
+        "prof": 0,
+        "total": 2,
+        "passive": 12
+      },
+      "per": {
+        "ability": "cha",
+        "value": 0,
+        "bonus": 0,
+        "mod": 2,
+        "prof": 0,
+        "total": 2,
+        "passive": 12
+      },
+      "rel": {
+        "ability": "int",
+        "value": 1,
+        "bonus": 0,
+        "mod": 0,
+        "prof": 2,
+        "total": 2,
+        "passive": 12
+      },
+      "slt": {
+        "ability": "dex",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      },
+      "ste": {
+        "ability": "dex",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      },
+      "sur": {
+        "ability": "wis",
+        "value": 0,
+        "bonus": 0,
+        "mod": 1,
+        "prof": 0,
+        "total": 1,
+        "passive": 11
+      }
+    },
+    "spells": {
+      "spell0": {
+        "value": 2,
+        "max": 2,
+        "override": 0
+      },
+      "spell1": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell2": {
+        "value": 2,
+        "max": 2,
+        "override": 0
+      },
+      "spell3": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell4": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell5": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell6": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell7": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell8": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      },
+      "spell9": {
+        "value": 0,
+        "max": 0,
+        "override": 0
+      }
+    },
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "traits": {
+      "size": "med",
+      "languages": {
+        "value": [
+          "common",
+          "dwarvish"
+        ],
+        "custom": ""
+      },
+      "toolProf": {
+        "value": [
+          "light-armor"
+        ],
+        "custom": ""
+      }
+    }
+  },
+  "items": [
+    {
+      "name": "Dwarf",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Constitution: +2</p><p>Speed: 25 ft.</p><p>Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.</p><p>Traits: Darkvision, Dwarven Resilience, Stonecunning, Dwarven Combat Training, Tool Proficiency</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Darkvision",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Dwarf"
+      }
+    },
+    {
+      "name": "Dwarven Resilience",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>You have advantage on saving throws against poison, and you have resistance against poison damage.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Dwarf"
+      }
+    },
+    {
+      "name": "Stonecunning",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Dwarf"
+      }
+    },
+    {
+      "name": "Dwarven Combat Training",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Dwarf"
+      }
+    },
+    {
+      "name": "Tool Proficiency",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Dwarf"
+      }
+    },
+    {
+      "name": "Hill Dwarf",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Dwarf"
+      }
+    },
+    {
+      "name": "Dwarven Toughness",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": "Hill Dwarf"
+      }
+    },
+    {
+      "name": "Acolyte",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Shelter of the Faithful",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
+        },
+        "type": {
+          "value": "background"
+        },
+        "source": "Acolyte"
+      }
+    },
+    {
+      "name": "Warlock",
+      "type": "class",
+      "system": {
+        "levels": 3,
+        "hitDice": "d8",
+        "subclass": "Fiend",
+        "spellcasting": {
+          "progression": "full",
+          "ability": "cha"
+        },
+        "description": {
+          "value": ""
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Otherworldly Patron",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": "Warlock 1"
+      }
+    },
+    {
+      "name": "Pact Magic",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": "Warlock 1"
+      }
+    },
+    {
+      "name": "Eldritch Invocations",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p><p>At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p><p>Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": "Warlock 2"
+      }
+    },
+    {
+      "name": "Pact Boon",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": "Warlock 3"
+      }
+    },
+    {
+      "name": "Dark One's Blessing",
+      "type": "feat",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": "Fiend"
+      }
+    },
+    {
+      "name": "Eldritch Blast",
+      "type": "spell",
+      "system": {
+        "description": {
+          "value": "<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>"
+        },
+        "level": 0,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "duration": {
+          "value": "Instantaneous"
+        },
+        "target": {
+          "value": null,
+          "type": "",
+          "units": ""
+        },
+        "range": {
+          "value": "120 feet",
+          "units": ""
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Hold Person",
+      "type": "spell",
+      "system": {
+        "description": {
+          "value": "<p>Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom saving throw. On a success, the spell ends on the target.</p>"
+        },
+        "level": 2,
+        "school": "enchantment",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A small, straight piece of iron."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "duration": {
+          "value": "Up to 1 minute"
+        },
+        "target": {
+          "value": null,
+          "type": "",
+          "units": ""
+        },
+        "range": {
+          "value": "60 feet",
+          "units": ""
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Invisibility",
+      "type": "spell",
+      "system": {
+        "description": {
+          "value": "<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>"
+        },
+        "level": 2,
+        "school": "illusion",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "An eyelash encased in gum arabic."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "duration": {
+          "value": "Up to 1 hour"
+        },
+        "target": {
+          "value": null,
+          "type": "",
+          "units": ""
+        },
+        "range": {
+          "value": "Touch",
+          "units": ""
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Mirror Image",
+      "type": "spell",
+      "system": {
+        "description": {
+          "value": "<p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.</p><p>Each time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates.</p><p>If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.</p><p>A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.</p><p>A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.</p>"
+        },
+        "level": 2,
+        "school": "illusion",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "duration": {
+          "value": "1 minute"
+        },
+        "target": {
+          "value": null,
+          "type": "",
+          "units": ""
+        },
+        "range": {
+          "value": "Self",
+          "units": ""
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Prestidigitation",
+      "type": "spell",
+      "system": {
+        "description": {
+          "value": "<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p><p>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p><p>You instantaneously light or snuff out a candle, a torch, or a small campfire.</p><p>You instantaneously clean or soil an object no larger than 1 cubic foot.</p><p>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p><p>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p><p>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p><p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "duration": {
+          "value": "1 hour"
+        },
+        "target": {
+          "value": null,
+          "type": "",
+          "units": ""
+        },
+        "range": {
+          "value": "10 feet",
+          "units": ""
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": "SRD"
+      }
+    },
+    {
+      "name": "Spider Climb",
+      "type": "spell",
+      "system": {
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.</p>"
+        },
+        "level": 2,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A drop of bitumen and a spider."
+        },
+        "activation": {
+          "type": "action",
+          "cost": 1
+        },
+        "duration": {
+          "value": "Up to 1 hour"
+        },
+        "target": {
+          "value": null,
+          "type": "",
+          "units": ""
+        },
+        "range": {
+          "value": "Touch",
+          "units": ""
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": "SRD"
+      }
+    }
+  ],
+  "effects": [],
+  "flags": {},
+  "prototypeToken": {
+    "name": "Dwarf Warlock 3",
+    "displayName": 20,
+    "disposition": 1,
+    "width": 1,
+    "height": 1,
+    "vision": true
+  }
+}

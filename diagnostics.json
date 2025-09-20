@@ -1,0 +1,26 @@
+{
+  "timestamp": 1758400831648,
+  "os": {
+    "platform": "win32",
+    "version": "10.0.26100",
+    "node": "20.18.3",
+    "electron": "34.4.0"
+  },
+  "foundry": {
+    "generation": 13,
+    "build": 348,
+    "channel": "stable",
+    "hosting": null
+  },
+  "modules": {},
+  "systems": {
+    "dnd5e": {
+      "version": "5.1.9"
+    }
+  },
+  "worlds": {},
+  "playtime": {
+    "total": 0,
+    "max": 0
+  }
+}
