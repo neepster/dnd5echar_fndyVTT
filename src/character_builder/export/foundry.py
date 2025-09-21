@@ -491,7 +491,6 @@ def _spell_item(spell: dict, prepared: bool) -> Dict[str, object]:
         "supply": 0,
     }
     source_classes = [ref.get("index") for ref in spell.get("classes", []) if ref.get("index")]
-    prepared_flag = 1 if prepared else 0
     components = {
         "v": components.get("v", False),
         "s": components.get("s", False),
@@ -516,9 +515,9 @@ def _spell_item(spell: dict, prepared: bool) -> Dict[str, object]:
         "materials": materials,
         "properties": properties,
         "method": "spell",
-        "prepared": prepared_flag,
+        "prepared": bool(prepared),
         "uses": {"spent": 0, "max": "", "recovery": []},
-        "sourceClass": source_classes[0] if source_classes else "",
+        "sourceClass": source_classes,
     }
     system["preparation"] = {"mode": "prepared" if prepared else "known", "prepared": bool(prepared)}
     activity = _build_spell_activity(spell, system)
