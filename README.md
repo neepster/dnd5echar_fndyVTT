@@ -18,7 +18,7 @@ python main.py
 - Full SRD data coverage (classes, subclasses, races, subraces, backgrounds, feats, spells, equipment categories, etc.)
 - Slick PySide6 desktop UI with:
   - Basics tab for level, race/subrace, class/subclass, background, alignment
-  - One-click random character generator that honors any fields you've already chosen while filling in the rest with synergistic picks, including starter gear, magical weapon upgrades, race-aware names, and pocket change scaled to level
+  - One-click random character generator that honors any fields you've already chosen while filling in the rest with synergistic picks, including starter gear, magical weapon/armor upgrades, race-aware names, and pocket change scaled to level
   - Clear button to wipe the sheet instantly when you want a completely fresh roll
   - Ability editor with automatic racial bonuses and manual ASI support
   - Skill/proficiency management with class/background/race choices and expertise toggles

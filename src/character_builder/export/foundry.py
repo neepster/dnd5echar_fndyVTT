@@ -175,11 +175,11 @@ def _build_spells(viewmodel: CharacterViewModel) -> Dict[str, object]:
     state = viewmodel.state
     spells: Dict[str, object] = {}
 
-    known_cantrips = sum(
-        1
-        for spell_index in state.selected_spells.get("known", set())
-        if (spell := viewmodel.srd.spells.get(spell_index)) and spell.get("level", 0) == 0
-    )
+    known_cantrips = 0
+    for spell_index in state.selected_spells.get("known", set()):
+        spell = viewmodel.srd.spells.get(spell_index)
+        if spell and spell.get("level", 0) == 0:
+            known_cantrips += 1
     spells["spell0"] = {"value": known_cantrips, "max": known_cantrips, "override": 0, "used": 0}
 
     for level in range(1, 10):
@@ -483,27 +483,44 @@ def _trait_item(trait: dict, source: str, trait_type: str) -> Dict[str, object]:
 
 def _spell_item(spell: dict, prepared: bool) -> Dict[str, object]:
     components = {component.lower(): True for component in spell.get("components", [])}
+    properties = _spell_properties(spell, components)
+    materials = {
+        "value": spell.get("material", ""),
+        "consumed": False,
+        "cost": 0,
+        "supply": 0,
+    }
+    source_classes = [ref.get("index") for ref in spell.get("classes", []) if ref.get("index")]
+    prepared_flag = 1 if prepared else 0
+    components = {
+        "v": components.get("v", False),
+        "s": components.get("s", False),
+        "m": components.get("m", False),
+        "ritual": spell.get("ritual", False),
+        "concentration": spell.get("concentration", False),
+        "material": spell.get("material", ""),
+    }
+
     system = {
         "description": {"value": _format_html(spell.get("desc", []))},
         "level": spell.get("level", 0),
         "school": spell.get("school", {}).get("index", ""),
-        "components": {
-            "v": components.get("v", False),
-            "s": components.get("s", False),
-            "m": components.get("m", False),
-            "ritual": spell.get("ritual", False),
-            "concentration": spell.get("concentration", False),
-            "material": spell.get("material", ""),
-        },
         "activation": _parse_activation(spell.get("casting_time", "")),
         "range": _parse_range(spell.get("range", "")),
         "duration": _parse_duration(spell.get("duration", "")),
-        "preparation": {"mode": "prepared" if prepared else "known", "prepared": prepared},
         "source": {"book": "SRD 5.1", "page": "", "custom": ""},
         "target": _default_target(),
         "identifier": spell.get("index", ""),
-        "activities": {}
+        "activities": {},
+        "components": components,
+        "materials": materials,
+        "properties": properties,
+        "method": "spell",
+        "prepared": prepared_flag,
+        "uses": {"spent": 0, "max": "", "recovery": []},
+        "sourceClass": source_classes[0] if source_classes else "",
     }
+    system["preparation"] = {"mode": "prepared" if prepared else "known", "prepared": bool(prepared)}
     activity = _build_spell_activity(spell, system)
     system["activities"][activity["_id"]] = activity
     return _base_item(spell.get("name", "Spell"), "spell", system, img="icons/magic/arcane/bolt-spiral-blue.webp")
@@ -598,27 +615,27 @@ def _parse_range(text: str) -> Dict[str, object]:
 
 def _parse_duration(text: str) -> Dict[str, object]:
     if not text:
-        return {"value": "0", "units": "inst"}
+        return {"value": "0", "units": "inst", "override": False}
     cleaned = text.strip()
     lower = cleaned.lower()
     if "instant" in lower:
-        return {"value": "0", "units": "inst"}
+        return {"value": "0", "units": "inst", "override": False}
     if "permanent" in lower:
-        return {"value": "", "units": "perm"}
+        return {"value": "", "units": "perm", "override": False}
     if "until dispelled" in lower or "special" in lower:
-        return {"value": "", "units": "spec"}
+        return {"value": "", "units": "spec", "override": False}
     number = _extract_number(lower) or "1"
     if "hour" in lower:
-        return {"value": number, "units": "hour"}
+        return {"value": number, "units": "hour", "override": False}
     if "minute" in lower:
-        return {"value": number, "units": "minute"}
+        return {"value": number, "units": "minute", "override": False}
     if "round" in lower:
-        return {"value": number, "units": "round"}
+        return {"value": number, "units": "round", "override": False}
     if "turn" in lower:
-        return {"value": number, "units": "turn"}
+        return {"value": number, "units": "turn", "override": False}
     if "day" in lower:
-        return {"value": number, "units": "day"}
-    return {"value": cleaned, "units": "spec"}
+        return {"value": number, "units": "day", "override": False}
+    return {"value": cleaned, "units": "spec", "override": False}
 
 
 def _extract_number(text: str) -> Optional[str]:
@@ -648,7 +665,7 @@ def _equipment_items(viewmodel: CharacterViewModel, equipment_list: List[str]) -
         if category == "weapon":
             item = _weapon_entry(entry, quantity, magic_bonus)
         elif category == "armor":
-            item = _armor_entry(entry, quantity)
+            item = _armor_entry(entry, quantity, magic_bonus)
         else:
             name = entry.get("name")
             if magic_bonus:
@@ -715,7 +732,7 @@ def _weapon_entry(entry: dict, quantity: int, magic_bonus: int = 0) -> Dict[str,
     return _base_item(name, "weapon", system, img="systems/dnd5e/icons/svg/items/sword.svg")
 
 
-def _armor_entry(entry: dict, quantity: int) -> Dict[str, object]:
+def _armor_entry(entry: dict, quantity: int, magic_bonus: int = 0) -> Dict[str, object]:
     armor_class = entry.get("armor_class", {})
     armor_type = (entry.get("armor_category") or "").lower()
 
@@ -733,15 +750,20 @@ def _armor_entry(entry: dict, quantity: int) -> Dict[str, object]:
         "attuned": False,
         "container": None,
         "armor": {
-            "value": armor_class.get("base", 10),
+            "value": armor_class.get("base", 10) + magic_bonus,
             "dex": armor_class.get("max_bonus", 0) if armor_class.get("dex_bonus") else 0,
         },
         "type": {"value": armor_type, "baseItem": entry.get("index", "")},
         "strength": entry.get("str_minimum", 0),
         "stealth": "disadvantage" if entry.get("stealth_disadvantage") else "",
     }
-
-    return _base_item(entry.get("name", "Armor"), "equipment", system, img="systems/dnd5e/icons/svg/items/armor.svg")
+    if magic_bonus:
+        system.setdefault("bonuses", {})
+        system["bonuses"]["ac"] = str(magic_bonus)
+    name = entry.get("name", "Armor")
+    if magic_bonus:
+        name = f"{name} +{magic_bonus}"
+    return _base_item(name, "equipment", system, img="systems/dnd5e/icons/svg/items/armor.svg")
 
 
 def _loot_entry(name: str, identifier: str, quantity: int, entry: Optional[dict] = None) -> Dict[str, object]:
@@ -829,6 +851,21 @@ def _spell_activity_type(spell: dict) -> str:
     if spell.get("damage"):
         return "damage"
     return "utility"
+
+
+def _spell_properties(spell: dict, components: Dict[str, bool]) -> List[str]:
+    props: List[str] = []
+    if components.get("v"):
+        props.append("verbal")
+    if components.get("s"):
+        props.append("somatic")
+    if components.get("m"):
+        props.append("material")
+    if spell.get("concentration"):
+        props.append("concentration")
+    if spell.get("ritual"):
+        props.append("ritual")
+    return props
 
 
 def _spell_progression(class_data: ClassData) -> str:

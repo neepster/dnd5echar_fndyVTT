@@ -1,18 +1,18 @@
 {
-  "name": "Sylwen Windrunner",
+  "name": "Aelar Nightbreeze",
   "type": "character",
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "currency": {
       "pp": 0,
-      "gp": 160,
+      "gp": 165,
       "ep": 0,
       "sp": 0,
       "cp": 0
     },
     "abilities": {
       "str": {
-        "value": 15,
+        "value": 8,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -35,7 +35,7 @@
         }
       },
       "dex": {
-        "value": 12,
+        "value": 15,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -58,7 +58,7 @@
         }
       },
       "con": {
-        "value": 13,
+        "value": 14,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -81,7 +81,7 @@
         }
       },
       "int": {
-        "value": 9,
+        "value": 11,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -127,7 +127,7 @@
         }
       },
       "cha": {
-        "value": 14,
+        "value": 15,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -283,7 +283,7 @@
       },
       "inv": {
         "ability": "int",
-        "value": 0,
+        "value": 1,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -296,7 +296,7 @@
       },
       "med": {
         "ability": "wis",
-        "value": 1,
+        "value": 0,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -348,7 +348,7 @@
       },
       "per": {
         "ability": "cha",
-        "value": 1,
+        "value": 0,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -414,41 +414,77 @@
     },
     "tools": {},
     "spells": {
+      "spell0": {
+        "value": 3,
+        "max": 3,
+        "override": 0,
+        "used": 0
+      },
       "spell1": {
-        "value": 3
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell2": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell3": {
-        "value": 0
+        "value": 2,
+        "max": 2,
+        "override": 0,
+        "used": 0
       },
       "spell4": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell5": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell6": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell7": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell8": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "spell9": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       },
       "pact": {
-        "value": 0
+        "value": 0,
+        "max": 0,
+        "override": 0,
+        "used": 0
       }
     },
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 11,
+        "flat": 12,
         "formula": ""
       },
       "init": {
@@ -497,8 +533,8 @@
       },
       "loyalty": {},
       "hp": {
-        "value": 32,
-        "max": 32,
+        "value": 38,
+        "max": 38,
         "temp": 0,
         "tempmax": 0,
         "bonuses": {
@@ -526,13 +562,13 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Neutral",
+      "alignment": "Lawful Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
       "race": "Elf",
       "background": "Acolyte",
-      "originalClass": "Paladin",
+      "originalClass": "Warlock",
       "xp": {
         "value": 0
       },
@@ -587,8 +623,7 @@
       },
       "armorProf": {
         "value": [
-          "all-armor",
-          "shields"
+          "light-armor"
         ],
         "custom": ""
       },
@@ -624,18 +659,18 @@
   },
   "items": [
     {
-      "_id": "6fefda41430645a5",
-      "name": "Paladin",
+      "_id": "62938a5d38df7e3b",
+      "name": "Warlock",
       "type": "class",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "paladin",
-        "levels": 4,
+        "identifier": "warlock",
+        "levels": 5,
         "hd": {
-          "denomination": "d10",
+          "denomination": "d8",
           "additional": "",
           "spent": 0
         },
@@ -646,27 +681,27 @@
         },
         "spellcasting": {
           "ability": "cha",
-          "progression": "half",
+          "progression": "full",
           "preparation": {
             "formula": ""
           }
         },
-        "subclass": "devotion"
+        "subclass": "fiend"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "74b311df407260e8",
-      "name": "Devotion",
+      "_id": "561fb4261bb19549",
+      "name": "Fiend",
       "type": "subclass",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.</p>"
+          "value": "<p>You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.</p>"
         },
-        "identifier": "devotion",
-        "classIdentifier": "paladin",
+        "identifier": "fiend",
+        "classIdentifier": "warlock",
         "source": {
           "book": "SRD 5.1",
           "page": "",
@@ -677,7 +712,7 @@
       "flags": {}
     },
     {
-      "_id": "f7352cdda7265c34",
+      "_id": "521dc3ae12edfcfd",
       "name": "Elf",
       "type": "race",
       "img": "icons/svg/book.svg",
@@ -695,7 +730,7 @@
       "flags": {}
     },
     {
-      "_id": "95d93b0e20e60684",
+      "_id": "fcdde36d35569a4b",
       "name": "High Elf",
       "type": "race",
       "img": "icons/svg/book.svg",
@@ -713,7 +748,7 @@
       "flags": {}
     },
     {
-      "_id": "9414f5e11aa510a5",
+      "_id": "61b5248457e48a3d",
       "name": "Darkvision",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -734,7 +769,7 @@
       "flags": {}
     },
     {
-      "_id": "74173aa37dccaa1d",
+      "_id": "ce970b1f5c2c3349",
       "name": "Fey Ancestry",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -755,7 +790,7 @@
       "flags": {}
     },
     {
-      "_id": "6389dba1f8e132d1",
+      "_id": "bf723475fb25d4e4",
       "name": "Trance",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -776,7 +811,7 @@
       "flags": {}
     },
     {
-      "_id": "e6c9fb163c55b6c3",
+      "_id": "93a70ef1d8c1f07d",
       "name": "Keen Senses",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -797,7 +832,7 @@
       "flags": {}
     },
     {
-      "_id": "d192d3f4e51eb3c7",
+      "_id": "36b72ac4a4ddbf3d",
       "name": "Elf Weapon Training",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -818,7 +853,7 @@
       "flags": {}
     },
     {
-      "_id": "5a9ba331d225bd8f",
+      "_id": "d0934eaf7214f972",
       "name": "High Elf Cantrip",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -839,7 +874,7 @@
       "flags": {}
     },
     {
-      "_id": "55ce42f130c7d8d2",
+      "_id": "f0b3af9d302f355f",
       "name": "Extra Language",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -860,7 +895,7 @@
       "flags": {}
     },
     {
-      "_id": "077fe817c3275440",
+      "_id": "69ed6ea5183f4d07",
       "name": "Acolyte",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -878,7 +913,7 @@
       "flags": {}
     },
     {
-      "_id": "b3187118240be132",
+      "_id": "adf643cd62b65598",
       "name": "Shelter of the Faithful",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -899,19 +934,19 @@
       "flags": {}
     },
     {
-      "_id": "d8cb657d3754d737",
-      "name": "Divine Sense",
+      "_id": "6b31351987d37cf4",
+      "name": "Otherworldly Patron",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</p><p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>"
+          "value": "<p>At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 1",
+          "book": "Warlock 1",
           "page": "",
           "custom": ""
         }
@@ -920,19 +955,19 @@
       "flags": {}
     },
     {
-      "_id": "16fbca62b9e4def4",
-      "name": "Lay on Hands",
+      "_id": "dca7cb9ffb4c5953",
+      "name": "Pact Magic",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</p><p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p><p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p><p>This feature has no effect on undead and constructs.</p>"
+          "value": "<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 1",
+          "book": "Warlock 1",
           "page": "",
           "custom": ""
         }
@@ -941,19 +976,19 @@
       "flags": {}
     },
     {
-      "_id": "916b293ab1dbbc6a",
-      "name": "Fighting Style",
+      "_id": "19270c04eaba30ef",
+      "name": "Eldritch Invocations",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>"
+          "value": "<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p><p>At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p><p>Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 2",
+          "book": "Warlock 2",
           "page": "",
           "custom": ""
         }
@@ -962,19 +997,19 @@
       "flags": {}
     },
     {
-      "_id": "abea135236f7a206",
-      "name": "Spellcasting: Paladin",
+      "_id": "d0ac6d4bd0bbaf90",
+      "name": "Pact Boon",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.</p>"
+          "value": "<p>At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 2",
+          "book": "Warlock 3",
           "page": "",
           "custom": ""
         }
@@ -983,112 +1018,7 @@
       "flags": {}
     },
     {
-      "_id": "9d6f46929cf574fb",
-      "name": "Divine Smite",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Paladin 2",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "398597549f617153",
-      "name": "Divine Health",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>By 3rd level, the divine magic flowing through you makes you immune to disease.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Paladin 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "baf99c8b4edb2ae6",
-      "name": "Sacred Oath",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.</p><p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Paladin 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "88c412c7495c6586",
-      "name": "Oath Spells",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p><p>If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Paladin 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "4736c5269b9ed9f0",
-      "name": "Channel Divinity",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.</p><p>When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.</p><p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Paladin 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "0a253ed91ac6bd8a",
+      "_id": "9e9466d76aabad23",
       "name": "Ability Score Improvement",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -1100,7 +1030,7 @@
           "value": "class"
         },
         "source": {
-          "book": "Paladin 4",
+          "book": "Warlock 4",
           "page": "",
           "custom": ""
         }
@@ -1109,19 +1039,19 @@
       "flags": {}
     },
     {
-      "_id": "218063ce0877e4ad",
-      "name": "Channel Divinity: Sacred Weapon",
+      "_id": "22b5b716ee4125f6",
+      "name": "Dark One's Blessing",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p><p>You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>"
+          "value": "<p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Devotion",
+          "book": "Fiend",
           "page": "",
           "custom": ""
         }
@@ -1130,184 +1060,31 @@
       "flags": {}
     },
     {
-      "_id": "1e5d7e4bc3da6e15",
-      "name": "Channel Divinity: Turn the Unholy",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Devotion",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "e4dfb6113a4c886b",
-      "name": "Bless",
+      "_id": "8595248817329a4b",
+      "name": "Dispel Magic",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.</p>"
+          "value": "<p>Choose one creature, object, or magical effect within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.</p>"
         },
-        "level": 1,
-        "school": "enchantment",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": true,
-          "material": "A sprinkling of holy water."
-        },
+        "level": 3,
+        "school": "abjuration",
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
           "units": "ft",
-          "value": "30"
-        },
-        "duration": {
-          "value": "1",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "b6863ef01b1001e6",
-      "name": "Command",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the GM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p>***Approach.*** The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p>***Drop.*** The target drops whatever it is holding and then ends its turn.</p><p>***Flee.*** The target spends its turn moving away from you by the fastest available means.</p><p>***Grovel.*** The target falls prone and then ends its turn.</p><p>***Halt.*** The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p>"
-        },
-        "level": 1,
-        "school": "enchantment",
-        "components": {
-          "v": true,
-          "s": false,
-          "m": false,
-          "ritual": false,
-          "concentration": false,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "60"
-        },
-        "duration": {
-          "value": "1",
-          "units": "round"
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "795fc0de200bfb1a",
-      "name": "Cure Wounds",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>"
-        },
-        "level": 1,
-        "school": "evocation",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": false,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "touch"
+          "value": "120",
+          "override": false
         },
         "duration": {
           "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
+          "units": "inst",
+          "override": false
         },
         "source": {
           "book": "SRD 5.1",
@@ -1330,45 +1107,278 @@
             "height": "",
             "units": "ft"
           }
-        }
+        },
+        "identifier": "dispel-magic",
+        "activities": {
+          "castdispel-mag": {
+            "_id": "castdispel-mag",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "value": "0",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "120",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "bard"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "a7f1c25f467382d6",
-      "name": "Detect Evil and Good",
+      "_id": "bb462420b64dbedd",
+      "name": "Fear",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+          "value": "<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p><p>While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a wisdom saving throw. On a successful save, the spell ends for that creature.</p>"
         },
-        "level": 1,
-        "school": "divination",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": true,
-          "material": ""
-        },
+        "level": 3,
+        "school": "illusion",
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
-          "units": "self"
+          "units": "self",
+          "value": "",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "override": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "fear",
+        "activities": {
+          "castfear": {
+            "_id": "castfear",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "self",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "A white feather or the heart of a hen.",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic",
+          "material",
+          "concentration"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "bard"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "7d1d27443f1cd7fc",
+      "name": "Fly",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>"
+        },
+        "level": 3,
+        "school": "transmutation",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "touch",
+          "value": "",
+          "override": false
         },
         "duration": {
           "value": "10",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
+          "units": "minute",
+          "override": false
         },
         "source": {
           "book": "SRD 5.1",
@@ -1391,45 +1401,132 @@
             "height": "",
             "units": "ft"
           }
-        }
+        },
+        "identifier": "fly",
+        "activities": {
+          "castfly": {
+            "_id": "castfly",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "10",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "touch",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "A wing feather from any bird.",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic",
+          "material",
+          "concentration"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "sorcerer"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "9a1be57fcf5695b4",
-      "name": "Heroism",
+      "_id": "d1f63b7e447f268a",
+      "name": "Gaseous Form",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.</p>"
+          "value": "<p>You transform a willing creature you touch, along with everything it's wearing and carrying, into a misty cloud for the duration. The spell ends if the creature drops to 0 hit points. An incorporeal creature isn't affected.</p><p>While in this form, the target's only method of movement is a flying speed of 10 feet. The target can enter and occupy the space of another creature. The target has resistance to nonmagical damage, and it has advantage on Strength, Dexterity, and constitution saving throws. The target can pass through small holes, narrow openings, and even mere cracks, though it treats liquids as though they were solid surfaces. The target can't fall and remains hovering in the air even when stunned or otherwise incapacitated.</p><p>While in the form of a misty cloud, the target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. The target can't attack or cast spells.</p>"
         },
-        "level": 1,
-        "school": "enchantment",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": true,
-          "material": ""
-        },
+        "level": 3,
+        "school": "transmutation",
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
-          "units": "touch"
+          "units": "touch",
+          "value": "",
+          "override": false
         },
         "duration": {
           "value": "1",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
+          "units": "hour",
+          "override": false
         },
         "source": {
           "book": "SRD 5.1",
@@ -1452,46 +1549,132 @@
             "height": "",
             "units": "ft"
           }
-        }
+        },
+        "identifier": "gaseous-form",
+        "activities": {
+          "castgaseous-fo": {
+            "_id": "castgaseous-fo",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "touch",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "A bit of gauze and a wisp of smoke.",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic",
+          "material",
+          "concentration"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "sorcerer"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "5819bf73a9b91d34",
-      "name": "Purify Food and Drink",
+      "_id": "55448804bb3cee67",
+      "name": "Magic Circle",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.</p>"
+          "value": "<p>You create a 10-foot radius, 20-foot-tall cylinder of magical energy centered on a point on the ground that you can see within range. Glowing runes appear whenever the cylinder intersects with the floor or other surface.</p><p>Choose one or more of the following types of creatures: celestials, elementals, fey, fiends, or undead. The circle affects a creature of the chosen type in the following ways:</p><p>- The creature can't willingly enter the cylinder by nonmagical means. If the creature tries to use teleportation or interplanar travel to do so, it must first succeed on a charisma saving throw.</p><p>- The creature has disadvantage on attack rolls against targets within the cylinder.</p><p>- Targets within the cylinder can't be charmed, frightened, or possessed by the creature.</p><p>When you cast this spell, you can elect to cause its magic to operate in the reverse direction, preventing a creature of the specified type from leaving the cylinder and protecting targets outside it.</p>"
         },
-        "level": 1,
-        "school": "transmutation",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": true,
-          "concentration": false,
-          "material": ""
-        },
+        "level": 3,
+        "school": "abjuration",
         "activation": {
-          "type": "action",
+          "type": "minute",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
           "units": "ft",
-          "value": "10"
+          "value": "10",
+          "override": false
         },
         "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
+          "value": "1",
+          "units": "hour",
+          "override": false
         },
         "source": {
           "book": "SRD 5.1",
@@ -1514,61 +1697,703 @@
             "height": "",
             "units": "ft"
           }
-        }
+        },
+        "identifier": "magic-circle",
+        "activities": {
+          "castmagic-circ": {
+            "_id": "castmagic-circ",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "minute",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "Holy water or powdered silver and iron worth at least 100 gp, which the spell consumes.",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic",
+          "material"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "cleric"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "49e79e1944739fdb",
-      "name": "Chain Mail",
+      "_id": "14f08968d196d195",
+      "name": "Minor Illusion",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p><p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p><p>If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p><p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>"
+        },
+        "level": 0,
+        "school": "illusion",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "30",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "override": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "minor-illusion",
+        "activities": {
+          "castminor-illu": {
+            "_id": "castminor-illu",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "30",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "A bit of fleece.",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "somatic",
+          "material"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "bard"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2e2ba93548575e8c",
+      "name": "Poison Spray",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You extend your hand toward a creature you can see within range and project a puff of noxious gas from your palm. The creature must succeed on a constitution saving throw or take 1d12 poison damage.</p><p>This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).</p>"
+        },
+        "level": 0,
+        "school": "conjuration",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "10",
+          "override": false
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst",
+          "override": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "poison-spray",
+        "activities": {
+          "castpoison-spr": {
+            "_id": "castpoison-spr",
+            "type": "damage",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "value": "0",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "sorcerer"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "ea2e6fe9d2206bd7",
+      "name": "Prestidigitation",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p><p>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p><p>You instantaneously light or snuff out a candle, a torch, or a small campfire.</p><p>You instantaneously clean or soil an object no larger than 1 cubic foot.</p><p>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p><p>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p><p>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p><p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "10",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour",
+          "override": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "prestidigitation",
+        "activities": {
+          "castprestidigi": {
+            "_id": "castprestidigi",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "bard"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "63b00e4892547fd9",
+      "name": "Vampiric Touch",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>The touch of your shadow-wreathed hand can siphon life force from others to heal your wounds. Make a melee spell attack against a creature within your reach. On a hit, the target takes 3d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt. Until the spell ends, you can make the attack again on each of your turns as an action.</p>"
+        },
+        "level": 3,
+        "school": "necromancy",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "self",
+          "value": "",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "override": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "vampiric-touch",
+        "activities": {
+          "castvampiric-t": {
+            "_id": "castvampiric-t",
+            "type": "attack",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "self",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        },
+        "materials": {
+          "value": "",
+          "consumed": false,
+          "cost": 0,
+          "supply": 0
+        },
+        "properties": [
+          "verbal",
+          "somatic",
+          "concentration"
+        ],
+        "method": "spell",
+        "prepared": 0,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "sourceClass": "warlock"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "0809123f710321d1",
+      "name": "Leather Armor +1",
       "type": "equipment",
       "img": "systems/dnd5e/icons/svg/items/armor.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "chain-mail",
+        "identifier": "leather-armor",
         "quantity": 1,
         "weight": {
-          "value": 55,
-          "units": "lb"
-        },
-        "price": {
-          "value": 75,
-          "denomination": "gp"
-        },
-        "equipped": false,
-        "attunement": "none",
-        "attuned": false,
-        "container": null,
-        "armor": {
-          "value": 16,
-          "dex": 0
-        },
-        "type": {
-          "value": "heavy",
-          "baseItem": "chain-mail"
-        },
-        "strength": 13,
-        "stealth": "disadvantage"
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "885b2ae2e3a1842a",
-      "name": "Shield",
-      "type": "equipment",
-      "img": "systems/dnd5e/icons/svg/items/armor.svg",
-      "system": {
-        "description": {
-          "value": ""
-        },
-        "identifier": "shield",
-        "quantity": 1,
-        "weight": {
-          "value": 6,
+          "value": 10,
           "units": "lb"
         },
         "price": {
@@ -1580,36 +2405,39 @@
         "attuned": false,
         "container": null,
         "armor": {
-          "value": 2,
+          "value": 12,
           "dex": 0
         },
         "type": {
-          "value": "shield",
-          "baseItem": "shield"
+          "value": "light",
+          "baseItem": "leather-armor"
         },
         "strength": 0,
-        "stealth": ""
+        "stealth": "",
+        "bonuses": {
+          "ac": "1"
+        }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "35733216aec93993",
-      "name": "Longsword",
+      "_id": "82f79e8e65a8d418",
+      "name": "Crossbow, light +1",
       "type": "weapon",
       "img": "systems/dnd5e/icons/svg/items/sword.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "longsword",
+        "identifier": "crossbow-light",
         "quantity": 1,
         "weight": {
-          "value": 3,
+          "value": 5,
           "units": "lb"
         },
         "price": {
-          "value": 15,
+          "value": 25,
           "denomination": "gp"
         },
         "equipped": false,
@@ -1622,106 +2450,57 @@
           "condition": ""
         },
         "range": {
-          "value": "5",
-          "long": "",
+          "value": "80",
+          "long": "320",
           "units": "ft"
         },
         "damage": {
           "parts": [
             [
               "1d8",
-              "slashing"
+              "piercing"
             ]
           ],
-          "versatile": "1d10"
+          "versatile": ""
         },
         "properties": [
-          "versatile"
+          "ammunition",
+          "loading",
+          "two-handed",
+          "mgc"
         ],
         "proficient": null,
-        "ability": "str",
-        "attackType": "mwak",
+        "ability": "dex",
+        "attackType": "rwak",
         "type": {
-          "value": "martialM",
-          "baseItem": "longsword"
+          "value": "simpleR",
+          "baseItem": "crossbow-light"
+        },
+        "bonuses": {
+          "attack": "1",
+          "damage": "1"
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "1524aa00ffa25824",
-      "name": "Warhammer",
-      "type": "weapon",
-      "img": "systems/dnd5e/icons/svg/items/sword.svg",
-      "system": {
-        "description": {
-          "value": ""
-        },
-        "identifier": "warhammer",
-        "quantity": 1,
-        "weight": {
-          "value": 2,
-          "units": "lb"
-        },
-        "price": {
-          "value": 15,
-          "denomination": "gp"
-        },
-        "equipped": false,
-        "attunement": "none",
-        "attuned": false,
-        "container": null,
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "value": "5",
-          "long": "",
-          "units": "ft"
-        },
-        "damage": {
-          "parts": [
-            [
-              "1d8",
-              "bludgeoning"
-            ]
-          ],
-          "versatile": "1d10"
-        },
-        "properties": [
-          "versatile"
-        ],
-        "proficient": null,
-        "ability": "str",
-        "attackType": "mwak",
-        "type": {
-          "value": "martialM",
-          "baseItem": "warhammer"
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "6e7b907a07aa1890",
-      "name": "Priest's Pack",
+      "_id": "873b21b77085d4b2",
+      "name": "Crossbow bolt",
       "type": "loot",
       "img": "systems/dnd5e/icons/svg/items/loot.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "priests-pack",
-        "quantity": 1,
+        "identifier": "crossbow-bolt",
+        "quantity": 2,
         "weight": {
-          "value": 0,
-          "units": ""
+          "value": 1.5,
+          "units": "lb"
         },
         "price": {
-          "value": 19,
+          "value": 1,
           "denomination": "gp"
         },
         "type": {
@@ -1739,22 +2518,81 @@
       "flags": {}
     },
     {
-      "_id": "144003ff93b16db6",
-      "name": "Holy water (flask)",
+      "_id": "d7b0d4fdec1de760",
+      "name": "Dagger",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "dagger",
+        "quantity": 2,
+        "weight": {
+          "value": 1,
+          "units": "lb"
+        },
+        "price": {
+          "value": 2,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d4",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "properties": [
+          "finesse",
+          "light",
+          "thrown",
+          "monk"
+        ],
+        "proficient": null,
+        "ability": "dex",
+        "attackType": "mwak",
+        "type": {
+          "value": "simpleM",
+          "baseItem": "dagger"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4d397f554a38af6a",
+      "name": "Scholar's Pack",
       "type": "loot",
       "img": "systems/dnd5e/icons/svg/items/loot.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "holy-water-flask",
+        "identifier": "scholars-pack",
         "quantity": 1,
         "weight": {
-          "value": 1,
-          "units": "lb"
+          "value": 0,
+          "units": ""
         },
         "price": {
-          "value": 25,
+          "value": 40,
           "denomination": "gp"
         },
         "type": {
@@ -1787,7 +2625,7 @@
     "default": 0
   },
   "prototypeToken": {
-    "name": "Sylwen Windrunner",
+    "name": "Aelar Nightbreeze",
     "actorLink": true,
     "texture": {
       "src": "icons/svg/mystery-man.svg",
@@ -1837,8 +2675,8 @@
     "systemId": "dnd5e",
     "systemVersion": "5.1.9",
     "coreVersion": "11",
-    "createdTime": 1758415759894,
-    "modifiedTime": 1758415759894,
+    "createdTime": 1758427750394,
+    "modifiedTime": 1758427750394,
     "lastModifiedBy": null
   }
 }

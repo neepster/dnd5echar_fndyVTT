@@ -815,7 +815,13 @@ class CharacterViewModel(QtCore.QObject):
         if magic_bonus > 0:
             for idx, item_index in enumerate(equipment):
                 entry = self.srd.equipment.get(item_index)
-                if entry and (entry.get("equipment_category", {}).get("index", "").lower() == "weapon"):
+                if entry and entry.get("equipment_category", {}).get("index", "").lower() == "weapon":
+                    equipment[idx] = f"{item_index}+{magic_bonus}"
+                    break
+
+            for idx, item_index in enumerate(equipment):
+                entry = self.srd.equipment.get(item_index)
+                if entry and entry.get("equipment_category", {}).get("index", "").lower() == "armor":
                     equipment[idx] = f"{item_index}+{magic_bonus}"
                     break
 
