@@ -34,6 +34,7 @@ class CharacterState:
     character_class: Optional[str] = None
     subclass: Optional[str] = None
     alignment: Optional[str] = None
+    gender: Optional[str] = None
 
     base_ability_scores: Dict[str, int] = field(
         default_factory=lambda: {key: 10 for key in ABILITY_SCORES}
@@ -103,6 +104,7 @@ class CharacterState:
         self.character_class = None
         self.subclass = None
         self.alignment = None
+        self.gender = None
         self.base_ability_scores = {key: 10 for key in ABILITY_SCORES}
         self.racial_ability_bonuses = {key: 0 for key in ABILITY_SCORES}
         self.subrace_ability_bonuses = {key: 0 for key in ABILITY_SCORES}

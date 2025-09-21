@@ -1,63 +1,17 @@
 {
-  "name": "Halfling Paladin 2",
+  "name": "Bree Tealeaf",
   "type": "character",
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "currency": {
       "pp": 0,
-      "gp": 0,
+      "gp": 80,
       "ep": 0,
       "sp": 0,
       "cp": 0
     },
     "abilities": {
       "str": {
-        "value": 15,
-        "proficient": 0,
-        "max": 20,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
-        "check": {
-          "roll": {
-            "min": null,
-            "max": null,
-            "mode": 0
-          }
-        },
-        "save": {
-          "roll": {
-            "min": null,
-            "max": null,
-            "mode": 0
-          }
-        }
-      },
-      "dex": {
-        "value": 12,
-        "proficient": 0,
-        "max": 20,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        },
-        "check": {
-          "roll": {
-            "min": null,
-            "max": null,
-            "mode": 0
-          }
-        },
-        "save": {
-          "roll": {
-            "min": null,
-            "max": null,
-            "mode": 0
-          }
-        }
-      },
-      "con": {
         "value": 13,
         "proficient": 0,
         "max": 20,
@@ -80,8 +34,54 @@
           }
         }
       },
+      "dex": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
       "int": {
-        "value": 8,
+        "value": 10,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -104,7 +104,7 @@
         }
       },
       "wis": {
-        "value": 12,
+        "value": 15,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -127,7 +127,7 @@
         }
       },
       "cha": {
-        "value": 15,
+        "value": 9,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -244,7 +244,7 @@
       },
       "his": {
         "ability": "int",
-        "value": 0,
+        "value": 1,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -415,7 +415,7 @@
     "tools": {},
     "spells": {
       "spell1": {
-        "value": 2
+        "value": 3
       },
       "spell2": {
         "value": 0
@@ -448,7 +448,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 11,
+        "flat": 12,
         "formula": ""
       },
       "init": {
@@ -481,7 +481,7 @@
         "units": "ft",
         "special": ""
       },
-      "spellcasting": "cha",
+      "spellcasting": "wis",
       "exhaustion": 0,
       "concentration": {
         "ability": "",
@@ -497,8 +497,8 @@
       },
       "loyalty": {},
       "hp": {
-        "value": 18,
-        "max": 18,
+        "value": 17,
+        "max": 17,
         "temp": 0,
         "tempmax": 0,
         "bonuses": {
@@ -526,13 +526,13 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Neutral Good",
+      "alignment": "Lawful Good",
       "ideal": "",
       "bond": "",
       "flaw": "",
       "race": "Halfling",
       "background": "Acolyte",
-      "originalClass": "Paladin",
+      "originalClass": "Cleric",
       "xp": {
         "value": 0
       },
@@ -587,7 +587,8 @@
       },
       "armorProf": {
         "value": [
-          "all-armor",
+          "light-armor",
+          "medium-armor",
           "shields"
         ],
         "custom": ""
@@ -624,18 +625,18 @@
   },
   "items": [
     {
-      "_id": "584a791419e0b218",
-      "name": "Paladin",
+      "_id": "dfa7791e6d81e8cf",
+      "name": "Cleric",
       "type": "class",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "paladin",
+        "identifier": "cleric",
         "levels": 2,
         "hd": {
-          "denomination": "d10",
+          "denomination": "d8",
           "additional": "",
           "spent": 0
         },
@@ -645,18 +646,39 @@
           "custom": ""
         },
         "spellcasting": {
-          "ability": "cha",
-          "progression": "half",
+          "ability": "wis",
+          "progression": "full",
           "preparation": {
             "formula": ""
           }
+        },
+        "subclass": "life"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "04c51458ae295cf4",
+      "name": "Life",
+      "type": "subclass",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>The Life domain focuses on the vibrant positive energy--one of the fundamental forces of the universe--that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities, sun gods, gods of healing or endurance, and gods of home and community.</p>"
+        },
+        "identifier": "life",
+        "classIdentifier": "cleric",
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "11abfb52e523a05a",
+      "_id": "69f4ab95fa56d401",
       "name": "Halfling",
       "type": "race",
       "img": "icons/svg/book.svg",
@@ -674,7 +696,7 @@
       "flags": {}
     },
     {
-      "_id": "c8b008055317359c",
+      "_id": "a590c5dde4067db4",
       "name": "Lightfoot Halfling",
       "type": "race",
       "img": "icons/svg/book.svg",
@@ -692,7 +714,7 @@
       "flags": {}
     },
     {
-      "_id": "ce648b0b6c515fea",
+      "_id": "8d2957fdd524dc54",
       "name": "Brave",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -713,7 +735,7 @@
       "flags": {}
     },
     {
-      "_id": "03a62f4d9d83972b",
+      "_id": "b9a299fa83632cfc",
       "name": "Halfling Nimbleness",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -734,7 +756,7 @@
       "flags": {}
     },
     {
-      "_id": "f74fe9659f0100c0",
+      "_id": "17d774a70ad79222",
       "name": "Lucky",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -755,7 +777,7 @@
       "flags": {}
     },
     {
-      "_id": "d203f6cb87074be5",
+      "_id": "f2c420927cdb3e55",
       "name": "Naturally Stealthy",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -776,7 +798,7 @@
       "flags": {}
     },
     {
-      "_id": "155729d39d10ac70",
+      "_id": "d7df28b8455e686f",
       "name": "Acolyte",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -794,7 +816,7 @@
       "flags": {}
     },
     {
-      "_id": "b16cf7548383f6cb",
+      "_id": "566fe84aed46699d",
       "name": "Shelter of the Faithful",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -815,19 +837,19 @@
       "flags": {}
     },
     {
-      "_id": "e5c80a9c4ff2d765",
-      "name": "Divine Sense",
+      "_id": "d72bb8c7760a1744",
+      "name": "Spellcasting: Cleric",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</p><p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>"
+          "value": "<p>As a conduit for divine power, you can cast cleric spells.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 1",
+          "book": "Cleric 1",
           "page": "",
           "custom": ""
         }
@@ -836,19 +858,19 @@
       "flags": {}
     },
     {
-      "_id": "5b39d4ff047a9da4",
-      "name": "Lay on Hands",
+      "_id": "784b53393f273f8d",
+      "name": "Divine Domain",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</p><p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p><p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p><p>This feature has no effect on undead and constructs.</p>"
+          "value": "<p>Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.</p><p>Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 1",
+          "book": "Cleric 1",
           "page": "",
           "custom": ""
         }
@@ -857,19 +879,19 @@
       "flags": {}
     },
     {
-      "_id": "f662afe4ad566ecd",
-      "name": "Fighting Style",
+      "_id": "0aef7ab05728ba89",
+      "name": "Domain Spells",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>"
+          "value": "<p>Each domain has a list of spells--its domain spells--that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day.</p><p>If you have a domain spell that doesn't appear on the cleric spell list, the spell is nonetheless a cleric spell for you.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 2",
+          "book": "Cleric 1",
           "page": "",
           "custom": ""
         }
@@ -878,19 +900,19 @@
       "flags": {}
     },
     {
-      "_id": "7e96b23bed9de8a8",
-      "name": "Spellcasting: Paladin",
+      "_id": "2926491b005891c7",
+      "name": "Channel Divinity (1/rest)",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.</p>"
+          "value": "<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p><p>When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p><p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</p><p>Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 2",
+          "book": "Cleric 2",
           "page": "",
           "custom": ""
         }
@@ -899,19 +921,19 @@
       "flags": {}
     },
     {
-      "_id": "769d8a297988c7a2",
-      "name": "Divine Smite",
+      "_id": "a480be09e5f21f12",
+      "name": "Channel Divinity: Turn Undead",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>"
+          "value": "<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Paladin 2",
+          "book": "Cleric 2",
           "page": "",
           "custom": ""
         }
@@ -920,26 +942,356 @@
       "flags": {}
     },
     {
-      "_id": "e7a602f8274c71b0",
-      "name": "Bless",
+      "_id": "fa50bc5559d432c3",
+      "name": "Divine Domain feature",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Choose one domain related to your deity, such as Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Only the Life domain is detailed in the Open Game Licensed SRD. Additional Domains are described in the official rulebooks or products from other publishers.</p><p>Your domain grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Cleric 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4850e67f6becc61f",
+      "name": "Bonus Proficiency",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you choose this domain at 1st level, you gain proficiency with heavy armor.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Life",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "cf91b3cae49c2d08",
+      "name": "Disciple of Life",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Also starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Life",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "26366a0ed5ec7ff2",
+      "name": "Channel Divinity: Preserve Life",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Starting at 2nd level, you can use your Channel Divinity to heal the badly injured.</p><p>As an action, you present your holy symbol and evoke healing energy that can restore a number of hit points equal to five times your cleric level.</p><p>Choose any creatures within 30 feet of you, and divide those hit points among them. This feature can restore a creature to no more than half of its hit point maximum. You can't use this feature on an undead or a construct.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Life",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "22ef39ad9b774617",
+      "name": "Guiding Bolt",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.</p>"
+          "value": "<p>A flash of light streaks toward a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the mystical dim light glittering on the target until then.</p>"
         },
         "level": 1,
-        "school": "enchantment",
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "120"
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a9a49a4100dd37ee",
+      "name": "Light",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.</p><p>If you target an object held or worn by a hostile creature, that creature must succeed on a dexterity saving throw to avoid the spell.</p>"
+        },
+        "level": 0,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A firefly or phosphorescent moss."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "fc935978137fd6bc",
+      "name": "Protection from Evil and Good",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>"
+        },
+        "level": 1,
+        "school": "abjuration",
         "components": {
           "v": true,
           "s": true,
           "m": true,
           "ritual": false,
           "concentration": true,
-          "material": "A sprinkling of holy water."
+          "material": "Holy water or powdered silver and iron, which the spell consumes."
         },
         "activation": {
           "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "523704d237fff708",
+      "name": "Sacred Flame",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Flame-like radiance descends on a creature that you can see within range. The target must succeed on a dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.</p><p>The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).</p>"
+        },
+        "level": 0,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "fcbbbe8c5909b678",
+      "name": "Sanctuary",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You ward a creature within range against attack. Until the spell ends, any creature who targets the warded creature with an attack or a harmful spell must first make a wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from area effects, such as the explosion of a fireball.</p><p>If the warded creature makes an attack or casts a spell that affects an enemy creature, this spell ends.</p>"
+        },
+        "level": 1,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A small silver mirror."
+        },
+        "activation": {
+          "type": "bonus",
           "value": 1,
           "condition": ""
         },
@@ -982,19 +1334,81 @@
       "flags": {}
     },
     {
-      "_id": "4e3dce4c91a8d281",
-      "name": "Cure Wounds",
+      "_id": "232e9af0fe754e4b",
+      "name": "Shield of Faith",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>"
+          "value": "<p>A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration.</p>"
         },
         "level": 1,
-        "school": "evocation",
+        "school": "abjuration",
         "components": {
           "v": true,
           "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A small parchment with a bit of holy text written on it."
+        },
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4e6b952ace33c8dd",
+      "name": "Thaumaturgy",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range.</p><p>- Your voice booms up to three times as loud as normal for 1 minute.</p><p>- You cause flames to flicker, brighten, dim, or change color for 1 minute.</p><p>- You cause harmless tremors in the ground for 1 minute.</p><p>- You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</p><p>- You instantaneously cause an unlocked door or window to fly open or slam shut.</p><p>- You alter the appearance of your eyes for 1 minute.</p><p>If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": false,
           "m": false,
           "ritual": false,
           "concentration": false,
@@ -1006,15 +1420,16 @@
           "condition": ""
         },
         "range": {
-          "units": "touch"
+          "units": "ft",
+          "value": "30"
         },
         "duration": {
-          "value": "0",
-          "units": "inst"
+          "value": "1",
+          "units": "minute"
         },
         "preparation": {
-          "mode": "prepared",
-          "prepared": true
+          "mode": "known",
+          "prepared": false
         },
         "source": {
           "book": "SRD 5.1",
@@ -1043,123 +1458,197 @@
       "flags": {}
     },
     {
-      "_id": "d8326a2bd184b71d",
-      "name": "Detect Evil and Good",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "_id": "6b37ae05531d274c",
+      "name": "Scale Mail",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
       "system": {
         "description": {
-          "value": "<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+          "value": ""
         },
-        "level": 1,
-        "school": "divination",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": true,
-          "material": ""
+        "identifier": "scale-mail",
+        "quantity": 1,
+        "weight": {
+          "value": 45,
+          "units": "lb"
         },
+        "price": {
+          "value": 50,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 14,
+          "dex": 2
+        },
+        "type": {
+          "value": "medium",
+          "baseItem": "scale-mail"
+        },
+        "strength": 0,
+        "stealth": "disadvantage"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2f19c60130ef764c",
+      "name": "Shield",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "shield",
+        "quantity": 1,
+        "weight": {
+          "value": 6,
+          "units": "lb"
+        },
+        "price": {
+          "value": 10,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 2,
+          "dex": 0
+        },
+        "type": {
+          "value": "shield",
+          "baseItem": "shield"
+        },
+        "strength": 0,
+        "stealth": ""
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "5f9b93e933bb5289",
+      "name": "Mace",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "mace",
+        "quantity": 1,
+        "weight": {
+          "value": 4,
+          "units": "lb"
+        },
+        "price": {
+          "value": 5,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
         "activation": {
           "type": "action",
           "value": 1,
           "condition": ""
         },
         "range": {
-          "units": "self"
+          "value": "5",
+          "long": "",
+          "units": "ft"
         },
-        "duration": {
-          "value": "10",
-          "units": "minute"
+        "damage": {
+          "parts": [
+            [
+              "1d6",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": ""
         },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
+        "properties": [
+          "monk"
+        ],
+        "proficient": null,
+        "ability": "str",
+        "attackType": "mwak",
+        "type": {
+          "value": "simpleM",
+          "baseItem": "mace"
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "98b50d5e459f7071",
-      "name": "Detect Poison and Disease",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "_id": "5571f829e88a7560",
+      "name": "Priest's Pack",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
       "system": {
         "description": {
-          "value": "<p>For the duration, you can sense the presence and location of poisons, poisonous creatures, and diseases within 30 feet of you. You also identify the kind of poison, poisonous creature, or disease in each case.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+          "value": ""
         },
-        "level": 1,
-        "school": "divination",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": true,
-          "concentration": true,
-          "material": "A yew leaf."
+        "identifier": "priests-pack",
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": ""
         },
-        "activation": {
-          "type": "action",
+        "price": {
+          "value": 19,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b2552c5a66a6fdf1",
+      "name": "Holy water (flask)",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "holy-water-flask",
+        "quantity": 1,
+        "weight": {
           "value": 1,
-          "condition": ""
+          "units": "lb"
         },
-        "range": {
-          "units": "self"
+        "price": {
+          "value": 25,
+          "denomination": "gp"
         },
-        "duration": {
-          "value": "10",
-          "units": "minute"
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
         },
-        "preparation": {
-          "mode": "prepared",
-          "prepared": true
+        "identified": true,
+        "unidentified": {
+          "description": ""
         },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
+        "container": null,
+        "properties": []
       },
       "effects": [],
       "flags": {}
@@ -1180,7 +1669,7 @@
     "default": 0
   },
   "prototypeToken": {
-    "name": "Halfling Paladin 2",
+    "name": "Bree Tealeaf",
     "actorLink": true,
     "texture": {
       "src": "icons/svg/mystery-man.svg",
@@ -1230,8 +1719,8 @@
     "systemId": "dnd5e",
     "systemVersion": "5.1.9",
     "coreVersion": "11",
-    "createdTime": 1758408059475,
-    "modifiedTime": 1758408059475,
+    "createdTime": 1758415348352,
+    "modifiedTime": 1758415348352,
     "lastModifiedBy": null
   }
 }

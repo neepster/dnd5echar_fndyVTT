@@ -1,342 +1,722 @@
 {
-  "name": "Dwarf Warlock 3",
+  "name": "Sylwen Windrunner",
   "type": "character",
   "img": "icons/svg/mystery-man.svg",
   "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 160,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
     "abilities": {
       "str": {
-        "value": 8,
-        "mod": -1,
-        "prof": 0,
-        "save": -1
+        "value": 15,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
       },
       "dex": {
-        "value": 13,
-        "mod": 1,
-        "prof": 0,
-        "save": 1
+        "value": 12,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
       },
       "con": {
-        "value": 16,
-        "mod": 3,
-        "prof": 0,
-        "save": 3
+        "value": 13,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
       },
       "int": {
-        "value": 10,
-        "mod": 0,
-        "prof": 0,
-        "save": 0
+        "value": 9,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
       },
       "wis": {
-        "value": 13,
-        "mod": 1,
-        "prof": 0,
-        "save": 1
+        "value": 12,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
       },
       "cha": {
-        "value": 15,
-        "mod": 2,
-        "prof": 0,
-        "save": 2
+        "value": 14,
+        "proficient": 0,
+        "max": 20,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        },
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
       }
     },
-    "attributes": {
-      "ac": {
-        "value": 11,
-        "base": 11
+    "bonuses": {
+      "mwak": {
+        "attack": "",
+        "damage": ""
       },
-      "hp": {
-        "value": 27,
-        "max": 27,
-        "temp": 0,
-        "tempmax": 0
+      "rwak": {
+        "attack": "",
+        "damage": ""
       },
-      "init": {
-        "mod": 1,
-        "value": 1
+      "msak": {
+        "attack": "",
+        "damage": ""
       },
-      "movement": {
-        "walk": 25
+      "rsak": {
+        "attack": "",
+        "damage": ""
       },
-      "prof": 2,
-      "spellcasting": {
-        "ability": "cha"
+      "abilities": {
+        "check": "",
+        "save": "",
+        "skill": ""
       },
-      "spellcastingAbility": "cha"
-    },
-    "details": {
-      "alignment": "chaotic-good",
-      "background": "Acolyte",
-      "biography": {
-        "value": ""
-      },
-      "class": "Warlock 3",
-      "level": 3,
-      "race": "Dwarf",
-      "xp": {
-        "value": 0,
-        "min": 0,
-        "max": 355000
+      "spell": {
+        "dc": ""
       }
     },
     "skills": {
       "acr": {
         "ability": "dex",
         "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "ani": {
         "ability": "wis",
         "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "arc": {
         "ability": "int",
         "value": 0,
-        "bonus": 0,
-        "mod": 0,
-        "prof": 0,
-        "total": 0,
-        "passive": 10
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "ath": {
         "ability": "str",
         "value": 0,
-        "bonus": 0,
-        "mod": -1,
-        "prof": 0,
-        "total": -1,
-        "passive": 9
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "dec": {
         "ability": "cha",
-        "value": 1,
-        "bonus": 0,
-        "mod": 2,
-        "prof": 2,
-        "total": 4,
-        "passive": 14
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "his": {
         "ability": "int",
         "value": 0,
-        "bonus": 0,
-        "mod": 0,
-        "prof": 0,
-        "total": 0,
-        "passive": 10
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "ins": {
         "ability": "wis",
         "value": 1,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 2,
-        "total": 3,
-        "passive": 13
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "itm": {
         "ability": "cha",
         "value": 0,
-        "bonus": 0,
-        "mod": 2,
-        "prof": 0,
-        "total": 2,
-        "passive": 12
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "inv": {
         "ability": "int",
-        "value": 1,
-        "bonus": 0,
-        "mod": 0,
-        "prof": 2,
-        "total": 2,
-        "passive": 12
+        "value": 0,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "med": {
         "ability": "wis",
-        "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "nat": {
         "ability": "int",
         "value": 0,
-        "bonus": 0,
-        "mod": 0,
-        "prof": 0,
-        "total": 0,
-        "passive": 10
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "prc": {
         "ability": "wis",
         "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "prf": {
         "ability": "cha",
         "value": 0,
-        "bonus": 0,
-        "mod": 2,
-        "prof": 0,
-        "total": 2,
-        "passive": 12
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "per": {
         "ability": "cha",
-        "value": 0,
-        "bonus": 0,
-        "mod": 2,
-        "prof": 0,
-        "total": 2,
-        "passive": 12
+        "value": 1,
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "rel": {
         "ability": "int",
         "value": 1,
-        "bonus": 0,
-        "mod": 0,
-        "prof": 2,
-        "total": 2,
-        "passive": 12
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "slt": {
         "ability": "dex",
         "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "ste": {
         "ability": "dex",
         "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       },
       "sur": {
         "ability": "wis",
         "value": 0,
-        "bonus": 0,
-        "mod": 1,
-        "prof": 0,
-        "total": 1,
-        "passive": 11
+        "bonuses": {
+          "check": "",
+          "passive": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
       }
     },
+    "tools": {},
     "spells": {
-      "spell0": {
-        "value": 2,
-        "max": 2,
-        "override": 0
-      },
       "spell1": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 3
       },
       "spell2": {
-        "value": 2,
-        "max": 2,
-        "override": 0
+        "value": 0
       },
       "spell3": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
       },
       "spell4": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
       },
       "spell5": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
       },
       "spell6": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
       },
       "spell7": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
       },
       "spell8": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
       },
       "spell9": {
-        "value": 0,
-        "max": 0,
-        "override": 0
+        "value": 0
+      },
+      "pact": {
+        "value": 0
       }
     },
-    "currency": {
-      "pp": 0,
-      "gp": 0,
-      "ep": 0,
-      "sp": 0,
-      "cp": 0
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 11,
+        "formula": ""
+      },
+      "init": {
+        "ability": "dex",
+        "bonus": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "walk": 30,
+        "units": "ft",
+        "hover": false,
+        "ignoredDifficultTerrain": []
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "blindsight": 0,
+        "darkvision": 60,
+        "tremorsense": 0,
+        "truesight": 0,
+        "units": "ft",
+        "special": ""
+      },
+      "spellcasting": "cha",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "bonuses": {
+          "save": ""
+        },
+        "limit": 1,
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 1
+        }
+      },
+      "loyalty": {},
+      "hp": {
+        "value": 32,
+        "max": 32,
+        "temp": 0,
+        "tempmax": 0,
+        "bonuses": {
+          "level": "",
+          "overall": ""
+        }
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "inspiration": false
+    },
+    "bastion": {},
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "Neutral",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "Elf",
+      "background": "Acolyte",
+      "originalClass": "Paladin",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "gender": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "skin": "",
+      "age": "",
+      "weight": ""
     },
     "traits": {
       "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "dm": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
       "languages": {
         "value": [
           "common",
-          "dwarvish"
+          "elvish"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [
+          "all-armor",
+          "shields"
         ],
         "custom": ""
       },
       "toolProf": {
-        "value": [
-          "light-armor"
-        ],
+        "value": [],
         "custom": ""
       }
-    }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": []
   },
   "items": [
     {
-      "name": "Dwarf",
-      "type": "feat",
+      "_id": "6fefda41430645a5",
+      "name": "Paladin",
+      "type": "class",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Constitution: +2</p><p>Speed: 25 ft.</p><p>Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium.</p><p>Traits: Darkvision, Dwarven Resilience, Stonecunning, Dwarven Combat Training, Tool Proficiency</p>"
+          "value": ""
         },
-        "type": {
-          "value": "race"
+        "identifier": "paladin",
+        "levels": 4,
+        "hd": {
+          "denomination": "d10",
+          "additional": "",
+          "spent": 0
         },
-        "source": "SRD"
-      }
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "spellcasting": {
+          "ability": "cha",
+          "progression": "half",
+          "preparation": {
+            "formula": ""
+          }
+        },
+        "subclass": "devotion"
+      },
+      "effects": [],
+      "flags": {}
     },
     {
+      "_id": "74b311df407260e8",
+      "name": "Devotion",
+      "type": "subclass",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>The Oath of Devotion binds a paladin to the loftiest ideals of justice, virtue, and order. Sometimes called cavaliers, white knights, or holy warriors, these paladins meet the ideal of the knight in shining armor, acting with honor in pursuit of justice and the greater good. They hold themselves to the highest standards of conduct, and some, for better or worse, hold the rest of the world to the same standards. Many who swear this oath are devoted to gods of law and good and use their gods' tenets as the measure of their devotion. They hold angels--the perfect servants of good--as their ideals, and incorporate images of angelic wings into their helmets or coats of arms.</p>"
+        },
+        "identifier": "devotion",
+        "classIdentifier": "paladin",
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "f7352cdda7265c34",
+      "name": "Elf",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p><p>You have advantage on saving throws against being charmed, and magic cannot put you to sleep.</p><p>Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep.</p><p>You have proficiency in the Perception skill.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "95d93b0e20e60684",
+      "name": "High Elf",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As a high elf, you have a keen mind and a mastery of at least the basics of magic. In many fantasy gaming worlds, there are two kinds of high elves. One type is haughty and reclusive, believing themselves to be superior to non-elves and even other elves. The other type is more common and more friendly, and often encountered among humans and other races.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": "Elf"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9414f5e11aa510a5",
       "name": "Darkvision",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
@@ -344,103 +724,164 @@
         "type": {
           "value": "race"
         },
-        "source": "Dwarf"
-      }
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Dwarven Resilience",
+      "_id": "74173aa37dccaa1d",
+      "name": "Fey Ancestry",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You have advantage on saving throws against poison, and you have resistance against poison damage.</p>"
+          "value": "<p>You have advantage on saving throws against being charmed, and magic cannot put you to sleep.</p>"
         },
         "type": {
           "value": "race"
         },
-        "source": "Dwarf"
-      }
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Stonecunning",
+      "_id": "6389dba1f8e132d1",
+      "name": "Trance",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>"
+          "value": "<p>Elves do not need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting this way, you gain the same benefit that a human does from 8 hours of sleep.</p>"
         },
         "type": {
           "value": "race"
         },
-        "source": "Dwarf"
-      }
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Dwarven Combat Training",
+      "_id": "e6c9fb163c55b6c3",
+      "name": "Keen Senses",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You have proficiency with the battleaxe, handaxe, light hammer, and warhammer.</p>"
+          "value": "<p>You have proficiency in the Perception skill.</p>"
         },
         "type": {
           "value": "race"
         },
-        "source": "Dwarf"
-      }
+        "source": {
+          "book": "Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Tool Proficiency",
+      "_id": "d192d3f4e51eb3c7",
+      "name": "Elf Weapon Training",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You gain proficiency with the artisan's tools of your choice: smith's tools, brewer's supplies, or mason's tools.</p>"
+          "value": "<p>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>"
         },
         "type": {
           "value": "race"
         },
-        "source": "Dwarf"
-      }
+        "source": {
+          "book": "High Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Hill Dwarf",
+      "_id": "5a9ba331d225bd8f",
+      "name": "High Elf Cantrip",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>As a hill dwarf, you have keen senses, deep intuition, and remarkable resilience.</p>"
+          "value": "<p>You know one cantrip of your choice form the wizard spell list. Intelligence is your spellcasting ability for it.</p>"
         },
         "type": {
           "value": "race"
         },
-        "source": "Dwarf"
-      }
+        "source": {
+          "book": "High Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Dwarven Toughness",
+      "_id": "55ce42f130c7d8d2",
+      "name": "Extra Language",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Your hit point maximum increases by 1, and it increases by 1 every time you gain a level.</p>"
+          "value": "<p>You can speak, read, and write one extra language of your choice.</p>"
         },
         "type": {
           "value": "race"
         },
-        "source": "Hill Dwarf"
-      }
+        "source": {
+          "book": "High Elf",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
+      "_id": "077fe817c3275440",
       "name": "Acolyte",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
         },
-        "type": {
-          "value": "background"
-        },
-        "source": "SRD"
-      }
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
+      "_id": "b3187118240be132",
       "name": "Shelter of the Faithful",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": "<p>As an acolyte, you command the respect of those who share your faith, and you can perform the religious ceremonies of your deity. You and your adventuring companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells. Those who share your religion will support you (but only you) at a modest lifestyle.</p><p>You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there. This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home. While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.</p>"
@@ -448,99 +889,401 @@
         "type": {
           "value": "background"
         },
-        "source": "Acolyte"
-      }
+        "source": {
+          "book": "Acolyte",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Warlock",
-      "type": "class",
-      "system": {
-        "levels": 3,
-        "hitDice": "d8",
-        "subclass": "Fiend",
-        "spellcasting": {
-          "progression": "full",
-          "ability": "cha"
-        },
-        "description": {
-          "value": ""
-        },
-        "source": "SRD"
-      }
-    },
-    {
-      "name": "Otherworldly Patron",
+      "_id": "d8cb657d3754d737",
+      "name": "Divine Sense",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 1st level, you have struck a bargain with an otherworldly being of your choice, such as the Fiend. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.</p>"
+          "value": "<p>The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the hallow spell.</p><p>You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.</p>"
         },
         "type": {
           "value": "class"
         },
-        "source": "Warlock 1"
-      }
+        "source": {
+          "book": "Paladin 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Pact Magic",
+      "_id": "16fbca62b9e4def4",
+      "name": "Lay on Hands",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Your arcane research and the magic bestowed on you by your patron have given you facility with spells.</p>"
+          "value": "<p>Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.</p><p>As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.</p><p>Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.</p><p>This feature has no effect on undead and constructs.</p>"
         },
         "type": {
           "value": "class"
         },
-        "source": "Warlock 1"
-      }
+        "source": {
+          "book": "Paladin 1",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Eldritch Invocations",
+      "_id": "916b293ab1dbbc6a",
+      "name": "Fighting Style",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.</p><p>At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.</p><p>Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.</p>"
+          "value": "<p>At 2nd level, you adopt a style of fighting as your specialty. Choose one of the following options. You can't take a Fighting Style option more than once, even if you later get to choose again.</p>"
         },
         "type": {
           "value": "class"
         },
-        "source": "Warlock 2"
-      }
+        "source": {
+          "book": "Paladin 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Pact Boon",
+      "_id": "abea135236f7a206",
+      "name": "Spellcasting: Paladin",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.</p>"
+          "value": "<p>By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric does.</p>"
         },
         "type": {
           "value": "class"
         },
-        "source": "Warlock 3"
-      }
+        "source": {
+          "book": "Paladin 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Dark One's Blessing",
+      "_id": "9d6f46929cf574fb",
+      "name": "Divine Smite",
       "type": "feat",
+      "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).</p>"
+          "value": "<p>Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon's damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend.</p>"
         },
         "type": {
           "value": "class"
         },
-        "source": "Fiend"
-      }
+        "source": {
+          "book": "Paladin 2",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Eldritch Blast",
+      "_id": "398597549f617153",
+      "name": "Divine Health",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>By 3rd level, the divine magic flowing through you makes you immune to disease.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "baf99c8b4edb2ae6",
+      "name": "Sacred Oath",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose an oath, such as the Oath of Devotion.</p><p>Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "88c412c7495c6586",
+      "name": "Oath Spells",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don't count against the number of spells you can prepare each day.</p><p>If you gain an oath spell that doesn't appear on the paladin spell list, the spell is nonetheless a paladin spell for you.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4736c5269b9ed9f0",
+      "name": "Channel Divinity",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.</p><p>When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.</p><p>Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 3",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "0a253ed91ac6bd8a",
+      "name": "Ability Score Improvement",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Paladin 4",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "218063ce0877e4ad",
+      "name": "Channel Divinity: Sacred Weapon",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.</p><p>You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Devotion",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1e5d7e4bc3da6e15",
+      "name": "Channel Divinity: Turn the Unholy",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.</p><p>A turned creature must spend its turns trying to move as far away from you as it can, and it can't willingly move to a space within 30 feet of you. It also can't take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there's nowhere to move, the creature can use the Dodge action.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Devotion",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e4dfb6113a4c886b",
+      "name": "Bless",
       "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>A beam of crackling energy streaks toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 force damage. The spell creates more than one beam when you reach higher levels: two beams at 5th level, three beams at 11th level, and four beams at 17th level. You can direct the beams at the same target or at different ones. Make a separate attack roll for each beam.</p>"
+          "value": "<p>You bless up to three creatures of your choice within range. Whenever a target makes an attack roll or a saving throw before the spell ends, the target can roll a d4 and add the number rolled to the attack roll or saving throw.</p>"
         },
-        "level": 0,
+        "level": 1,
+        "school": "enchantment",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A sprinkling of holy water."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b6863ef01b1001e6",
+      "name": "Command",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You speak a one-word command to a creature you can see within range. The target must succeed on a wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn't understand your language, or if your command is directly harmful to it.</p><p>Some typical commands and their effects follow. You might issue a command other than one described here. If you do so, the GM determines how the target behaves. If the target can't follow your command, the spell ends.</p><p>***Approach.*** The target moves toward you by the shortest and most direct route, ending its turn if it moves within 5 feet of you.</p><p>***Drop.*** The target drops whatever it is holding and then ends its turn.</p><p>***Flee.*** The target spends its turn moving away from you by the fastest available means.</p><p>***Grovel.*** The target falls prone and then ends its turn.</p><p>***Halt.*** The target doesn't move and takes no actions. A flying creature stays aloft, provided that it is able to do so. If it must move to stay aloft, it flies the minimum distance needed to remain in the air.</p>"
+        },
+        "level": 1,
+        "school": "enchantment",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "795fc0de200bfb1a",
+      "name": "Cure Wounds",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs.</p>"
+        },
+        "level": 1,
         "school": "evocation",
         "components": {
           "v": true,
@@ -552,236 +1295,550 @@
         },
         "activation": {
           "type": "action",
-          "cost": 1
-        },
-        "duration": {
-          "value": "Instantaneous"
-        },
-        "target": {
-          "value": null,
-          "type": "",
-          "units": ""
+          "value": 1,
+          "condition": ""
         },
         "range": {
-          "value": "120 feet",
-          "units": ""
+          "units": "touch"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
-        "source": "SRD"
-      }
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Hold Person",
+      "_id": "a7f1c25f467382d6",
+      "name": "Detect Evil and Good",
       "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom saving throw. On a success, the spell ends on the target.</p>"
+          "value": "<p>For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
         },
-        "level": 2,
+        "level": 1,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9a1be57fcf5695b4",
+      "name": "Heroism",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A willing creature you touch is imbued with bravery. Until the spell ends, the creature is immune to being frightened and gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell.</p>"
+        },
+        "level": 1,
         "school": "enchantment",
         "components": {
           "v": true,
           "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": true,
-          "material": "A small, straight piece of iron."
-        },
-        "activation": {
-          "type": "action",
-          "cost": 1
-        },
-        "duration": {
-          "value": "Up to 1 minute"
-        },
-        "target": {
-          "value": null,
-          "type": "",
-          "units": ""
-        },
-        "range": {
-          "value": "60 feet",
-          "units": ""
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": "SRD"
-      }
-    },
-    {
-      "name": "Invisibility",
-      "type": "spell",
-      "system": {
-        "description": {
-          "value": "<p>A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.</p>"
-        },
-        "level": 2,
-        "school": "illusion",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": true,
-          "material": "An eyelash encased in gum arabic."
-        },
-        "activation": {
-          "type": "action",
-          "cost": 1
-        },
-        "duration": {
-          "value": "Up to 1 hour"
-        },
-        "target": {
-          "value": null,
-          "type": "",
-          "units": ""
-        },
-        "range": {
-          "value": "Touch",
-          "units": ""
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": "SRD"
-      }
-    },
-    {
-      "name": "Mirror Image",
-      "type": "spell",
-      "system": {
-        "description": {
-          "value": "<p>Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real. You can use your action to dismiss the illusory duplicates.</p><p>Each time a creature targets you with an attack during the spell's duration, roll a d20 to determine whether the attack instead targets one of your duplicates.</p><p>If you have three duplicates, you must roll a 6 or higher to change the attack's target to a duplicate. With two duplicates, you must roll an 8 or higher. With one duplicate, you must roll an 11 or higher.</p><p>A duplicate's AC equals 10 + your Dexterity modifier. If an attack hits a duplicate, the duplicate is destroyed. A duplicate can be destroyed only by an attack that hits it. It ignores all other damage and effects. The spell ends when all three duplicates are destroyed.</p><p>A creature is unaffected by this spell if it can't see, if it relies on senses other than sight, such as blindsight, or if it can perceive illusions as false, as with truesight.</p>"
-        },
-        "level": 2,
-        "school": "illusion",
-        "components": {
-          "v": true,
-          "s": true,
           "m": false,
           "ritual": false,
-          "concentration": false,
+          "concentration": true,
           "material": ""
         },
         "activation": {
           "type": "action",
-          "cost": 1
-        },
-        "duration": {
-          "value": "1 minute"
-        },
-        "target": {
-          "value": null,
-          "type": "",
-          "units": ""
+          "value": 1,
+          "condition": ""
         },
         "range": {
-          "value": "Self",
-          "units": ""
+          "units": "touch"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
-        "source": "SRD"
-      }
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Prestidigitation",
+      "_id": "5819bf73a9b91d34",
+      "name": "Purify Food and Drink",
       "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p><p>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p><p>You instantaneously light or snuff out a candle, a torch, or a small campfire.</p><p>You instantaneously clean or soil an object no larger than 1 cubic foot.</p><p>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p><p>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p><p>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p><p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>"
+          "value": "<p>All nonmagical food and drink within a 5-foot radius sphere centered on a point of your choice within range is purified and rendered free of poison and disease.</p>"
         },
-        "level": 0,
+        "level": 1,
         "school": "transmutation",
         "components": {
           "v": true,
           "s": true,
           "m": false,
-          "ritual": false,
+          "ritual": true,
           "concentration": false,
           "material": ""
         },
         "activation": {
           "type": "action",
-          "cost": 1
-        },
-        "duration": {
-          "value": "1 hour"
-        },
-        "target": {
-          "value": null,
-          "type": "",
-          "units": ""
+          "value": 1,
+          "condition": ""
         },
         "range": {
-          "value": "10 feet",
-          "units": ""
+          "units": "ft",
+          "value": "10"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
-        "source": "SRD"
-      }
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
     },
     {
-      "name": "Spider Climb",
-      "type": "spell",
+      "_id": "49e79e1944739fdb",
+      "name": "Chain Mail",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
       "system": {
         "description": {
-          "value": "<p>Until the spell ends, one willing creature you touch gains the ability to move up, down, and across vertical surfaces and upside down along ceilings, while leaving its hands free. The target also gains a climbing speed equal to its walking speed.</p>"
+          "value": ""
         },
-        "level": 2,
-        "school": "transmutation",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": true,
-          "material": "A drop of bitumen and a spider."
+        "identifier": "chain-mail",
+        "quantity": 1,
+        "weight": {
+          "value": 55,
+          "units": "lb"
         },
+        "price": {
+          "value": 75,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 16,
+          "dex": 0
+        },
+        "type": {
+          "value": "heavy",
+          "baseItem": "chain-mail"
+        },
+        "strength": 13,
+        "stealth": "disadvantage"
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "885b2ae2e3a1842a",
+      "name": "Shield",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "shield",
+        "quantity": 1,
+        "weight": {
+          "value": 6,
+          "units": "lb"
+        },
+        "price": {
+          "value": 10,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 2,
+          "dex": 0
+        },
+        "type": {
+          "value": "shield",
+          "baseItem": "shield"
+        },
+        "strength": 0,
+        "stealth": ""
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "35733216aec93993",
+      "name": "Longsword",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "longsword",
+        "quantity": 1,
+        "weight": {
+          "value": 3,
+          "units": "lb"
+        },
+        "price": {
+          "value": 15,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
         "activation": {
           "type": "action",
-          "cost": 1
-        },
-        "duration": {
-          "value": "Up to 1 hour"
-        },
-        "target": {
-          "value": null,
-          "type": "",
-          "units": ""
+          "value": 1,
+          "condition": ""
         },
         "range": {
-          "value": "Touch",
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8",
+              "slashing"
+            ]
+          ],
+          "versatile": "1d10"
+        },
+        "properties": [
+          "versatile"
+        ],
+        "proficient": null,
+        "ability": "str",
+        "attackType": "mwak",
+        "type": {
+          "value": "martialM",
+          "baseItem": "longsword"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "1524aa00ffa25824",
+      "name": "Warhammer",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "warhammer",
+        "quantity": 1,
+        "weight": {
+          "value": 2,
+          "units": "lb"
+        },
+        "price": {
+          "value": 15,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": "1d10"
+        },
+        "properties": [
+          "versatile"
+        ],
+        "proficient": null,
+        "ability": "str",
+        "attackType": "mwak",
+        "type": {
+          "value": "martialM",
+          "baseItem": "warhammer"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6e7b907a07aa1890",
+      "name": "Priest's Pack",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "priests-pack",
+        "quantity": 1,
+        "weight": {
+          "value": 0,
           "units": ""
         },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
+        "price": {
+          "value": 19,
+          "denomination": "gp"
         },
-        "source": "SRD"
-      }
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "144003ff93b16db6",
+      "name": "Holy water (flask)",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "holy-water-flask",
+        "quantity": 1,
+        "weight": {
+          "value": 1,
+          "units": "lb"
+        },
+        "price": {
+          "value": 25,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
     }
   ],
   "effects": [],
-  "flags": {},
+  "flags": {
+    "dnd5e": {
+      "exportSource": {
+        "world": "",
+        "system": "dnd5e",
+        "type": "character"
+      }
+    }
+  },
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
   "prototypeToken": {
-    "name": "Dwarf Warlock 3",
-    "displayName": 20,
-    "disposition": 1,
+    "name": "Sylwen Windrunner",
+    "actorLink": true,
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "alphaThreshold": 0.75
+    },
     "width": 1,
     "height": 1,
-    "vision": true
+    "displayName": 0,
+    "displayBars": 0,
+    "disposition": 1,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "flags": {},
+    "sight": {
+      "enabled": true,
+      "range": 60,
+      "angle": 360,
+      "visionMode": "basic",
+      "attenuation": 0,
+      "brightness": 0,
+      "color": null,
+      "contrast": 0,
+      "saturation": 0
+    },
+    "light": {
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5
+      }
+    }
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "5.1.9",
+    "coreVersion": "11",
+    "createdTime": 1758415759894,
+    "modifiedTime": 1758415759894,
+    "lastModifiedBy": null
   }
 }

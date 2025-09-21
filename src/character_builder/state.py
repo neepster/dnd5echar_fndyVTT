@@ -150,6 +150,60 @@ DEFAULT_LOADOUT = {
     "gp_per_level": 20,
 }
 
+RACE_NAME_TABLES: Dict[str, Dict[str, List[str]]] = {
+    "human": {
+        "male": ["Alden", "Derrik", "Marcus", "Tristan", "Roland"],
+        "female": ["Elena", "Lysa", "Marian", "Seren", "Talia"],
+        "surname": ["Blackwood", "Cavalier", "Harrow", "Rivers", "Thorne"],
+    },
+    "elf": {
+        "male": ["Aelar", "Theren", "Varis", "Erevan", "Syllion"],
+        "female": ["Aeris", "Lia", "Naivara", "Sylwen", "Thia"],
+        "surname": ["Evenwood", "Moonwhisper", "Nightbreeze", "Silvertree", "Windrunner"],
+    },
+    "dwarf": {
+        "male": ["Baern", "Bruen", "Dorn", "Harbek", "Rurik"],
+        "female": ["Amber", "Eldeth", "Finellen", "Mardred", "Torbera"],
+        "surname": ["Battlehammer", "Fireforge", "Ironfist", "Rockseeker", "Stonehelm"],
+    },
+    "halfling": {
+        "male": ["Alton", "Cade", "Eldon", "Milo", "Wellby"],
+        "female": ["Bree", "Callie", "Lavinia", "Myria", "Seraphina"],
+        "surname": ["Brushgather", "Goodbarrel", "Greenbottle", "Highhill", "Tealeaf"],
+    },
+    "dragonborn": {
+        "male": ["Aryx", "Balasar", "Khagrax", "Rhogar", "Torinn"],
+        "female": ["Akra", "Kaida", "Mizra", "Sora", "Thyana"],
+        "surname": ["Clethtinthiallor", "Daardendrian", "Delmirev", "Kepeshkmolik", "Turnuroth"],
+    },
+    "gnome": {
+        "male": ["Alston", "Boddynock", "Dimble", "Finnan", "Orin"],
+        "female": ["Bimpnottin", "Ella", "Lilli", "Nissa", "Zanna"],
+        "surname": ["Beren", "Daergel", "Folkor", "Murnig", "Nackle"],
+    },
+    "half-elf": {
+        "male": ["Aeric", "Corin", "Laethan", "Syllas", "Theron"],
+        "female": ["Ara", "Elora", "Maia", "Rinn", "Sylia"],
+        "surname": ["Amastacia", "Galanodel", "Ilphelkiir", "Siannodel", "Holimion"],
+    },
+    "half-orc": {
+        "male": ["Dorn", "Grysh", "Krusk", "Mogar", "Thokk"],
+        "female": ["Arha", "Baggi", "Emen", "Sutha", "Yevelda"],
+        "surname": ["Bonecrusher", "Ironhide", "Skullcleaver", "Stormcaller", "Thrash"]
+    },
+    "tiefling": {
+        "male": ["Akmenos", "Damien", "Leucis", "Morthos", "Zephiros"],
+        "female": ["Akmena", "Beleth", "Kasdeya", "Orianna", "Zephra"],
+        "surname": ["Fateborn", "Hellfire", "Nightbloom", "Runeweaver", "Shadowstep"],
+    },
+}
+
+DEFAULT_NAME_TABLE = {
+    "male": ["Rowan", "Galen", "Tobin", "Lucan", "Merrick"],
+    "female": ["Ayla", "Celia", "Daphne", "Lyra", "Mira"],
+    "surname": ["Ashford", "Brightwood", "Fairwind", "Starling", "Waverly"],
+}
+
 
 class CharacterViewModel(QtCore.QObject):
     stateChanged = QtCore.Signal()
@@ -275,6 +329,14 @@ class CharacterViewModel(QtCore.QObject):
     def set_alignment(self, alignment: Optional[str]) -> None:
         self.state.alignment = alignment
         self._lock_field("alignment", bool(alignment))
+        self._emit_state_changed()
+
+    def set_gender(self, gender: Optional[str]) -> None:
+        normalized = gender.lower() if gender else None
+        if normalized not in {"male", "female", None}:
+            normalized = None
+        self.state.gender = normalized
+        self._lock_field("gender", bool(normalized))
         self._emit_state_changed()
 
     def set_base_ability_score(self, ability: str, value: int) -> None:
@@ -439,8 +501,17 @@ class CharacterViewModel(QtCore.QObject):
             state.alignment = alignment_entry.get("index") if alignment_entry else None
             self._lock_field("alignment", False)
 
+        if self._is_locked("gender") and state.gender:
+            gender = state.gender
+        else:
+            gender = random.choice(["male", "female"])
+            state.gender = gender
+            self._lock_field("gender", False)
+
         if not self._is_locked("name"):
-            state.name = f"{race.name} {class_data.name} {state.level}"
+            generated_name = _generate_character_name(race, gender)
+            state.name = generated_name
+            self._lock_field("name", False)
 
         if not self._is_locked("skills"):
             state.selected_skill_proficiencies.clear()
@@ -733,6 +804,21 @@ class CharacterViewModel(QtCore.QObject):
             if isinstance(items, list):
                 equipment.extend(items)
 
+        magic_bonus = 0
+        if self.state.level >= 16:
+            magic_bonus = 3
+        elif self.state.level >= 11:
+            magic_bonus = 2
+        elif self.state.level >= 5:
+            magic_bonus = 1
+
+        if magic_bonus > 0:
+            for idx, item_index in enumerate(equipment):
+                entry = self.srd.equipment.get(item_index)
+                if entry and (entry.get("equipment_category", {}).get("index", "").lower() == "weapon"):
+                    equipment[idx] = f"{item_index}+{magic_bonus}"
+                    break
+
         base_gp = loadout.get("gp", 40)
         gp_per_level = loadout.get("gp_per_level", 20)
         level = max(1, self.state.level)
@@ -1024,3 +1110,32 @@ def _ensure_positive_int(value) -> int:
         return max(0, int(round(float(value))))
     except (TypeError, ValueError):
         return 0
+
+
+def _split_magic_index(index: str) -> Tuple[str, int]:
+    if "+" in index:
+        base, bonus = index.split("+", 1)
+        try:
+            value = int(bonus)
+        except ValueError:
+            value = 0
+        return base, value
+    return index, 0
+
+
+def _generate_character_name(race: Optional[RaceData], gender: Optional[str]) -> str:
+    gender = (gender or random.choice(["male", "female"])).lower()
+    race_key = race.index if race else "human"
+    if race_key not in RACE_NAME_TABLES and race:
+        parts = race.index.split("-")
+        for candidate in (race.index, parts[0], parts[-1]):
+            if candidate in RACE_NAME_TABLES:
+                race_key = candidate
+                break
+    name_table = RACE_NAME_TABLES.get(race_key, DEFAULT_NAME_TABLE)
+
+    given_options = name_table.get(gender, DEFAULT_NAME_TABLE.get(gender, DEFAULT_NAME_TABLE["male"]))
+    surname_options = name_table.get("surname", DEFAULT_NAME_TABLE["surname"])
+    given_name = random.choice(given_options) if given_options else "Arin"
+    surname = random.choice(surname_options) if surname_options else "Brightwood"
+    return f"{given_name} {surname}"

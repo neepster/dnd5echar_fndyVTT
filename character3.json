@@ -1,18 +1,18 @@
 {
-  "name": "Half-Orc Monk 9",
+  "name": "Roland Cavalier",
   "type": "character",
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "currency": {
       "pp": 0,
-      "gp": 0,
+      "gp": 205,
       "ep": 0,
       "sp": 0,
       "cp": 0
     },
     "abilities": {
       "str": {
-        "value": 14,
+        "value": 9,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -81,7 +81,7 @@
         }
       },
       "int": {
-        "value": 10,
+        "value": 11,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -104,7 +104,7 @@
         }
       },
       "wis": {
-        "value": 14,
+        "value": 13,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -127,7 +127,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 16,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -179,7 +179,7 @@
     "skills": {
       "acr": {
         "ability": "dex",
-        "value": 1,
+        "value": 0,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -205,7 +205,7 @@
       },
       "arc": {
         "ability": "int",
-        "value": 0,
+        "value": 1,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -244,7 +244,7 @@
       },
       "his": {
         "ability": "int",
-        "value": 1,
+        "value": 0,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -283,7 +283,7 @@
       },
       "inv": {
         "ability": "int",
-        "value": 0,
+        "value": 1,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -374,7 +374,7 @@
       },
       "slt": {
         "ability": "dex",
-        "value": 0,
+        "value": 1,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -413,7 +413,31 @@
       }
     },
     "tools": {
-      "jewelers-tools": {
+      "flute": {
+        "value": 1,
+        "ability": "int",
+        "bonuses": {
+          "check": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "pan-flute": {
+        "value": 1,
+        "ability": "int",
+        "bonuses": {
+          "check": ""
+        },
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "shawm": {
         "value": 1,
         "ability": "int",
         "bonuses": {
@@ -428,19 +452,19 @@
     },
     "spells": {
       "spell1": {
-        "value": 0
+        "value": 4
       },
       "spell2": {
-        "value": 0
+        "value": 3
       },
       "spell3": {
-        "value": 0
+        "value": 3
       },
       "spell4": {
-        "value": 0
+        "value": 3
       },
       "spell5": {
-        "value": 0
+        "value": 1
       },
       "spell6": {
         "value": 0
@@ -488,13 +512,13 @@
       },
       "senses": {
         "blindsight": 0,
-        "darkvision": 60,
+        "darkvision": 0,
         "tremorsense": 0,
         "truesight": 0,
         "units": "ft",
         "special": ""
       },
-      "spellcasting": "",
+      "spellcasting": "cha",
       "exhaustion": 0,
       "concentration": {
         "ability": "",
@@ -539,13 +563,13 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Neutral Good",
+      "alignment": "Chaotic Evil",
       "ideal": "",
       "bond": "",
       "flaw": "",
-      "race": "Half-Orc",
+      "race": "Human",
       "background": "Acolyte",
-      "originalClass": "Monk",
+      "originalClass": "Bard",
       "xp": {
         "value": 0
       },
@@ -585,7 +609,7 @@
       "languages": {
         "value": [
           "common",
-          "orc"
+          "dwarvish"
         ],
         "custom": "",
         "communication": {}
@@ -599,12 +623,16 @@
         }
       },
       "armorProf": {
-        "value": [],
+        "value": [
+          "light-armor"
+        ],
         "custom": ""
       },
       "toolProf": {
         "value": [
-          "jewelers-tools"
+          "flute",
+          "pan-flute",
+          "shawm"
         ],
         "custom": ""
       }
@@ -636,15 +664,15 @@
   },
   "items": [
     {
-      "_id": "1296dba35fc5cd2c",
-      "name": "Monk",
+      "_id": "ea64b408906936d5",
+      "name": "Bard",
       "type": "class",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "monk",
+        "identifier": "bard",
         "levels": 9,
         "hd": {
           "denomination": "d8",
@@ -657,28 +685,28 @@
           "custom": ""
         },
         "spellcasting": {
-          "ability": "",
-          "progression": "none",
+          "ability": "cha",
+          "progression": "full",
           "preparation": {
             "formula": ""
           }
         },
-        "subclass": "open-hand"
+        "subclass": "lore"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "34d2b738d149b695",
-      "name": "Open Hand",
+      "_id": "4b07557c741fa607",
+      "name": "Lore",
       "type": "subclass",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Monks of the Way of the Open Hand are the ultimate masters of martial arts combat, whether armed or unarmed. They learn techniques to push and trip their opponents, manipulate ki to heal damage to their bodies, and practice advanced meditation that can protect them from harm.</p>"
+          "value": "<p>Bards of the College of Lore know something about most things, collecting bits of knowledge from sources as diverse as scholarly tomes and peasant tales. Whether singing folk ballads in taverns or elaborate compositions in royal courts, these bards use their gifts to hold audiences spellbound. When the applause dies down, the audience members might find themselves questioning everything they held to be true, from their faith in the priesthood of the local temple to their loyalty to the king. The loyalty of these bards lies in the pursuit of beauty and truth, not in fealty to a monarch or following the tenets of a deity. A noble who keeps such a bard as a herald or advisor knows that the bard would rather be honest than politic. The college's members gather in libraries and sometimes in actual colleges, complete with classrooms and dormitories, to share their lore with one another. They also meet at festivals or affairs of state, where they can expose corruption, unravel lies, and poke fun at self-important figures of authority.</p>"
         },
-        "identifier": "open-hand",
-        "classIdentifier": "monk",
+        "identifier": "lore",
+        "classIdentifier": "bard",
         "source": {
           "book": "SRD 5.1",
           "page": "",
@@ -689,13 +717,13 @@
       "flags": {}
     },
     {
-      "_id": "970acebb98efda80",
-      "name": "Half-Orc",
+      "_id": "dc0dd196512b3e64",
+      "name": "Human",
       "type": "race",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p><p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p><p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.</p><p>You gain proficiency in the Intimidation skill.</p>"
+          "value": ""
         },
         "source": {
           "book": "SRD 5.1",
@@ -707,91 +735,7 @@
       "flags": {}
     },
     {
-      "_id": "add3db9c5fb69a30",
-      "name": "Darkvision",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
-        },
-        "type": {
-          "value": "race"
-        },
-        "source": {
-          "book": "Half-Orc",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "0ff7938214382ccf",
-      "name": "Savage Attacks",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.</p>"
-        },
-        "type": {
-          "value": "race"
-        },
-        "source": {
-          "book": "Half-Orc",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "9ee8288867e21648",
-      "name": "Relentless Endurance",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. you cannot use this feature again until you finish a long rest.</p>"
-        },
-        "type": {
-          "value": "race"
-        },
-        "source": {
-          "book": "Half-Orc",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "faadb6765f08379b",
-      "name": "Menacing",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>You gain proficiency in the Intimidation skill.</p>"
-        },
-        "type": {
-          "value": "race"
-        },
-        "source": {
-          "book": "Half-Orc",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "e1ab968debaf5127",
+      "_id": "41c6e8e29259681d",
       "name": "Acolyte",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -809,7 +753,7 @@
       "flags": {}
     },
     {
-      "_id": "a147b6a8d058e1b9",
+      "_id": "106610a27896776b",
       "name": "Shelter of the Faithful",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -830,19 +774,19 @@
       "flags": {}
     },
     {
-      "_id": "249f9582e055eee1",
-      "name": "Unarmored Defense",
+      "_id": "5872f56b44a48e93",
+      "name": "Spellcasting: Bard",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>"
+          "value": "<p>You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells are part of your vast repertoire, magic that you can tune to different situations.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 1",
+          "book": "Bard 1",
           "page": "",
           "custom": ""
         }
@@ -851,19 +795,19 @@
       "flags": {}
     },
     {
-      "_id": "bce174a6381e9470",
-      "name": "Martial Arts",
+      "_id": "cc0ba6bb36b86efc",
+      "name": "Bardic Inspiration (d6)",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two- handed or heavy property.</p><p>You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield:</p><p>- You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.</p><p>- You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of Table: The Monk.</p><p>- When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn.</p><p>Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.</p>"
+          "value": "<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p><p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p><p>Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 1",
+          "book": "Bard 1",
           "page": "",
           "custom": ""
         }
@@ -872,19 +816,19 @@
       "flags": {}
     },
     {
-      "_id": "a63bb053f529d4ac",
-      "name": "Ki",
+      "_id": "ff5978c2cdefc8ca",
+      "name": "Jack of All Trades",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of Table: The Monk.</p><p>You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.</p><p>When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.</p><p>Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:</p><p>Ki save DC = 8 + your proficiency bonus + your Wisdom modifier</p>"
+          "value": "<p>Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn't already include your proficiency bonus.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 2",
+          "book": "Bard 2",
           "page": "",
           "custom": ""
         }
@@ -893,19 +837,19 @@
       "flags": {}
     },
     {
-      "_id": "506a1028d7da38fb",
-      "name": "Flurry of Blows",
+      "_id": "bd8b30dc76b81304",
+      "name": "Song of Rest (d6)",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.</p>"
+          "value": "<p>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</p><p>The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 2",
+          "book": "Bard 2",
           "page": "",
           "custom": ""
         }
@@ -914,19 +858,19 @@
       "flags": {}
     },
     {
-      "_id": "067db40e9d9bc2b6",
-      "name": "Patient Defense",
+      "_id": "9eef9e8631d85f97",
+      "name": "Expertise",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You can spend 1 ki point to take the Dodge action as a bonus action on your turn.</p>"
+          "value": "<p>At 3rd level, choose two of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies. At 10th level, you can choose another two skill proficiencies to gain this benefit.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 2",
+          "book": "Bard 3",
           "page": "",
           "custom": ""
         }
@@ -935,19 +879,19 @@
       "flags": {}
     },
     {
-      "_id": "e51f4e2b064cd69b",
-      "name": "Step of the Wind",
+      "_id": "d90d55444e6676ef",
+      "name": "Bard College",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.</p>"
+          "value": "<p>At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 2",
+          "book": "Bard 3",
           "page": "",
           "custom": ""
         }
@@ -956,70 +900,7 @@
       "flags": {}
     },
     {
-      "_id": "1b424a6cdc28c168",
-      "name": "Unarmored Movement",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.</p><p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Monk 2",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "a09e07bd5dc49676",
-      "name": "Monastic Tradition",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Monk 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "daf384ed7cab468b",
-      "name": "Deflect Missiles",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your monk level.</p><p>If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a normal range of 20 feet and a long range of 60 feet.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Monk 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "00f0d7fdacd355d4",
+      "_id": "09da3138f2506059",
       "name": "Ability Score Improvement",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -1031,7 +912,7 @@
           "value": "class"
         },
         "source": {
-          "book": "Monk 4",
+          "book": "Bard 4",
           "page": "",
           "custom": ""
         }
@@ -1040,19 +921,19 @@
       "flags": {}
     },
     {
-      "_id": "c168ecbc6896a38e",
-      "name": "Slow Fall",
+      "_id": "3d1ae740ff0105dc",
+      "name": "Bardic Inspiration (d8)",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level.</p>"
+          "value": "<p>You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.</p><p>You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.</p><p>Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 4",
+          "book": "Bard 5",
           "page": "",
           "custom": ""
         }
@@ -1061,19 +942,19 @@
       "flags": {}
     },
     {
-      "_id": "fb86122d1b43cbc3",
-      "name": "Extra Attack",
+      "_id": "f6ec50402d86fab0",
+      "name": "Font of Inspiration",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>"
+          "value": "<p>Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 5",
+          "book": "Bard 5",
           "page": "",
           "custom": ""
         }
@@ -1082,19 +963,19 @@
       "flags": {}
     },
     {
-      "_id": "d620004311586b84",
-      "name": "Stunning Strike",
+      "_id": "fb9df5ff40c4b713",
+      "name": "Countercharm",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting at 5th level, you can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</p>"
+          "value": "<p>At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 5",
+          "book": "Bard 6",
           "page": "",
           "custom": ""
         }
@@ -1103,19 +984,19 @@
       "flags": {}
     },
     {
-      "_id": "14667ff862ca183a",
-      "name": "Ki Empowered Strikes",
+      "_id": "fad4480516f9908c",
+      "name": "Bard College feature",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>"
+          "value": "<p>At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 6",
+          "book": "Bard 6",
           "page": "",
           "custom": ""
         }
@@ -1124,70 +1005,7 @@
       "flags": {}
     },
     {
-      "_id": "5db42c13da985946",
-      "name": "Monastic Tradition feature",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Monk 6",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "1b801b90e9580164",
-      "name": "Evasion",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>At 7th level, your instinctive agility lets you dodge out of the way of certain area effects, such as a blue dragon's lightning breath or a fireball spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Monk 7",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "182ea2b3e4e56f80",
-      "name": "Stillness of Mind",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Monk 7",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "23f84bea5384e761",
+      "_id": "c4b2993f7231e820",
       "name": "Ability Score Improvement",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -1199,7 +1017,7 @@
           "value": "class"
         },
         "source": {
-          "book": "Monk 8",
+          "book": "Bard 8",
           "page": "",
           "custom": ""
         }
@@ -1208,19 +1026,19 @@
       "flags": {}
     },
     {
-      "_id": "a8ae8d72e77acad2",
-      "name": "Unarmored Movement",
+      "_id": "413a8f866c7ac651",
+      "name": "Song of Rest (d8)",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain monk levels, as shown in Table: The Monk.</p><p>At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</p>"
+          "value": "<p>Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.</p><p>The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Monk 9",
+          "book": "Bard 9",
           "page": "",
           "custom": ""
         }
@@ -1229,19 +1047,19 @@
       "flags": {}
     },
     {
-      "_id": "7be742a0622d2697",
-      "name": "Open Hand Technique",
+      "_id": "fbb8162715aaf325",
+      "name": "Bonus Proficiencies",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Starting when you choose this tradition at 3rd level, you can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:</p><p>- It must succeed on a Dexterity saving throw or be knocked prone.</p><p>- It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.</p><p>- It can't take reactions until the end of your next turn.</p>"
+          "value": "<p>When you join the College of Lore at 3rd level, you gain proficiency with three skills of your choice.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Open Hand",
+          "book": "Lore",
           "page": "",
           "custom": ""
         }
@@ -1250,22 +1068,1190 @@
       "flags": {}
     },
     {
-      "_id": "10e2cd948720061f",
-      "name": "Wholeness of Body",
+      "_id": "c75d415061aa8e0a",
+      "name": "Cutting Words",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.</p>"
+          "value": "<p>Also at 3rd level, you learn how to use your wit to distract, confuse, and otherwise sap the confidence and competence of others.</p><p>When a creature that you can see within 60 feet of you makes an attack roll, an ability check, or a damage roll, you can use your reaction to expend one of your uses of Bardic Inspiration, rolling a Bardic Inspiration die and subtracting the number rolled from the creature's roll.</p><p>You can choose to use this feature after the creature makes its roll, but before the GM determines whether the attack roll or ability check succeeds or fails, or before the creature deals its damage. The creature is immune if it can't hear you or if it's immune to being charmed.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Open Hand",
+          "book": "Lore",
           "page": "",
           "custom": ""
         }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9385ac77ecfaa191",
+      "name": "Additional Magical Secrets",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>At 6th level, you learn two spells of your choice from any class. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip. The chosen spells count as bard spells for you but don't count against the number of bard spells you know.</p>"
+        },
+        "type": {
+          "value": "class"
+        },
+        "source": {
+          "book": "Lore",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b1ca0ba14ffe5e6c",
+      "name": "Call Lightning",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A storm cloud appears in the shape of a cylinder that is 10 feet tall with a 60-foot radius, centered on a point you can see 100 feet directly above you. The spell fails if you can't see a point in the air where the storm cloud could appear (for example, if you are in a room that can't accommodate the cloud).</p><p>When you cast the spell, choose a point you can see within range. A bolt of lightning flashes down from the cloud to that point. Each creature within 5 feet of that point must make a dexterity saving throw. A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one. On each of your turns until the spell ends, you can use your action to call down lightning in this way again, targeting the same point or a different one.</p><p>If you are outdoors in stormy conditions when you cast this spell, the spell gives you control over the existing storm instead of creating a new one. Under such conditions, the spell's damage increases by 1d10.</p>"
+        },
+        "level": 3,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "120"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e18deddf2539803b",
+      "name": "Calm Emotions",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You attempt to suppress strong emotions in a group of people. Each humanoid in a 20-foot-radius sphere centered on a point you choose within range must make a charisma saving throw; a creature can choose to fail this saving throw if it wishes. If a creature fails its saving throw, choose one of the following two effects. You can suppress any effect causing a target to be charmed or frightened. When this spell ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.</p><p>Alternatively, you can make a target indifferent about creatures of your choice that it is hostile toward. This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed. When the spell ends, the creature becomes hostile again, unless the GM rules otherwise.</p>"
+        },
+        "level": 2,
+        "school": "enchantment",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "013294878a52caa7",
+      "name": "Create Food and Water",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad.</p>"
+        },
+        "level": 3,
+        "school": "conjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6fc396c454bc4fa9",
+      "name": "Darkness",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.</p><p>If the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.</p><p>If any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.</p>"
+        },
+        "level": 2,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": false,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "Bat fur and a drop of pitch or piece of coal."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "434160a40c9397d3",
+      "name": "Daylight",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A 60-foot-radius sphere of light spreads out from a point you choose within range. The sphere is bright light and sheds dim light for an additional 60 feet.</p><p>If you chose a point on an object you are holding or one that isn't being worn or carried, the light shines from the object and moves with it. Completely covering the affected object with an opaque object, such as a bowl or a helm, blocks the light.</p><p>If any of this spell's area overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled.</p>"
+        },
+        "level": 3,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "eb0c9a3291282949",
+      "name": "Detect Magic",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
+        },
+        "level": 1,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": true,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "38adcad70d6e1d97",
+      "name": "Enthrall",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You weave a distracting string of words, causing creatures of your choice that you can see within range and that can hear you to make a wisdom saving throw. Any creature that can't be charmed succeeds on this saving throw automatically, and if you or your companions are fighting a creature, it has advantage on the save. On a failed save, the target has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you until the spell ends or until the target can no longer hear you. The spell ends if you are incapacitated or can no longer speak.</p>"
+        },
+        "level": 2,
+        "school": "enchantment",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "60"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "33edfe44e4159bfc",
+      "name": "Fly",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You touch a willing creature. The target gains a flying speed of 60 feet for the duration. When the spell ends, the target falls if it is still aloft, unless it can stop the fall.</p>"
+        },
+        "level": 3,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A wing feather from any bird."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6e51dc34a307c9e8",
+      "name": "Gust of Wind",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A line of strong wind 60 feet long and 10 feet wide blasts from you in a direction you choose for the spell's duration. Each creature that starts its turn in the line must succeed on a strength saving throw or be pushed 15 feet away from you in a direction following the line.</p><p>Any creature in the line must spend 2 feet of movement for every 1 foot it moves when moving closer to you.</p><p>The gust disperses gas or vapor, and it extinguishes candles, torches, and similar unprotected flames in the area. It causes protected flames, such as those of lanterns, to dance wildly and has a 50 percent chance to extinguish them.</p><p>As a bonus action on each of your turns before the spell ends, you can change the direction in which the line blasts from you.</p>"
+        },
+        "level": 2,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A legume seed."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4e32584d8a872ae0",
+      "name": "Mending",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell repairs a single break or tear in an object you touch, such as a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no longer than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p><p>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "Two lodestones."
+        },
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4804a7480aa12068",
+      "name": "Minor Illusion",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p><p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p><p>If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p><p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>"
+        },
+        "level": 0,
+        "school": "illusion",
+        "components": {
+          "v": false,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A bit of fleece."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9ea997e3a226a2e7",
+      "name": "Raise Dead",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You return a dead creature you touch to life, provided that it has been dead no longer than 10 days. If the creature's soul is both willing and at liberty to rejoin the body, the creature returns to life with 1 hit point.</p><p>This spell also neutralizes any poisons and cures nonmagical diseases that affected the creature at the time it died. This spell doesn't, however, remove magical diseases, curses, or similar effects; if these aren't first removed prior to casting the spell, they take effect when the creature returns to life. The spell can't return an undead creature to life.</p><p>This spell closes all mortal wounds, but it doesn't restore missing body parts. If the creature is lacking body parts or organs integral for its survival--its head, for instance--the spell automatically fails.</p><p>Coming back from the dead is an ordeal. The target takes a -4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.</p>"
+        },
+        "level": 5,
+        "school": "necromancy",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A diamond worth at least 500gp, which the spell consumes."
+        },
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "touch"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "b6f48f200497cb83",
+      "name": "Sleep",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p><p>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.</p><p>Undead and creatures immune to being charmed aren't affected by this spell.</p>"
+        },
+        "level": 1,
+        "school": "enchantment",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A pinch of fine sand, rose petals, or a cricket."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "90"
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "ac29904a83905a7a",
+      "name": "Thunderwave",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.</p><p>In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet.</p>"
+        },
+        "level": 1,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "self"
+        },
+        "duration": {
+          "value": "0",
+          "units": "inst"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2d368efe911ff6f7",
+      "name": "True Strike",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.</p>"
+        },
+        "level": 0,
+        "school": "divination",
+        "components": {
+          "v": false,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": true,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "units": "ft",
+          "value": "30"
+        },
+        "duration": {
+          "value": "1",
+          "units": "round"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "2d0868166fa62033",
+      "name": "Leather Armor",
+      "type": "equipment",
+      "img": "systems/dnd5e/icons/svg/items/armor.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "leather-armor",
+        "quantity": 1,
+        "weight": {
+          "value": 10,
+          "units": "lb"
+        },
+        "price": {
+          "value": 10,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "armor": {
+          "value": 11,
+          "dex": 0
+        },
+        "type": {
+          "value": "light",
+          "baseItem": "leather-armor"
+        },
+        "strength": 0,
+        "stealth": ""
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "bbd8d4ef2234d6a9",
+      "name": "Rapier +1",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "rapier",
+        "quantity": 1,
+        "weight": {
+          "value": 2,
+          "units": "lb"
+        },
+        "price": {
+          "value": 25,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d8",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "properties": [
+          "finesse",
+          "mgc"
+        ],
+        "proficient": null,
+        "ability": "dex",
+        "attackType": "mwak",
+        "type": {
+          "value": "martialM",
+          "baseItem": "rapier"
+        },
+        "bonuses": {
+          "attack": "1",
+          "damage": "1"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "beacc07204c33b20",
+      "name": "Dagger",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "dagger",
+        "quantity": 1,
+        "weight": {
+          "value": 1,
+          "units": "lb"
+        },
+        "price": {
+          "value": 2,
+          "denomination": "gp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d4",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "properties": [
+          "finesse",
+          "light",
+          "thrown",
+          "monk"
+        ],
+        "proficient": null,
+        "ability": "dex",
+        "attackType": "mwak",
+        "type": {
+          "value": "simpleM",
+          "baseItem": "dagger"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "88b3e1b93ab40d6d",
+      "name": "Entertainer's Pack",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "entertainers-pack",
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": ""
+        },
+        "price": {
+          "value": 40,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "9ba3b5ac6def6c1e",
+      "name": "Lute",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "lute",
+        "quantity": 1,
+        "weight": {
+          "value": 2,
+          "units": "lb"
+        },
+        "price": {
+          "value": 35,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Tools",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
       },
       "effects": [],
       "flags": {}
@@ -1286,7 +2272,7 @@
     "default": 0
   },
   "prototypeToken": {
-    "name": "Half-Orc Monk 9",
+    "name": "Roland Cavalier",
     "actorLink": true,
     "texture": {
       "src": "icons/svg/mystery-man.svg",
@@ -1336,8 +2322,8 @@
     "systemId": "dnd5e",
     "systemVersion": "5.1.9",
     "coreVersion": "11",
-    "createdTime": 1758408001442,
-    "modifiedTime": 1758408001442,
+    "createdTime": 1758415821832,
+    "modifiedTime": 1758415821832,
     "lastModifiedBy": null
   }
 }

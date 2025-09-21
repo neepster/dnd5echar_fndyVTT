@@ -96,7 +96,7 @@ def _build_system(
 
     abilities = _build_abilities(viewmodel)
     skills = _build_skills(viewmodel)
-    spells = _build_spells(state)
+    spells = _build_spells(viewmodel)
     attributes = _build_attributes(viewmodel, class_data, race_data)
     details = _build_details(viewmodel, class_data, race_data, background)
     traits = _build_traits(viewmodel, race_data)
@@ -171,11 +171,22 @@ def _build_skills(viewmodel: CharacterViewModel) -> Dict[str, object]:
     return skills
 
 
-def _build_spells(state: CharacterState) -> Dict[str, object]:
+def _build_spells(viewmodel: CharacterViewModel) -> Dict[str, object]:
+    state = viewmodel.state
     spells: Dict[str, object] = {}
+
+    known_cantrips = sum(
+        1
+        for spell_index in state.selected_spells.get("known", set())
+        if (spell := viewmodel.srd.spells.get(spell_index)) and spell.get("level", 0) == 0
+    )
+    spells["spell0"] = {"value": known_cantrips, "max": known_cantrips, "override": 0, "used": 0}
+
     for level in range(1, 10):
-        spells[f"spell{level}"] = {"value": state.derived.spell_slots.get(level, 0)}
-    spells["pact"] = {"value": 0}
+        max_slots = state.derived.spell_slots.get(level, 0)
+        spells[f"spell{level}"] = {"value": max_slots, "max": max_slots, "override": 0, "used": 0}
+
+    spells["pact"] = {"value": 0, "max": 0, "override": 0, "used": 0}
     return spells
 
 
@@ -490,7 +501,11 @@ def _spell_item(spell: dict, prepared: bool) -> Dict[str, object]:
         "preparation": {"mode": "prepared" if prepared else "known", "prepared": prepared},
         "source": {"book": "SRD 5.1", "page": "", "custom": ""},
         "target": _default_target(),
+        "identifier": spell.get("index", ""),
+        "activities": {}
     }
+    activity = _build_spell_activity(spell, system)
+    system["activities"][activity["_id"]] = activity
     return _base_item(spell.get("name", "Spell"), "spell", system, img="icons/magic/arcane/bolt-spiral-blue.webp")
 
 
@@ -510,7 +525,7 @@ def _default_target() -> Dict[str, object]:
 
 def _parse_activation(text: str) -> Dict[str, object]:
     if not text:
-        return {"type": "action", "value": 1, "condition": ""}
+        return {"type": "action", "value": 1, "condition": "", "override": False}
     raw = text.strip()
     condition = ""
     if "," in raw:
@@ -548,35 +563,37 @@ def _parse_activation(text: str) -> Dict[str, object]:
         if unit.startswith(key):
             mapped = value
             break
-    return {"type": mapped, "value": cost, "condition": condition}
+    return {"type": mapped, "value": cost, "condition": condition, "override": False}
 
 
 def _parse_range(text: str) -> Dict[str, object]:
     if not text:
-        return {"units": "self"}
+        return {"units": "self", "value": "", "override": False}
     cleaned = text.strip()
     lower = cleaned.lower()
     if lower.startswith("self"):
-        return {"units": "self"}
+        return {"units": "self", "value": "", "override": False}
     if lower.startswith("touch"):
-        return {"units": "touch"}
+        return {"units": "touch", "value": "", "override": False}
     if "unlimited" in lower:
-        return {"units": "any"}
+        return {"units": "any", "value": "", "override": False}
     if "sight" in lower:
-        return {"units": "spec", "value": "sight"}
+        return {"units": "spec", "value": "sight", "override": False}
     value = _extract_number(lower)
     if "mile" in lower:
-        return {"units": "mi", "value": value or "1"}
+        return {"units": "mi", "value": value or "1", "override": False}
     if "foot" in lower or "feet" in lower:
-        return {"units": "ft", "value": value or "0"}
+        return {"units": "ft", "value": value or "0", "override": False}
     if "yard" in lower:
         number = value or "0"
         try:
             converted = str(int(number) * 3)
         except ValueError:
             converted = number
-        return {"units": "ft", "value": converted}
-    return {"units": "spec", "value": cleaned}
+        return {"units": "ft", "value": converted, "override": False}
+    if lower == "special":
+        return {"units": "spec", "value": "", "override": False}
+    return {"units": "spec", "value": cleaned, "override": False}
 
 
 def _parse_duration(text: str) -> Dict[str, object]:
@@ -618,24 +635,31 @@ def _equipment_items(viewmodel: CharacterViewModel, equipment_list: List[str]) -
     output: List[Dict[str, object]] = []
 
     for index, quantity in counter.items():
-        entry = equipment_catalog.get(index)
+        base_index, magic_bonus = _split_magic_index(index)
+        entry = equipment_catalog.get(base_index)
         if not entry:
-            output.append(_loot_entry(index.replace("-", " ").title(), index, quantity))
+            display_name = base_index.replace("-", " ").title()
+            if magic_bonus:
+                display_name = f"{display_name} +{magic_bonus}"
+            output.append(_loot_entry(display_name, base_index, quantity))
             continue
 
         category = (entry.get("equipment_category", {}).get("index") or "").lower()
         if category == "weapon":
-            item = _weapon_entry(entry, quantity)
+            item = _weapon_entry(entry, quantity, magic_bonus)
         elif category == "armor":
             item = _armor_entry(entry, quantity)
         else:
-            item = _loot_entry(entry.get("name"), entry.get("index"), quantity, entry)
+            name = entry.get("name")
+            if magic_bonus:
+                name = f"{name} +{magic_bonus}"
+            item = _loot_entry(name, entry.get("index"), quantity, entry)
         output.append(item)
 
     return output
 
 
-def _weapon_entry(entry: dict, quantity: int) -> Dict[str, object]:
+def _weapon_entry(entry: dict, quantity: int, magic_bonus: int = 0) -> Dict[str, object]:
     damage = entry.get("damage", {})
     damage_dice = damage.get("damage_dice", "")
     damage_type = damage.get("damage_type", {}).get("index", "")
@@ -677,8 +701,18 @@ def _weapon_entry(entry: dict, quantity: int) -> Dict[str, object]:
             "baseItem": entry.get("index", ""),
         },
     }
+    system["properties"] = list(dict.fromkeys(system["properties"]))
+    if magic_bonus:
+        system.setdefault("bonuses", {"attack": "", "damage": ""})
+        system["bonuses"]["attack"] = str(magic_bonus)
+        system["bonuses"]["damage"] = str(magic_bonus)
+        if "mgc" not in system["properties"]:
+            system["properties"].append("mgc")
 
-    return _base_item(entry.get("name", "Weapon"), "weapon", system, img="systems/dnd5e/icons/svg/items/sword.svg")
+    name = entry.get("name", "Weapon")
+    if magic_bonus:
+        name = f"{name} +{magic_bonus}"
+    return _base_item(name, "weapon", system, img="systems/dnd5e/icons/svg/items/sword.svg")
 
 
 def _armor_entry(entry: dict, quantity: int) -> Dict[str, object]:
@@ -726,6 +760,75 @@ def _loot_entry(name: str, identifier: str, quantity: int, entry: Optional[dict]
         "properties": [],
     }
     return _base_item(name, "loot", system, img="systems/dnd5e/icons/svg/items/loot.svg")
+
+
+def _build_spell_activity(spell: dict, system: Dict[str, object]) -> Dict[str, object]:
+    activation = system.get("activation", {})
+    duration = system.get("duration", {})
+    spell_range = system.get("range", {})
+    concentration = bool(spell.get("concentration"))
+    activity_id = f"cast{spell.get('index', 'spell')[:10]}"
+
+    return {
+        "_id": activity_id,
+        "type": _spell_activity_type(spell),
+        "sort": 0,
+        "activation": {
+            "type": activation.get("type", "action"),
+            "value": activation.get("value", 1),
+            "condition": activation.get("condition", ""),
+            "override": False,
+        },
+        "consumption": {
+            "targets": [],
+            "spellSlot": True,
+            "scaling": {"allowed": False, "max": ""},
+        },
+        "description": {},
+        "duration": {
+            "units": duration.get("units", "inst"),
+            "value": duration.get("value", "0"),
+            "concentration": concentration,
+            "override": False,
+        },
+        "effects": [],
+        "ignoreTraits": {"idi": False, "idr": False, "idv": False, "ida": False, "idm": False},
+        "isOverTimeFlag": False,
+        "macroData": {"name": "", "command": ""},
+        "midiProperties": {},
+        "otherActivityAsParentType": True,
+        "otherActivityId": "none",
+        "range": {
+            "value": str(spell_range.get("value", "")),
+            "units": spell_range.get("units", "self"),
+            "override": False,
+        },
+        "roll": {"prompt": False, "visible": False},
+        "target": {
+            "prompt": True,
+            "override": False,
+            "affects": {"choice": False},
+            "template": {
+                "contiguous": False,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft",
+            },
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "uses": {"spent": 0, "recovery": []},
+    }
+
+
+def _spell_activity_type(spell: dict) -> str:
+    if spell.get("attack_type"):
+        return "attack"
+    if spell.get("damage"):
+        return "damage"
+    return "utility"
 
 
 def _spell_progression(class_data: ClassData) -> str:
@@ -808,3 +911,13 @@ def _weapon_ability(entry: dict) -> str:
     if "finesse" in properties or entry.get("weapon_range", "").lower() == "ranged":
         return "dex"
     return "str"
+
+
+def _split_magic_index(index: str) -> Tuple[str, int]:
+    if "+" in index:
+        base, bonus = index.split("+", 1)
+        try:
+            return base, int(bonus)
+        except ValueError:
+            return base, 0
+    return index, 0

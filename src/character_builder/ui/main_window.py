@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Set
+from typing import Dict, Iterable, List, Optional, Set, Tuple
 
 from PySide6 import QtCore, QtWidgets
 
@@ -208,6 +208,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.alignment_combo = self._create_combo()
         form.addRow("Alignment", self.alignment_combo)
 
+        self.gender_combo = self._create_combo()
+        form.addRow("Gender", self.gender_combo)
+
         self.notes_edit = QtWidgets.QTextEdit()
         self.notes_edit.setPlaceholderText("Personality traits, ideals, bonds, appearance, etc.")
         form.addRow("Notes", self.notes_edit)
@@ -381,6 +384,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.export_button.clicked.connect(self._export_to_foundry)
         self.randomize_button.clicked.connect(self._on_randomize_clicked)
         self.clear_button.clicked.connect(self._on_clear_clicked)
+        self.gender_combo.currentIndexChanged.connect(lambda _: self._on_combo_changed(self.gender_combo, self.viewmodel.set_gender))
 
         self.viewmodel.stateChanged.connect(self.refresh_all)
         self.viewmodel.derivedChanged.connect(self._refresh_summary)
@@ -421,6 +425,10 @@ class MainWindow(QtWidgets.QMainWindow):
         alignments = [(entry["index"], entry["name"]) for entry in self.viewmodel.srd.alignments]
         self._populate_combo(self.alignment_combo, alignments)
         self._set_combo_to_value(self.alignment_combo, state.alignment)
+
+        gender_options = [("male", "Male"), ("female", "Female")]
+        self._populate_combo(self.gender_combo, gender_options)
+        self._set_combo_to_value(self.gender_combo, state.gender)
 
         self._block(self.notes_edit, lambda: self.notes_edit.setPlainText(state.notes))
 
@@ -501,13 +509,14 @@ class MainWindow(QtWidgets.QMainWindow):
             self.spell_tabs.clear()
             self._spell_lists.clear()
             self._spell_widgets.clear()
-            for level, spells in spell_data.items():
+            for level in sorted(spell_data.keys()):
                 list_widget = QtWidgets.QListWidget()
                 list_widget.setSpacing(4)
                 self._spell_lists[level] = list_widget
                 level_label = "Cantrips" if level == 0 else f"Level {level}"
                 self.spell_tabs.addTab(list_widget, level_label)
 
+        self._spell_widgets.clear()
         for level, list_widget in self._spell_lists.items():
             list_widget.clear()
             for spell in spell_data.get(level, []):
@@ -578,8 +587,11 @@ class MainWindow(QtWidgets.QMainWindow):
 
             counts = Counter(state.equipment)
             for idx, qty in counts.items():
-                item = self.viewmodel.srd.equipment.get(idx)
-                name = item.get("name") if item else idx.replace("-", " ").title()
+                base_index, bonus = _split_magic_index(idx)
+                item = self.viewmodel.srd.equipment.get(base_index)
+                name = item.get("name") if item else base_index.replace("-", " ").title()
+                if bonus:
+                    name = f"{name} +{bonus}"
                 if qty > 1:
                     equipment_lines.append(f"{qty} × {name}")
                 else:
@@ -591,6 +603,7 @@ class MainWindow(QtWidgets.QMainWindow):
         <p>
             Level {state.level} {class_data.name if class_data else ''}{' / ' if class_data and race_data else ''}{race_data.name if race_data else ''}<br/>
             Alignment: {state.alignment or 'Unaligned'}<br/>
+            Gender: {state.gender.title() if state.gender else '—'}
         </p>
         <h3>Derived Stats</h3>
         <ul>
@@ -694,7 +707,7 @@ class MainWindow(QtWidgets.QMainWindow):
 
     def _on_clear_clicked(self) -> None:
         self.viewmodel.state.reset()
-        self.refresh_all()
+        self.viewmodel._refresh_everything()
 
     def _populate_combo(self, combo: QtWidgets.QComboBox, options: Iterable[tuple]) -> None:
         with QtCore.QSignalBlocker(combo):
@@ -721,6 +734,16 @@ class MainWindow(QtWidgets.QMainWindow):
         item = QtWidgets.QTableWidgetItem(text)
         item.setFlags(QtCore.Qt.ItemIsSelectable | QtCore.Qt.ItemIsEnabled)
         return item
+
+
+def _split_magic_index(index: str) -> Tuple[str, int]:
+    if "+" in index:
+        base, bonus = index.split("+", 1)
+        try:
+            return base, int(bonus)
+        except ValueError:
+            return base, 0
+    return index, 0
 
 
 def launch_app() -> None:

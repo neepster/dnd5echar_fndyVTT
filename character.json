@@ -1,11 +1,11 @@
 {
-  "name": "Tiefling Sorcerer 15",
+  "name": "Seraphina Tealeaf",
   "type": "character",
   "img": "icons/svg/mystery-man.svg",
   "system": {
     "currency": {
       "pp": 0,
-      "gp": 410,
+      "gp": 170,
       "ep": 0,
       "sp": 0,
       "cp": 0
@@ -35,7 +35,7 @@
         }
       },
       "dex": {
-        "value": 13,
+        "value": 16,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -58,7 +58,7 @@
         }
       },
       "con": {
-        "value": 14,
+        "value": 13,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -81,7 +81,7 @@
         }
       },
       "int": {
-        "value": 11,
+        "value": 15,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -127,7 +127,7 @@
         }
       },
       "cha": {
-        "value": 17,
+        "value": 11,
         "proficient": 0,
         "max": 20,
         "bonuses": {
@@ -205,7 +205,7 @@
       },
       "arc": {
         "ability": "int",
-        "value": 1,
+        "value": 0,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -231,7 +231,7 @@
       },
       "dec": {
         "ability": "cha",
-        "value": 1,
+        "value": 0,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -283,7 +283,7 @@
       },
       "inv": {
         "ability": "int",
-        "value": 0,
+        "value": 1,
         "bonuses": {
           "check": "",
           "passive": ""
@@ -424,19 +424,19 @@
         "value": 3
       },
       "spell4": {
-        "value": 3
+        "value": 1
       },
       "spell5": {
-        "value": 2
+        "value": 0
       },
       "spell6": {
-        "value": 1
+        "value": 0
       },
       "spell7": {
-        "value": 1
+        "value": 0
       },
       "spell8": {
-        "value": 1
+        "value": 0
       },
       "spell9": {
         "value": 0
@@ -448,7 +448,7 @@
     "attributes": {
       "ac": {
         "calc": "flat",
-        "flat": 11,
+        "flat": 13,
         "formula": ""
       },
       "init": {
@@ -465,7 +465,7 @@
         "climb": 0,
         "fly": 0,
         "swim": 0,
-        "walk": 30,
+        "walk": 25,
         "units": "ft",
         "hover": false,
         "ignoredDifficultTerrain": []
@@ -475,13 +475,13 @@
       },
       "senses": {
         "blindsight": 0,
-        "darkvision": 60,
+        "darkvision": 0,
         "tremorsense": 0,
         "truesight": 0,
         "units": "ft",
         "special": ""
       },
-      "spellcasting": "cha",
+      "spellcasting": "int",
       "exhaustion": 0,
       "concentration": {
         "ability": "",
@@ -497,8 +497,8 @@
       },
       "loyalty": {},
       "hp": {
-        "value": 92,
-        "max": 92,
+        "value": 37,
+        "max": 37,
         "temp": 0,
         "tempmax": 0,
         "bonuses": {
@@ -526,13 +526,13 @@
         "value": "",
         "public": ""
       },
-      "alignment": "Chaotic Evil",
+      "alignment": "Chaotic Neutral",
       "ideal": "",
       "bond": "",
       "flaw": "",
-      "race": "Tiefling",
+      "race": "Halfling",
       "background": "Acolyte",
-      "originalClass": "Sorcerer",
+      "originalClass": "Wizard",
       "xp": {
         "value": 0
       },
@@ -548,7 +548,7 @@
       "weight": ""
     },
     "traits": {
-      "size": "med",
+      "size": "sm",
       "di": {
         "value": [],
         "custom": ""
@@ -572,7 +572,7 @@
       "languages": {
         "value": [
           "common",
-          "infernal"
+          "halfling"
         ],
         "custom": "",
         "communication": {}
@@ -621,16 +621,16 @@
   },
   "items": [
     {
-      "_id": "93941c139fcf90b7",
-      "name": "Sorcerer",
+      "_id": "0346cc63610d824b",
+      "name": "Wizard",
       "type": "class",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "sorcerer",
-        "levels": 15,
+        "identifier": "wizard",
+        "levels": 7,
         "hd": {
           "denomination": "d6",
           "additional": "",
@@ -642,28 +642,28 @@
           "custom": ""
         },
         "spellcasting": {
-          "ability": "cha",
+          "ability": "int",
           "progression": "full",
           "preparation": {
             "formula": ""
           }
         },
-        "subclass": "draconic"
+        "subclass": "evocation"
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "e0bc4fd0120f4144",
-      "name": "Draconic",
+      "_id": "781316ad29b908bb",
+      "name": "Evocation",
       "type": "subclass",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.</p>"
+          "value": "<p>You focus your study on magic that creates powerful elemental effects such as bitter cold, searing flame, rolling thunder, crackling lightning, and burning acid. Some evokers find employment in military forces, serving as artillery to blast enemy armies from afar. Others use their spectacular power to protect the weak, while some seek their own gain as bandits, adventurers, or aspiring tyrants.</p>"
         },
-        "identifier": "draconic",
-        "classIdentifier": "sorcerer",
+        "identifier": "evocation",
+        "classIdentifier": "wizard",
         "source": {
           "book": "SRD 5.1",
           "page": "",
@@ -674,13 +674,13 @@
       "flags": {}
     },
     {
-      "_id": "a0f1d1eb7db163ab",
-      "name": "Tiefling",
+      "_id": "91f9f3cb6dbab841",
+      "name": "Halfling",
       "type": "race",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p><p>You have resistance to fire damage.</p><p>You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>"
+          "value": "<p>You have advantage on saving throw against being frightened.</p><p>You can move through the space of any creature that is of a size larger than yours.</p><p>When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>"
         },
         "source": {
           "book": "SRD 5.1",
@@ -692,19 +692,37 @@
       "flags": {}
     },
     {
-      "_id": "cf38977303b2b182",
-      "name": "Darkvision",
+      "_id": "19511509a65e9294",
+      "name": "Lightfoot Halfling",
+      "type": "race",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>As a lightfoot halfling, you can easily hide from notice, even using other people as cover. You're inclined to be affable and get along well with others. Lightfoots are more prone to wanderlust than other halflings, and often dwell alongside other races or take up a nomadic life.</p>"
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": "Halfling"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "e6fbf7f53d93e649",
+      "name": "Brave",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You cannot discern color in darkness, only shades of gray.</p>"
+          "value": "<p>You have advantage on saving throw against being frightened.</p>"
         },
         "type": {
           "value": "race"
         },
         "source": {
-          "book": "Tiefling",
+          "book": "Halfling",
           "page": "",
           "custom": ""
         }
@@ -713,19 +731,19 @@
       "flags": {}
     },
     {
-      "_id": "ad3e3bfbc124e00a",
-      "name": "Hellish Resistance",
+      "_id": "1d0bf21acb1f9af2",
+      "name": "Halfling Nimbleness",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You have resistance to fire damage.</p>"
+          "value": "<p>You can move through the space of any creature that is of a size larger than yours.</p>"
         },
         "type": {
           "value": "race"
         },
         "source": {
-          "book": "Tiefling",
+          "book": "Halfling",
           "page": "",
           "custom": ""
         }
@@ -734,19 +752,19 @@
       "flags": {}
     },
     {
-      "_id": "dfcc9d90bc242b2f",
-      "name": "Infernal Legacy",
+      "_id": "c0e2ca6760f8564a",
+      "name": "Lucky",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells.</p>"
+          "value": "<p>When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>"
         },
         "type": {
           "value": "race"
         },
         "source": {
-          "book": "Tiefling",
+          "book": "Halfling",
           "page": "",
           "custom": ""
         }
@@ -755,7 +773,28 @@
       "flags": {}
     },
     {
-      "_id": "db44486abbfc31cd",
+      "_id": "60ead7bcd4844d72",
+      "name": "Naturally Stealthy",
+      "type": "feat",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": {
+          "value": "<p>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you.</p>"
+        },
+        "type": {
+          "value": "race"
+        },
+        "source": {
+          "book": "Lightfoot Halfling",
+          "page": "",
+          "custom": ""
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "4718246aa1b82aa0",
       "name": "Acolyte",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -773,7 +812,7 @@
       "flags": {}
     },
     {
-      "_id": "337e073ed75968cc",
+      "_id": "e0bf7c058289e43b",
       "name": "Shelter of the Faithful",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -794,19 +833,19 @@
       "flags": {}
     },
     {
-      "_id": "cdd667456794ab13",
-      "name": "Spellcasting: Sorcerer",
+      "_id": "69cf0cae90a7d8d3",
+      "name": "Spellcasting: Wizard",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.</p>"
+          "value": "<p>As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 1",
+          "book": "Wizard 1",
           "page": "",
           "custom": ""
         }
@@ -815,19 +854,19 @@
       "flags": {}
     },
     {
-      "_id": "92db67c402c9bb1f",
-      "name": "Sorcerous Origin",
+      "_id": "ea7da2e4c7e22467",
+      "name": "Arcane Recovery",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.</p><p>Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.</p>"
+          "value": "<p>You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.</p><p>For example, if you're a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 1",
+          "book": "Wizard 1",
           "page": "",
           "custom": ""
         }
@@ -836,19 +875,19 @@
       "flags": {}
     },
     {
-      "_id": "99417e62dd20e32d",
-      "name": "Font of Magic",
+      "_id": "dca1ec5a072fd51a",
+      "name": "Arcane Tradition",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.</p><p>Sorcery Points</p><p>You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.</p>"
+          "value": "<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p><p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 2",
+          "book": "Wizard 2",
           "page": "",
           "custom": ""
         }
@@ -857,70 +896,7 @@
       "flags": {}
     },
     {
-      "_id": "5a2bf644b18a5ce1",
-      "name": "Flexible Casting: Creating Spell Slots",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.</p><p>Any spell slot you create with this feature vanishes when you finish a long rest.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Sorcerer 2",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "ca50ab6f9bb1eb7a",
-      "name": "Flexible Casting: Converting Spell Slot",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot's level..</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Sorcerer 2",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "ce5f46f736cf3865",
-      "name": "Metamagic",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p><p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Sorcerer 3",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "60d237e748de95fd",
+      "_id": "d501469b04ea1758",
       "name": "Ability Score Improvement",
       "type": "feat",
       "img": "icons/svg/book.svg",
@@ -932,7 +908,7 @@
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 4",
+          "book": "Wizard 4",
           "page": "",
           "custom": ""
         }
@@ -941,19 +917,19 @@
       "flags": {}
     },
     {
-      "_id": "2441292f46dc5933",
-      "name": "Sorcerous Origin feature",
+      "_id": "cbfd5a93605f7bed",
+      "name": "Arcane Tradition feature",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.</p><p>Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.</p>"
+          "value": "<p>When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.</p><p>Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 6",
+          "book": "Wizard 6",
           "page": "",
           "custom": ""
         }
@@ -962,19 +938,19 @@
       "flags": {}
     },
     {
-      "_id": "fcc377586689c2e0",
-      "name": "Ability Score Improvement",
+      "_id": "4fe9902cf001ec22",
+      "name": "Evocation Savant",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+          "value": "<p>Beginning when you select this school at 2nd level, the gold and time you must spend to copy an evocation spell into your spellbook is halved.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 8",
+          "book": "Evocation",
           "page": "",
           "custom": ""
         }
@@ -983,19 +959,19 @@
       "flags": {}
     },
     {
-      "_id": "c56b5d677b02701a",
-      "name": "Metamagic",
+      "_id": "2a6b401d8ca12012",
+      "name": "Sculpt Spells",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.</p><p>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</p>"
+          "value": "<p>Beginning at 2nd level, you can create pockets of relative safety within the effects of your evocation spells. When you cast an evocation spell that affects other creatures that you can see, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 10",
+          "book": "Evocation",
           "page": "",
           "custom": ""
         }
@@ -1004,19 +980,19 @@
       "flags": {}
     },
     {
-      "_id": "4022d689bed965f8",
-      "name": "Ability Score Improvement",
+      "_id": "3f8109ad4308c4d1",
+      "name": "Potent Cantrip",
       "type": "feat",
       "img": "icons/svg/book.svg",
       "system": {
         "description": {
-          "value": "<p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.</p>"
+          "value": "<p>Starting at 6th level, your damaging cantrips affect even creatures that avoid the brunt of the effect. When a creature succeeds on a saving throw against your cantrip, the creature takes half the cantrip's damage (if any) but suffers no additional effect from the cantrip.</p>"
         },
         "type": {
           "value": "class"
         },
         "source": {
-          "book": "Sorcerer 12",
+          "book": "Evocation",
           "page": "",
           "custom": ""
         }
@@ -1025,453 +1001,42 @@
       "flags": {}
     },
     {
-      "_id": "bbfb260f2b14a754",
-      "name": "Sorcerous Origin feature",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Choose a sorcerous origin, which describes the source of your innate magical power, such as Draconic Bloodline.</p><p>Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Sorcerer 14",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "4ab5a979873dd0b4",
-      "name": "Dragon Ancestor",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>At 1st level, you choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.</p><p>You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Draconic",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "11474aaef352973d",
-      "name": "Draconic Resilience",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class.</p><p>Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Draconic",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "979a7c4cfbda3713",
-      "name": "Elemental Affinity",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>Starting at 6th level, when you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell. At the same time, you can spend 1 sorcery point to gain resistance to that damage type for 1 hour.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Draconic",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "d9dfe20fe0f979be",
-      "name": "Dragon Wings",
-      "type": "feat",
-      "img": "icons/svg/book.svg",
-      "system": {
-        "description": {
-          "value": "<p>At 14th level, you gain the ability to sprout a pair of dragon wings from your back, gaining a flying speed equal to your current speed. You can create these wings as a bonus action on your turn. They last until you dismiss them as a bonus action on your turn.</p><p>You can't manifest your wings while wearing armor unless the armor is made to accommodate them, and clothing not made to accommodate your wings might be destroyed when you manifest them.</p>"
-        },
-        "type": {
-          "value": "class"
-        },
-        "source": {
-          "book": "Draconic",
-          "page": "",
-          "custom": ""
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "4421947e23f168ae",
-      "name": "Circle of Death",
+      "_id": "ff59eb9f954bd229",
+      "name": "Arcanist's Magic Aura",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>A sphere of negative energy ripples out in a 60-foot radius sphere from a point within range. Each creature in that area must make a constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one.</p>"
+          "value": "<p>You place an illusion on a creature or an object you touch so that divination spells reveal false information about it. The target can be a willing creature or an object that isn't being carried or worn by another creature.</p><p>When you cast the spell, choose one or both of the following effects. The effect lasts for the duration. If you cast this spell on the same creature or object every day for 30 days, placing the same effect on it each time, the illusion lasts until it is dispelled.</p><p>***False Aura.*** You change the way the target appears to spells and magical effects, such as detect magic, that detect magical auras. You can make a nonmagical object appear magical, a magical object appear nonmagical, or change the object's magical aura so that it appears to belong to a specific school of magic that you choose. When you use this effect on an object, you can make the false magic apparent to any creature that handles the item.</p><p>***Mask.*** You change the way the target appears to spells and magical effects that detect creature types, such as a paladin's Divine Sense or the trigger of a symbol spell. You choose a creature type and other spells and magical effects treat the target as if it were a creature of that type or of that alignment.</p>"
         },
-        "level": 6,
-        "school": "necromancy",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": false,
-          "material": "The powder of a crushed black pearl worth at least 500 gp."
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "150"
-        },
-        "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "05b55f1a0d00cadd",
-      "name": "Cloudkill",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You create a 20-foot-radius sphere of poisonous, yellow-green fog centered on a point you choose within range. The fog spreads around corners. It lasts for the duration or until strong wind disperses the fog, ending the spell. Its area is heavily obscured.</p><p>When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature must make a constitution saving throw. The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one. Creatures are affected even if they hold their breath or don't need to breathe.</p><p>The fog moves 10 feet away from you at the start of each of your turns, rolling along the surface of the ground. The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.</p>"
-        },
-        "level": 5,
-        "school": "conjuration",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": true,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "120"
-        },
-        "duration": {
-          "value": "10",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "92c70fd8ebdc8057",
-      "name": "Detect Magic",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>For the duration, you sense the presence of magic within 30 feet of you. If you sense magic in this way, you can use your action to see a faint aura around any visible creature or object in the area that bears magic, and you learn its school of magic, if any.</p><p>The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.</p>"
-        },
-        "level": 1,
-        "school": "divination",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": true,
-          "concentration": true,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "self"
-        },
-        "duration": {
-          "value": "10",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "9fbca29e85ae8e07",
-      "name": "Dominate Person",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You attempt to beguile a humanoid that you can see within range. It must succeed on a wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.</p><p>While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"Attack that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.</p><p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.</p><p>Each time the target takes damage, it makes a new wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.</p>"
-        },
-        "level": 5,
-        "school": "enchantment",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": true,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "60"
-        },
-        "duration": {
-          "value": "1",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "985d6060944aa02f",
-      "name": "Earthquake",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You create a seismic disturbance at a point on the ground that you can see within range. For the duration, an intense tremor rips through the ground in a 100-foot-radius circle centered on that point and shakes creatures and structures in contact with the ground in that area.</p><p>The ground in the area becomes difficult terrain. Each creature on the ground that is concentrating must make a constitution saving throw. On a failed save, the creature's concentration is broken.</p><p>When you cast this spell and at the end of each turn you spend concentrating on it, each creature on the ground in the area must make a dexterity saving throw. On a failed save, the creature is knocked prone.</p><p>This spell can have additional effects depending on the terrain in the area, as determined by the GM.</p><p>Fissures. Fissures open throughout the spell's area at the start of your next turn after you cast the spell. A total of 1d6 such fissures open in locations chosen by the GM. Each is 1d10 x 10 feet deep, 10 feet wide, and extends from one edge of the spell's area to the opposite side. A creature standing on a spot where a fissure opens must succeed on a dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens.</p><p>A fissure that opens beneath a structure causes it to automatically collapse (see below).</p><p>Structures. The tremor deals 50 bludgeoning damage to any structure in contact with the ground in the area when you cast the spell and at the start of each of your turns until the spell ends. If a structure drops to 0 hit points, it collapses and potentially damages nearby creatures. A creature within half the distance of a structure's height must make a dexterity saving throw. On a failed save, the creature takes 5d6 bludgeoning damage, is knocked prone, and is buried in the rubble, requiring a DC 20 Strength (Athletics) check as an action to escape. The GM can adjust the DC higher or lower, depending on the nature of the rubble. On a successful save, the creature takes half as much damage and doesn't fall prone or become buried.</p>"
-        },
-        "level": 8,
-        "school": "evocation",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": true,
-          "material": "A pinch of dirt, a piece of rock, and a lump of clay."
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "500"
-        },
-        "duration": {
-          "value": "1",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "11a58db89b552275",
-      "name": "Fear",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a wisdom saving throw or drop whatever it is holding and become frightened for the duration.</p><p>While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a wisdom saving throw. On a successful save, the spell ends for that creature.</p>"
-        },
-        "level": 3,
+        "level": 2,
         "school": "illusion",
         "components": {
           "v": true,
           "s": true,
           "m": true,
           "ritual": false,
-          "concentration": true,
-          "material": "A white feather or the heart of a hen."
+          "concentration": false,
+          "material": "A small square of silk."
         },
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
-          "units": "self"
+          "units": "touch",
+          "value": "",
+          "override": false
         },
         "duration": {
-          "value": "1",
-          "units": "minute"
+          "value": "24",
+          "units": "hour"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
         "source": {
           "book": "SRD 5.1",
@@ -1494,67 +1059,80 @@
             "height": "",
             "units": "ft"
           }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "a355407871cad4d6",
-      "name": "Feather Fall",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>Choose up to five falling creatures within range. A falling creature's rate of descent slows to 60 feet per round until the spell ends. If the creature lands before the spell ends, it takes no falling damage and can land on its feet, and the spell ends for that creature.</p>"
         },
-        "level": 1,
-        "school": "transmutation",
-        "components": {
-          "v": true,
-          "s": false,
-          "m": true,
-          "ritual": false,
-          "concentration": false,
-          "material": "A small feather or a piece of down."
-        },
-        "activation": {
-          "type": "reaction",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "60"
-        },
-        "duration": {
-          "value": "1",
-          "units": "minute"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
+        "identifier": "arcanists-magic-aura",
+        "activities": {
+          "castarcanists-": {
+            "_id": "castarcanists-",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "24",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "touch",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
           }
         }
       },
@@ -1562,156 +1140,34 @@
       "flags": {}
     },
     {
-      "_id": "a1ceac4206ba476c",
-      "name": "Finger of Death",
+      "_id": "bc76d3109064b90a",
+      "name": "Dancing Lights",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>You send negative energy coursing through a creature that you can see within range, causing it searing pain. The target must make a constitution saving throw. It takes 7d8 + 30 necrotic damage on a failed save, or half as much damage on a successful one.</p><p>A humanoid killed by this spell rises at the start of your next turn as a zombie that is permanently under your command, following your verbal orders to the best of its ability.</p>"
-        },
-        "level": 7,
-        "school": "necromancy",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": false,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "60"
-        },
-        "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "32f5c41815fedd75",
-      "name": "Fire Bolt",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.</p><p>This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).</p>"
+          "value": "<p>You create up to four torch-sized lights within range, making them appear as torches, lanterns, or glowing orbs that hover in the air for the duration. You can also combine the four lights into one glowing vaguely humanoid form of Medium size. Whichever form you choose, each light sheds dim light in a 10-foot radius.</p><p>As a bonus action on your turn, you can move the lights up to 60 feet to a new spot within range. A light must be within 20 feet of another light created by this spell, and a light winks out if it exceeds the spell's range.</p>"
         },
         "level": 0,
         "school": "evocation",
         "components": {
           "v": true,
           "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": false,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "120"
-        },
-        "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "e031a284f9cf2ad0",
-      "name": "Hold Person",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom saving throw. On a success, the spell ends on the target.</p>"
-        },
-        "level": 2,
-        "school": "enchantment",
-        "components": {
-          "v": true,
-          "s": true,
           "m": true,
           "ritual": false,
           "concentration": true,
-          "material": "A small, straight piece of iron."
+          "material": "A bit of phosphorus or wychwood, or a glowworm."
         },
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
           "units": "ft",
-          "value": "60"
+          "value": "120",
+          "override": false
         },
         "duration": {
           "value": "1",
@@ -1742,45 +1198,123 @@
             "height": "",
             "units": "ft"
           }
+        },
+        "identifier": "dancing-lights",
+        "activities": {
+          "castdancing-li": {
+            "_id": "castdancing-li",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "120",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "e451740c4117f95f",
-      "name": "Mage Armor",
+      "_id": "f6e54b44d0b82d06",
+      "name": "Darkvision",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends. The target's base AC becomes 13 + its Dexterity modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.</p>"
+          "value": "<p>You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet.</p>"
         },
-        "level": 1,
-        "school": "abjuration",
+        "level": 2,
+        "school": "transmutation",
         "components": {
           "v": true,
           "s": true,
           "m": true,
           "ritual": false,
           "concentration": false,
-          "material": "A piece of cured leather."
+          "material": "Either a pinch of dried carrot or an agate."
         },
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
-          "units": "touch"
+          "units": "touch",
+          "value": "",
+          "override": false
         },
         "duration": {
           "value": "8",
           "units": "hour"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
         "source": {
           "book": "SRD 5.1",
@@ -1803,107 +1337,123 @@
             "height": "",
             "units": "ft"
           }
+        },
+        "identifier": "darkvision",
+        "activities": {
+          "castdarkvision": {
+            "_id": "castdarkvision",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "8",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "touch",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "59c6d79bd88af58c",
-      "name": "Mending",
+      "_id": "5981de3bd6365648",
+      "name": "Flaming Sphere",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>This spell repairs a single break or tear in an object you touch, such as a broken key, a torn cloak, or a leaking wineskin. As long as the break or tear is no longer than 1 foot in any dimension, you mend it, leaving no trace of the former damage.</p><p>This spell can physically repair a magic item or construct, but the spell can't restore magic to such an object.</p>"
+          "value": "<p>A 5-foot-diameter sphere of fire appears in an unoccupied space of your choice within range and lasts for the duration. Any creature that ends its turn within 5 feet of the sphere must make a dexterity saving throw. The creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.</p><p>As a bonus action, you can move the sphere up to 30 feet. If you ram the sphere into a creature, that creature must make the saving throw against the sphere's damage, and the sphere stops moving this turn.</p><p>When you move the sphere, you can direct it over barriers up to 5 feet tall and jump it across pits up to 10 feet wide. The sphere ignites flammable objects not being worn or carried, and it sheds bright light in a 20-foot radius and dim light for an additional 20 feet.</p>"
         },
-        "level": 0,
-        "school": "transmutation",
+        "level": 2,
+        "school": "conjuration",
         "components": {
           "v": true,
           "s": true,
           "m": true,
           "ritual": false,
-          "concentration": false,
-          "material": "Two lodestones."
-        },
-        "activation": {
-          "type": "minute",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "touch"
-        },
-        "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "684e4388b77961b8",
-      "name": "Minor Illusion",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You create a sound or an image of an object within range that lasts for the duration. The illusion also ends if you dismiss it as an action or cast this spell again.</p><p>If you create a sound, its volume can range from a whisper to a scream. It can be your voice, someone else's voice, a lion's roar, a beating of drums, or any other sound you choose. The sound continues unabated throughout the duration, or you can make discrete sounds at different times before the spell ends.</p><p>If you create an image of an object--such as a chair, muddy footprints, or a small chest--it must be no larger than a 5-foot cube. The image can't create sound, light, smell, or any other sensory effect. Physical interaction with the image reveals it to be an illusion, because things can pass through it.</p><p>If a creature uses its action to examine the sound or image, the creature can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the illusion becomes faint to the creature.</p>"
-        },
-        "level": 0,
-        "school": "illusion",
-        "components": {
-          "v": false,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": false,
-          "material": "A bit of fleece."
+          "concentration": true,
+          "material": "A bit of tallow, a pinch of brimstone, and a dusting of powdered iron."
         },
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
           "units": "ft",
-          "value": "30"
+          "value": "60",
+          "override": false
         },
         "duration": {
           "value": "1",
           "units": "minute"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
         "source": {
           "book": "SRD 5.1",
@@ -1926,13 +1476,366 @@
             "height": "",
             "units": "ft"
           }
+        },
+        "identifier": "flaming-sphere",
+        "activities": {
+          "castflaming-sp": {
+            "_id": "castflaming-sp",
+            "type": "damage",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "60",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "54317bfa0603035c",
+      "_id": "42b4c1ee9c6b567d",
+      "name": "Hallucinatory Terrain",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.</p><p>The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain.</p>"
+        },
+        "level": 4,
+        "school": "illusion",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A stone, a twig, and a bit of green plant."
+        },
+        "activation": {
+          "type": "minute",
+          "value": 10,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "300",
+          "override": false
+        },
+        "duration": {
+          "value": "24",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "hallucinatory-terrain",
+        "activities": {
+          "casthallucinat": {
+            "_id": "casthallucinat",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "minute",
+              "value": 10,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "24",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "300",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "6bfb3ea65a24a708",
+      "name": "Magic Mouth",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>You plant a message to an object in the range of the spell. The message is verbalized when the trigger conditions are met. Choose an object that you see, and that is not worn or carried by another creature. Then say the message, which should not exceed 25 words but listening can take up to 10 minutes. Finally, establish the circumstances that trigger the spell to deliver your message.</p><p>When these conditions are satisfied, a magical mouth appears on the object and it articulates the message imitating your voice, the same tone used during implantation of the message. If the selected object has a mouth or something that approaches such as the mouth of a statue, the magic mouth come alive at this point, giving the illusion that the words come from the mouth of the object.</p><p>When you cast this spell, you may decide that the spell ends when the message is delivered or it can persist and repeat the message whenever circumstances occur.</p><p>The triggering circumstance can be as general or as detailed as you like, though it must be based on visual or audible conditions that occur within 30 feet of the object. For example, you could instruct the mouth to speak when any creature moves within 30 feet of the object or when a silver bell rings within 30 feet of it.</p>"
+        },
+        "level": 2,
+        "school": "illusion",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": true,
+          "concentration": false,
+          "material": "A honeycomb and jade dust of at least 10 inches, the spell consumes."
+        },
+        "activation": {
+          "type": "minute",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "30",
+          "override": false
+        },
+        "duration": {
+          "value": "",
+          "units": "spec"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "magic-mouth",
+        "activities": {
+          "castmagic-mout": {
+            "_id": "castmagic-mout",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "minute",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "spec",
+              "value": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "30",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "a16e85327f97b6ac",
       "name": "Poison Spray",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
@@ -1953,11 +1856,13 @@
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
           "units": "ft",
-          "value": "10"
+          "value": "10",
+          "override": false
         },
         "duration": {
           "value": "0",
@@ -1988,13 +1893,644 @@
             "height": "",
             "units": "ft"
           }
+        },
+        "identifier": "poison-spray",
+        "activities": {
+          "castpoison-spr": {
+            "_id": "castpoison-spr",
+            "type": "damage",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "value": "0",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "ec92c847a4ffd7a0",
+      "_id": "4c46296ebde438ed",
+      "name": "Prestidigitation",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>This spell is a minor magical trick that novice spellcasters use for practice. You create one of the following magical effects within 'range':</p><p>You create an instantaneous, harmless sensory effect, such as a shower of sparks, a puff of wind, faint musical notes, or an odd odor.</p><p>You instantaneously light or snuff out a candle, a torch, or a small campfire.</p><p>You instantaneously clean or soil an object no larger than 1 cubic foot.</p><p>You chill, warm, or flavor up to 1 cubic foot of nonliving material for 1 hour.</p><p>You make a color, a small mark, or a symbol appear on an object or a surface for 1 hour.</p><p>You create a nonmagical trinket or an illusory image that can fit in your hand and that lasts until the end of your next turn.</p><p>If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>"
+        },
+        "level": 0,
+        "school": "transmutation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": false,
+          "ritual": false,
+          "concentration": false,
+          "material": ""
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "10",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "known",
+          "prepared": false
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "prestidigitation",
+        "activities": {
+          "castprestidigi": {
+            "_id": "castprestidigi",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "10",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "8691656bbfdbd456",
+      "name": "Protection from Evil and Good",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.</p><p>The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect.</p>"
+        },
+        "level": 1,
+        "school": "abjuration",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "Holy water or powdered silver and iron, which the spell consumes."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "touch",
+          "value": "",
+          "override": false
+        },
+        "duration": {
+          "value": "10",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "protection-from-evil-and-good",
+        "activities": {
+          "castprotection": {
+            "_id": "castprotection",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "10",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "touch",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "348f7b909025b73e",
+      "name": "Resilient Sphere",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>A sphere of shimmering force encloses a creature or object of Large size or smaller within range. An unwilling creature must make a dexterity saving throw. On a failed save, the creature is enclosed for the duration.</p><p>Nothing--not physical objects, energy, or other spell effects--can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it.</p><p>The sphere is weightless and just large enough to contain the creature or object inside. An enclosed creature can use its action to push against the sphere's walls and thus roll the sphere at up to half the creature's speed. Similarly, the globe can be picked up and moved by other creatures.</p><p>A disintegrate spell targeting the globe destroys it without harming anything inside it.</p>"
+        },
+        "level": 4,
+        "school": "evocation",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": true,
+          "material": "A hemispherical piece of clear crystal and a matching hemispherical piece of gum arabic."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "30",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "resilient-sphere",
+        "activities": {
+          "castresilient-": {
+            "_id": "castresilient-",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": true,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "30",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "91e6f8d1435ef911",
+      "name": "See Invisibility",
+      "type": "spell",
+      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
+      "system": {
+        "description": {
+          "value": "<p>For the duration of the spell, you see invisible creatures and objects as if they were visible, and you can see through Ethereal. The ethereal objects and creatures appear ghostly translucent.</p>"
+        },
+        "level": 2,
+        "school": "divination",
+        "components": {
+          "v": true,
+          "s": true,
+          "m": true,
+          "ritual": false,
+          "concentration": false,
+          "material": "A dash of talc and a small amount of silver powder."
+        },
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "self",
+          "value": "",
+          "override": false
+        },
+        "duration": {
+          "value": "1",
+          "units": "hour"
+        },
+        "preparation": {
+          "mode": "prepared",
+          "prepared": true
+        },
+        "source": {
+          "book": "SRD 5.1",
+          "page": "",
+          "custom": ""
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          }
+        },
+        "identifier": "see-invisibility",
+        "activities": {
+          "castsee-invisi": {
+            "_id": "castsee-invisi",
+            "type": "utility",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "hour",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "self",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "d11ff7b7532b7a72",
       "name": "Shocking Grasp",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
@@ -2015,10 +2551,13 @@
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
-          "units": "touch"
+          "units": "touch",
+          "value": "",
+          "override": false
         },
         "duration": {
           "value": "0",
@@ -2049,66 +2588,80 @@
             "height": "",
             "units": "ft"
           }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "0481dd384ad4188a",
-      "name": "Stoneskin",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>This spell turns the flesh of a willing creature you touch as hard as stone. Until the spell ends, the target has resistance to nonmagical bludgeoning, piercing, and slashing damage.</p>"
         },
-        "level": 4,
-        "school": "abjuration",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": true,
-          "material": "Diamond dust worth 100 gp, which the spell consumes."
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "touch"
-        },
-        "duration": {
-          "value": "1",
-          "units": "hour"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
+        "identifier": "shocking-grasp",
+        "activities": {
+          "castshocking-g": {
+            "_id": "castshocking-g",
+            "type": "attack",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "inst",
+              "value": "0",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "",
+              "units": "touch",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
           }
         }
       },
@@ -2116,225 +2669,42 @@
       "flags": {}
     },
     {
-      "_id": "3a1008f650875252",
-      "name": "Sunburst",
+      "_id": "a2a8dddb71ce8975",
+      "name": "Sleep",
       "type": "spell",
       "img": "icons/magic/arcane/bolt-spiral-blue.webp",
       "system": {
         "description": {
-          "value": "<p>Brilliant sunlight flashes in a 60-foot radius centered on a point you choose within range. Each creature in that light must make a constitution saving throw. On a failed save, a creature takes 12d6 radiant damage and is blinded for 1 minute. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.</p><p>A creature blinded by this spell makes another constitution saving throw at the end of each of its turns. On a successful save, it is no longer blinded.</p><p>This spell dispels any darkness in its area that was created by a spell.</p>"
+          "value": "<p>This spell sends creatures into a magical slumber. Roll 5d8; the total is how many hit points of creatures this spell can affect. Creatures within 20 feet of a point you choose within range are affected in ascending order of their current hit points (ignoring unconscious creatures).</p><p>Starting with the creature that has the lowest current hit points, each creature affected by this spell falls unconscious until the spell ends, the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake. Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points. A creature's hit points must be equal to or less than the remaining total for that creature to be affected.</p><p>Undead and creatures immune to being charmed aren't affected by this spell.</p>"
         },
-        "level": 8,
-        "school": "evocation",
-        "components": {
-          "v": true,
-          "s": true,
-          "m": true,
-          "ritual": false,
-          "concentration": false,
-          "material": "Fire and a piece of sunstone."
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "150"
-        },
-        "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "47f3114d090f0cad",
-      "name": "Teleport",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>This spell instantly transports you and up to eight willing creatures of your choice that you can see within range, or a single object that you can see within range, to a destination you select. If you target an object, it must be able to fit entirely inside a 10-foot cube, and it can't be held or carried by an unwilling creature.</p><p>The destination you choose must be known to you, and it must be on the same plane of existence as you. Your familiarity with the destination determines whether you arrive there successfully. The GM rolls d100 and consults the table.</p><p>| Familiarity | Mishap | Similar Area | Off Target | On Target |</p><p>|---|---|---|---|---|</p><p>| Permanent circle | -- | -- | -- | 01-100 |</p><p>| Associated object | -- | -- | -- | 01-100 |</p><p>| Very familiar | 01-05 | 06-13 | 14-24 | 25-100 |</p><p>| Seen casually | 01-33 | 34-43 | 44-53 | 54-100 |</p><p>| Viewed once | 01-43 | 44-53 | 54-73 | 74-100 |</p><p>| Description | 01-43 | 44-53 | 54-73 | 74-100 |</p><p>| False destination | 01-50 | 51-100 | -- | -- |</p><p>***Familiarity.*** \"Permanent circle\" means a permanent teleportation circle whose sigil sequence you know.</p><p>\"Associated object\" means that you possess an object taken from the desired destination within the last six months, such as a book from a wizard's library, bed linen from a royal suite, or a chunk of marble from a lich's secret tomb.</p><p>\"Very familiar\" is a place you have been very often, a place you have carefully studied, or a place you can see when you cast the spell.</p><p>\"Seen casually\" is someplace you have seen more than once but with which you aren't very familiar.</p><p>\"Viewed once\" is a place you have seen once, possibly using magic.</p><p>\"Description\" is a place whose location and appearance you know through someone else's description, perhaps from a map.</p><p>\"False destination\" is a place that doesn't exist. Perhaps you tried to scry an enemy's sanctum but instead viewed an illusion, or you are attempting to teleport to a familiar location that no longer exists.</p><p>***On Target.*** You and your group (or the target object) appear where you want to.</p><p>***Off Target.*** You and your group (or the target object) appear a random distance away from the destination in a random direction. Distance off target is 1d10 x 1d10 percent of the distance that was to be traveled. For example, if you tried to travel 120 miles, landed off target, and rolled a 5 and 3 on the two d10s, then you would be off target by 15 percent, or 18 miles. The GM determines the direction off target randomly by rolling a d8 and designating 1 as north, 2 as northeast, 3 as east, and so on around the points of the compass.  If you were teleporting to a coastal city and wound up 18 miles out at sea, you could be in trouble.</p><p>***Similar Area.*** You and your group (or the target object) wind up in a different area that's visually or thematically similar to the target area. If you are heading for your home laboratory, for example, you might wind up in another wizard's laboratory or in an alchemical supply shop that has many of the same tools and implements as your laboratory. Generally, you appear in the closest similar place, but since the spell has no range limit, you could conceivably wind up anywhere on the plane.</p><p>***Mishap.*** The spell's unpredictable magic results in a difficult journey. Each teleporting creature (or the target object) takes 3d10 force damage, and the GM rerolls on the table to see where you wind up (multiple mishaps can occur, dealing damage each time).</p>"
-        },
-        "level": 7,
-        "school": "conjuration",
-        "components": {
-          "v": true,
-          "s": false,
-          "m": false,
-          "ritual": false,
-          "concentration": false,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "ft",
-          "value": "10"
-        },
-        "duration": {
-          "value": "0",
-          "units": "inst"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "6c19560156281e5b",
-      "name": "True Seeing",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>This spell gives the willing creature you touch the ability to see things as they actually are. For the duration, the creature has truesight, notices secret doors hidden by magic, and can see into the Ethereal Plane, all out to a range of 120 feet.</p>"
-        },
-        "level": 6,
-        "school": "divination",
+        "level": 1,
+        "school": "enchantment",
         "components": {
           "v": true,
           "s": true,
           "m": true,
           "ritual": false,
           "concentration": false,
-          "material": "An ointment for the eyes that costs 25gp; is made from mushroom powder, saffron, and fat; and is consumed by the spell."
+          "material": "A pinch of fine sand, rose petals, or a cricket."
         },
         "activation": {
           "type": "action",
           "value": 1,
-          "condition": ""
-        },
-        "range": {
-          "units": "touch"
-        },
-        "duration": {
-          "value": "1",
-          "units": "hour"
-        },
-        "preparation": {
-          "mode": "known",
-          "prepared": false
-        },
-        "source": {
-          "book": "SRD 5.1",
-          "page": "",
-          "custom": ""
-        },
-        "target": {
-          "affects": {
-            "count": "",
-            "type": "",
-            "choice": false,
-            "special": ""
-          },
-          "template": {
-            "count": "",
-            "contiguous": false,
-            "type": "",
-            "size": "",
-            "width": "",
-            "height": "",
-            "units": "ft"
-          }
-        }
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "ecf39997a83904c8",
-      "name": "True Strike",
-      "type": "spell",
-      "img": "icons/magic/arcane/bolt-spiral-blue.webp",
-      "system": {
-        "description": {
-          "value": "<p>You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.</p>"
-        },
-        "level": 0,
-        "school": "divination",
-        "components": {
-          "v": false,
-          "s": true,
-          "m": false,
-          "ritual": false,
-          "concentration": true,
-          "material": ""
-        },
-        "activation": {
-          "type": "action",
-          "value": 1,
-          "condition": ""
+          "condition": "",
+          "override": false
         },
         "range": {
           "units": "ft",
-          "value": "30"
+          "value": "90",
+          "override": false
         },
         "duration": {
           "value": "1",
-          "units": "round"
+          "units": "minute"
         },
         "preparation": {
-          "mode": "known",
-          "prepared": false
+          "mode": "prepared",
+          "prepared": true
         },
         "source": {
           "book": "SRD 5.1",
@@ -2357,22 +2727,159 @@
             "height": "",
             "units": "ft"
           }
+        },
+        "identifier": "sleep",
+        "activities": {
+          "castsleep": {
+            "_id": "castsleep",
+            "type": "damage",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "spellSlot": true,
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              }
+            },
+            "description": {},
+            "duration": {
+              "units": "minute",
+              "value": "1",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "ignoreTraits": {
+              "idi": false,
+              "idr": false,
+              "idv": false,
+              "ida": false,
+              "idm": false
+            },
+            "isOverTimeFlag": false,
+            "macroData": {
+              "name": "",
+              "command": ""
+            },
+            "midiProperties": {},
+            "otherActivityAsParentType": true,
+            "otherActivityId": "none",
+            "range": {
+              "value": "90",
+              "units": "ft",
+              "override": false
+            },
+            "roll": {
+              "prompt": false,
+              "visible": false
+            },
+            "target": {
+              "prompt": true,
+              "override": false,
+              "affects": {
+                "choice": false
+              },
+              "template": {
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              }
+            },
+            "useConditionText": "",
+            "useConditionReason": "",
+            "uses": {
+              "spent": 0,
+              "recovery": []
+            }
+          }
         }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "5015aaa420a9b477",
+      "_id": "2cb07b04309a8bbc",
+      "name": "Quarterstaff +1",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "quarterstaff",
+        "quantity": 1,
+        "weight": {
+          "value": 4,
+          "units": "lb"
+        },
+        "price": {
+          "value": 2,
+          "denomination": "sp"
+        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
+        "container": null,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": ""
+        },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d6",
+              "bludgeoning"
+            ]
+          ],
+          "versatile": "1d8"
+        },
+        "properties": [
+          "versatile",
+          "monk",
+          "mgc"
+        ],
+        "proficient": null,
+        "ability": "str",
+        "attackType": "mwak",
+        "type": {
+          "value": "simpleM",
+          "baseItem": "quarterstaff"
+        },
+        "bonuses": {
+          "attack": "1",
+          "damage": "1"
+        }
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "c11064f8523350ce",
       "name": "Dagger",
-      "type": "loot",
-      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "type": "weapon",
+      "img": "systems/dnd5e/icons/svg/items/sword.svg",
       "system": {
         "description": {
           "value": ""
         },
         "identifier": "dagger",
-        "quantity": 2,
+        "quantity": 1,
         "weight": {
           "value": 1,
           "units": "lb"
@@ -2381,103 +2888,63 @@
           "value": 2,
           "denomination": "gp"
         },
-        "type": {
-          "value": "Weapon",
-          "subtype": ""
-        },
-        "identified": true,
-        "unidentified": {
-          "description": ""
-        },
+        "equipped": false,
+        "attunement": "none",
+        "attuned": false,
         "container": null,
-        "properties": []
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "6964fc572734e14d",
-      "name": "Crossbow, light",
-      "type": "loot",
-      "img": "systems/dnd5e/icons/svg/items/loot.svg",
-      "system": {
-        "description": {
-          "value": ""
-        },
-        "identifier": "crossbow-light",
-        "quantity": 1,
-        "weight": {
-          "value": 5,
-          "units": "lb"
-        },
-        "price": {
-          "value": 25,
-          "denomination": "gp"
-        },
-        "type": {
-          "value": "Weapon",
-          "subtype": ""
-        },
-        "identified": true,
-        "unidentified": {
-          "description": ""
-        },
-        "container": null,
-        "properties": []
-      },
-      "effects": [],
-      "flags": {}
-    },
-    {
-      "_id": "112bc821e8792ab9",
-      "name": "Crossbow bolt",
-      "type": "loot",
-      "img": "systems/dnd5e/icons/svg/items/loot.svg",
-      "system": {
-        "description": {
-          "value": ""
-        },
-        "identifier": "crossbow-bolt",
-        "quantity": 2,
-        "weight": {
-          "value": 1.5,
-          "units": "lb"
-        },
-        "price": {
+        "activation": {
+          "type": "action",
           "value": 1,
-          "denomination": "gp"
+          "condition": ""
         },
+        "range": {
+          "value": "5",
+          "long": "",
+          "units": "ft"
+        },
+        "damage": {
+          "parts": [
+            [
+              "1d4",
+              "piercing"
+            ]
+          ],
+          "versatile": ""
+        },
+        "properties": [
+          "finesse",
+          "light",
+          "thrown",
+          "monk"
+        ],
+        "proficient": null,
+        "ability": "dex",
+        "attackType": "mwak",
         "type": {
-          "value": "Adventuring Gear",
-          "subtype": ""
-        },
-        "identified": true,
-        "unidentified": {
-          "description": ""
-        },
-        "container": null,
-        "properties": []
+          "value": "simpleM",
+          "baseItem": "dagger"
+        }
       },
       "effects": [],
       "flags": {}
     },
     {
-      "_id": "0207d83f8f58c170",
-      "name": "Explorer's Pack",
+      "_id": "3e29047b65602e58",
+      "name": "Scholar's Pack",
       "type": "loot",
       "img": "systems/dnd5e/icons/svg/items/loot.svg",
       "system": {
         "description": {
           "value": ""
         },
-        "identifier": "explorers-pack",
+        "identifier": "scholars-pack",
         "quantity": 1,
         "weight": {
           "value": 0,
           "units": ""
         },
         "price": {
-          "value": 10,
+          "value": 40,
           "denomination": "gp"
         },
         "type": {
@@ -2495,7 +2962,40 @@
       "flags": {}
     },
     {
-      "_id": "7887bd04e6d75cc4",
+      "_id": "ea1aa2a8ea68e94c",
+      "name": "Spellbook",
+      "type": "loot",
+      "img": "systems/dnd5e/icons/svg/items/loot.svg",
+      "system": {
+        "description": {
+          "value": ""
+        },
+        "identifier": "spellbook",
+        "quantity": 1,
+        "weight": {
+          "value": 3,
+          "units": "lb"
+        },
+        "price": {
+          "value": 50,
+          "denomination": "gp"
+        },
+        "type": {
+          "value": "Adventuring Gear",
+          "subtype": ""
+        },
+        "identified": true,
+        "unidentified": {
+          "description": ""
+        },
+        "container": null,
+        "properties": []
+      },
+      "effects": [],
+      "flags": {}
+    },
+    {
+      "_id": "ced664a928200184",
       "name": "Crystal",
       "type": "loot",
       "img": "systems/dnd5e/icons/svg/items/loot.svg",
@@ -2543,7 +3043,7 @@
     "default": 0
   },
   "prototypeToken": {
-    "name": "Tiefling Sorcerer 15",
+    "name": "Seraphina Tealeaf",
     "actorLink": true,
     "texture": {
       "src": "icons/svg/mystery-man.svg",
@@ -2593,8 +3093,8 @@
     "systemId": "dnd5e",
     "systemVersion": "5.1.9",
     "coreVersion": "11",
-    "createdTime": 1758409419446,
-    "modifiedTime": 1758409419446,
+    "createdTime": 1758416749876,
+    "modifiedTime": 1758416749876,
     "lastModifiedBy": null
   }
 }
