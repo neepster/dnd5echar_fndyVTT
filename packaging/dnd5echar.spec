@@ -1,41 +1,37 @@
-# PyInstaller spec for the D&D 5e Character Builder
-from PyInstaller.utils.hooks import collect_submodules
-from PyInstaller.utils.hooks import collect_data_files
-from PyInstaller.building.build_main import Analysis, PYZ, EXE, COLLECT
-from PyInstaller.building.datastruct import Tree
+# -*- mode: python ; coding: utf-8 -*-
+from pathlib import Path
 
-block_cipher = None
+from PyInstaller.utils.hooks import collect_submodules
+
+BASE_DIR = Path.cwd().resolve()
+SCRIPT_PATH = BASE_DIR / 'main.py'
+DATA_DIR = BASE_DIR / 'data' / '5e-database'
 
 hiddenimports = collect_submodules('character_builder')
 
-analysis = Analysis(
-    ['main.py'],
-    pathex=['.'],
+a = Analysis(
+    [str(SCRIPT_PATH)],
+    pathex=[str(BASE_DIR)],
     binaries=[],
     datas=[
-        Tree('data/5e-database', dest='data/5e-database'),
-        ('README.md', '.'),
+        (str(DATA_DIR), 'data/5e-database'),
+        (str(BASE_DIR / 'README.md'), 'README.md'),
     ],
     hiddenimports=hiddenimports,
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
     excludes=[],
-    win_no_prefer_redirects=False,
-    win_private_assemblies=False,
-    cipher=block_cipher,
     noarchive=False,
+    optimize=0,
 )
-
-pyz = PYZ(analysis.pure, analysis.zipped_data, cipher=block_cipher)
+pyz = PYZ(a.pure)
 
 exe = EXE(
     pyz,
-    analysis.scripts,
-    analysis.binaries,
-    analysis.zipfiles,
-    analysis.datas,
+    a.scripts,
     [],
+    exclude_binaries=True,
     name='dnd5e-character-builder',
     debug=False,
     bootloader_ignore_signals=False,
@@ -43,16 +39,17 @@ exe = EXE(
     upx=True,
     console=False,
     disable_windowed_traceback=False,
+    argv_emulation=False,
     target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
 )
-
 coll = COLLECT(
     exe,
-    analysis.binaries,
-    analysis.zipfiles,
-    analysis.datas,
+    a.binaries,
+    a.datas,
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='dnd5e-character-builder'
+    name='dnd5e-character-builder',
 )
