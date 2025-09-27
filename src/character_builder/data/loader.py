@@ -4,6 +4,7 @@ import json
 from dataclasses import dataclass
 from functools import lru_cache
 from pathlib import Path
+import sys
 from typing import Dict, Iterable, List, Optional
 
 __all__ = [
@@ -143,6 +144,5 @@ def get_repository(base_path: Optional[Path] = None) -> DataRepository:
 
 
 def _default_dataset_path() -> Path:
-    current = Path(__file__).resolve()
-    project_root = current.parents[3]
-    return project_root / "data" / "5e-database" / "src" / "2014"
+    base = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[3]))
+    return base / "data" / "5e-database" / "src" / "2014"

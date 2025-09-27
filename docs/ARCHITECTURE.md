@@ -12,6 +12,7 @@
 | Data Access (`character_builder.data.loader`) | Load and normalize SRD JSON resources (races, classes, features, spells, equipment, etc.) |
 | Domain (`character_builder.models`, `character_builder.rules`) | Immutable-ish dataclasses that represent SRD concepts, plus helper rules for derived statistics |
 | Narrative (`character_builder.flavor`) | Synthesizes biographies, hooks, and descriptive text for generated NPCs |
+| Packaging (`packaging/dnd5echar.spec`) | PyInstaller configuration that bundles the app plus SRD data for desktop distribution |
 | Application State (`character_builder.state`) | Mutable character draft with reactive hooks for the UI |
 | UI (`character_builder.ui`) | PySide6 widgets composing the character builder workflow |
 | Export (`character_builder.export.statblock`) | Render the character state into a 5e-style NPC statblock text block |

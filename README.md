@@ -36,8 +36,15 @@ python main.py
   - `data/` handles SRD loading and normalization
   - `state.py` exposes a Qt-friendly view-model
   - `ui/` contains PySide6 widgets
-  - `export/` houses exporters (e.g., `statblock.py` for NPC statblocks)
+- `export/` houses exporters (e.g., `statblock.py` for NPC statblocks)
 - Launch helper: `python -m character_builder.ui.main_window`
+
+## Packaging
+- Install dependencies: `pip install -r requirements.txt`
+- Install PyInstaller: `pip install pyinstaller`
+- Build (Windows PowerShell/cmd): `pyinstaller packaging\dnd5echar.spec --clean --noconfirm`
+- Build (macOS/Linux): `pyinstaller packaging/dnd5echar.spec --clean --noconfirm`
+- Bundles land in `dist/dnd5e-character-builder/`; ship the entire folder for the SRD dataset.
 
 ## Testing quick checks
 - `PYTHONPATH=src python -m compileall src`

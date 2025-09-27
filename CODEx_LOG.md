@@ -9,6 +9,7 @@
 - NPC statblock export (`export/statblock.py`) generates 5e-formatted text blocks that summarize abilities, features, weapons, spellcasting, class details, and append descriptive bios for the 5e Statblock Importer (with quick clipboard copy support)
 - Narrative generator (`flavor.py`) crafts short biographies, physical descriptors, and hooks whenever the randomizer assembles a new NPC
 - Dark-themed UI refresh with header banner, iconography, and polished controls
+- PyInstaller spec + packaging docs provided (`packaging/dnd5echar.spec`, `packaging/README.md`)
 - Requirements + README authored
 
 ## Next Steps
