@@ -13,7 +13,7 @@ from .data import SRDData
 from .data.srd import ClassData, RaceData, SubraceData
 from .models import CharacterState
 from . import rules
-from .flavor import generate_biography
+from .flavor import generate_biography, get_custom_name
 
 
 @dataclass(slots=True)
@@ -1137,6 +1137,11 @@ def _split_magic_index(index: str) -> Tuple[str, int]:
 def _generate_character_name(race: Optional[RaceData], gender: Optional[str]) -> str:
     gender = (gender or random.choice(["male", "female"])).lower()
     race_key = race.index if race else "human"
+
+    custom = get_custom_name(race_key if race else None, gender)
+    if custom:
+        return custom
+
     if race_key not in RACE_NAME_TABLES and race:
         parts = race.index.split("-")
         for candidate in (race.index, parts[0], parts[-1]):

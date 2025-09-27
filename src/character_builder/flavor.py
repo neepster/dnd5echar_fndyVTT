@@ -1,10 +1,27 @@
 from __future__ import annotations
 
+import csv
+import math
 import random
-from typing import Dict, Optional
+import re
+import sys
+from collections import defaultdict
+from pathlib import Path
+from typing import Dict, Iterable, List, Optional, Tuple
 
 from .models import CharacterState
 from .data import SRDData
+
+
+def _resource_root() -> Path:
+    return Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parents[2]))
+
+
+CUSTOM_NAMES_PATH = _resource_root() / "data" / "custom" / "names.csv"
+CUSTOM_HOMETOWNS_PATH = _resource_root() / "data" / "custom" / "hometowns.csv"
+
+_CUSTOM_NAMES_CACHE: Optional[Dict[str, Dict[str, List[str]]]] = None
+_CUSTOM_HOMETOWNS_CACHE: Optional[Dict[str, List[str]]] = None
 
 
 LEVEL_DESCRIPTORS = {
@@ -110,7 +127,7 @@ def generate_biography(state: CharacterState, srd: SRDData) -> str:
     }
 
     level_descriptor = _level_descriptor(state.level)
-    origin = random.choice(ORIGINS)
+    origin = _custom_hometown(race) or random.choice(ORIGINS)
     class_label = _class_label(class_data, subclass)
     article = _indefinite_article(level_descriptor)
     first_sentence = (
@@ -130,6 +147,83 @@ def generate_biography(state: CharacterState, srd: SRDData) -> str:
     if physical_sentence:
         sentences.append(physical_sentence)
     return " ".join(sentences)
+
+
+def get_custom_name(race_index: Optional[str], gender: Optional[str]) -> Optional[str]:
+    data = _load_custom_names()
+    if not data:
+        return None
+    race_candidates = _race_candidates(race_index)
+    gender_candidates = [g for g in [gender.lower() if gender else None, 'any'] if g]
+
+    for race_key in race_candidates:
+        if race_key not in data:
+            continue
+        options: List[str] = []
+        entries = data[race_key]
+        for gender_key in gender_candidates:
+            options.extend(entries.get(gender_key, []))
+        if options:
+            return random.choice(options)
+    return None
+
+
+def _load_custom_names() -> Dict[str, Dict[str, List[str]]]:
+    global _CUSTOM_NAMES_CACHE
+    if _CUSTOM_NAMES_CACHE is not None:
+        return _CUSTOM_NAMES_CACHE
+    mapping: Dict[str, Dict[str, List[str]]] = defaultdict(lambda: defaultdict(list))
+    if CUSTOM_NAMES_PATH.exists():
+        with CUSTOM_NAMES_PATH.open('r', encoding='utf-8') as handle:
+            reader = csv.DictReader(handle)
+            for row in reader:
+                race = (row.get('race') or 'any').strip().lower()
+                gender = (row.get('gender') or 'any').strip().lower()
+                name = (row.get('name') or '').strip()
+                if name:
+                    mapping[race][gender].append(name)
+    _CUSTOM_NAMES_CACHE = mapping
+    return mapping
+
+
+def _custom_hometown(race) -> Optional[str]:
+    data = _load_custom_hometowns()
+    if not data:
+        return None
+    for race_key in _race_candidates(race.index if race else None):
+        options = data.get(race_key)
+        if options:
+            return random.choice(options)
+    return None
+
+
+def _load_custom_hometowns() -> Dict[str, List[str]]:
+    global _CUSTOM_HOMETOWNS_CACHE
+    if _CUSTOM_HOMETOWNS_CACHE is not None:
+        return _CUSTOM_HOMETOWNS_CACHE
+    mapping: Dict[str, List[str]] = defaultdict(list)
+    if CUSTOM_HOMETOWNS_PATH.exists():
+        with CUSTOM_HOMETOWNS_PATH.open('r', encoding='utf-8') as handle:
+            reader = csv.DictReader(handle)
+            for row in reader:
+                race = (row.get('race') or 'any').strip().lower()
+                place = (row.get('place') or '').strip()
+                if place:
+                    mapping[race].append(place)
+    _CUSTOM_HOMETOWNS_CACHE = mapping
+    return mapping
+
+
+def _race_candidates(race_index: Optional[str]) -> List[str]:
+    if not race_index:
+        return ['any']
+    key = race_index.lower()
+    parts = key.split('-')
+    candidates = [key]
+    if len(parts) > 1:
+        candidates.extend(parts)
+    candidates.append('any')
+    return candidates
 
 
 def _level_descriptor(level: int) -> str:
@@ -205,7 +299,6 @@ def _physical_sentence(race, context: Dict[str, str]) -> str:
     weight = profile_weight(profile)
     age = profile_age(profile)
     height_text = _format_height(height_inches)
-    possessive = context["possessive"]
     subject = context["subject"]
     return f"Standing {height_text} and weighing about {weight} pounds, {subject} appears to be roughly {age} years old."
 
@@ -216,7 +309,7 @@ def _profile_for_race(race) -> Optional[dict]:
     index = race.index.lower()
     if index in PHYSICAL_PROFILES:
         return PHYSICAL_PROFILES[index]
-    parts = index.split("-")
+    parts = index.split('-')
     for part in (parts[0], parts[-1]):
         profile = PHYSICAL_PROFILES.get(part)
         if profile:

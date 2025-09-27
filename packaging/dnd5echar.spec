@@ -18,6 +18,7 @@ a = Analysis(
     binaries=[],
     datas=[
         (str(DATA_DIR), 'data/5e-database'),
+        (str(BASE_DIR / 'data' / 'custom'), 'data/custom'),
         (str(BASE_DIR / 'README.md'), 'README.md'),
     ],
     hiddenimports=hiddenimports,

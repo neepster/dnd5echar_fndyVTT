@@ -27,6 +27,7 @@ python main.py
   - Summary dashboard with computed ability mods, saves, skills, spell slots, and feature list
 - NPC statblock export (`File > Export NPC Statblock…`) that saves (or instantly copies) a ready-to-import text block (including class, trait, and biography summaries) compatible with the Foundry VTT "5e Statblock Importer" module.
 - Sleek, dark-themed Qt interface with iconography and polished typography for faster workflows
+- Optional custom name and hometown CSVs let you tailor race/gender-specific identities without touching code
 
 ## Data Sources
 - SRD JSON sourced from [5e-bits/5e-database](https://github.com/5e-bits/5e-database) (CC-BY 4.0)
@@ -45,6 +46,11 @@ python main.py
 - Build (Windows PowerShell/cmd): `pyinstaller packaging\dnd5echar.spec --clean --noconfirm`
 - Build (macOS/Linux): `pyinstaller packaging/dnd5echar.spec --clean --noconfirm`
 - Bundles land in `dist/dnd5e-character-builder/`; ship the entire folder for the SRD dataset.
+
+## Custom Data Files
+- `data/custom/names.csv` — format: `race,gender,name`. Provide full names for specific races and genders (use `any` for wildcards). Example entries are included; edit or replace as desired.
+- `data/custom/hometowns.csv` — format: `race,place`. List optional hometowns for each race; `any` acts as a fallback bucket.
+- When these files exist and contain data, the randomizer and biography generator draw from them; otherwise the built-in name tables and origin list are used.
 
 ## Testing quick checks
 - `PYTHONPATH=src python -m compileall src`

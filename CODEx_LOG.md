@@ -7,7 +7,7 @@
 - View-model (`state.py`) with reactive signals, randomization locks, and a rich random-character generator (respects user selections, adds ability scores, race-aware names, gender, starter gear, level-scaled currency, and now auto-magical weapons)
 - Qt UI (`ui/main_window.py`) implements the full workflow (basics, abilities, skills, spells, summary/export) with Random + Clear controls, gender picker, and summary sections for gear/finances
 - NPC statblock export (`export/statblock.py`) generates 5e-formatted text blocks that summarize abilities, features, weapons, spellcasting, class details, and append descriptive bios for the 5e Statblock Importer (with quick clipboard copy support)
-- Narrative generator (`flavor.py`) crafts short biographies, physical descriptors, and hooks whenever the randomizer assembles a new NPC
+- Narrative generator (`flavor.py`) crafts short biographies, physical descriptors, and hooks whenever the randomizer assembles a new NPC, pulling from optional custom name/hometown CSVs when provided
 - Dark-themed UI refresh with header banner, iconography, and polished controls
 - PyInstaller spec + packaging docs provided (`packaging/dnd5echar.spec`, `packaging/README.md`)
 - Requirements + README authored
