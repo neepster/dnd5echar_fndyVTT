@@ -1,17 +1,20 @@
 # -*- mode: python ; coding: utf-8 -*-
 from pathlib import Path
 
+import sys
+
 from PyInstaller.utils.hooks import collect_submodules
 
 BASE_DIR = Path.cwd().resolve()
 SCRIPT_PATH = BASE_DIR / 'main.py'
 DATA_DIR = BASE_DIR / 'data' / '5e-database'
 
+sys.path.insert(0, str(BASE_DIR / 'src'))
 hiddenimports = collect_submodules('character_builder')
 
 a = Analysis(
     [str(SCRIPT_PATH)],
-    pathex=[str(BASE_DIR)],
+    pathex=[str(BASE_DIR / 'src'), str(BASE_DIR)],
     binaries=[],
     datas=[
         (str(DATA_DIR), 'data/5e-database'),
