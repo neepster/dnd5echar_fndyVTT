@@ -19,12 +19,14 @@ python main.py
 - Slick PySide6 desktop UI with:
   - Basics tab for level, race/subrace, class/subclass, background, alignment
   - One-click random character generator that honors any fields you've already chosen while filling in the rest with synergistic picks, including starter gear, magical weapon/armor upgrades, race-aware names, and pocket change scaled to level
+  - Automatic biography generator that scripts quick backstories, physical descriptors, and hooks for newly created NPCs
   - Clear button to wipe the sheet instantly when you want a completely fresh roll
   - Ability editor with automatic racial bonuses and manual ASI support
   - Skill/proficiency management with class/background/race choices and expertise toggles
   - Spell management grouped by level with known/prepared tracking
   - Summary dashboard with computed ability mods, saves, skills, spell slots, and feature list
-- Foundry VTT export (`File > Export to Foundry VTT…`) producing dnd5e-compatible actor JSON including abilities, proficiencies, features, and spells.
+- NPC statblock export (`File > Export NPC Statblock…`) that saves (or instantly copies) a ready-to-import text block (including class, trait, and biography summaries) compatible with the Foundry VTT "5e Statblock Importer" module.
+- Sleek, dark-themed Qt interface with iconography and polished typography for faster workflows
 
 ## Data Sources
 - SRD JSON sourced from [5e-bits/5e-database](https://github.com/5e-bits/5e-database) (CC-BY 4.0)
@@ -34,9 +36,9 @@ python main.py
   - `data/` handles SRD loading and normalization
   - `state.py` exposes a Qt-friendly view-model
   - `ui/` contains PySide6 widgets
-  - `export/foundry.py` writes Foundry actors
+  - `export/` houses exporters (e.g., `statblock.py` for NPC statblocks)
 - Launch helper: `python -m character_builder.ui.main_window`
 
 ## Testing quick checks
 - `PYTHONPATH=src python -m compileall src`
-- Manual smoke test: launch the app, fill in selections, export to Foundry JSON, and import into Foundry VTT (dnd5e system >= v11)
+- Manual smoke test: launch the app, fill in selections, export an NPC statblock, and import it with the 5e Statblock Importer module inside Foundry VTT

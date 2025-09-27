@@ -3,7 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Set, Tuple
 
-from PySide6 import QtCore, QtWidgets
+from PySide6 import QtCore, QtGui, QtWidgets
 
 from ..constants import ABILITY_NAMES, ABILITY_SCORES, SKILL_NAMES, SKILL_TO_ABILITY
 from ..data import SRDData
@@ -144,13 +144,44 @@ class MainWindow(QtWidgets.QMainWindow):
 
         self._build_ui()
         self._connect_signals()
+        self._apply_theme()
         self.refresh_all()
 
     # ------------------------------------------------------------------
     def _build_ui(self) -> None:
         container = QtWidgets.QWidget(self)
         layout = QtWidgets.QVBoxLayout(container)
+        layout.setContentsMargins(24, 24, 24, 24)
+        layout.setSpacing(16)
+
+        header = QtWidgets.QFrame()
+        header.setObjectName("headerFrame")
+        header_layout = QtWidgets.QHBoxLayout(header)
+        header_layout.setContentsMargins(18, 12, 18, 12)
+        header_layout.setSpacing(12)
+
+        self.title_label = QtWidgets.QLabel("D&D 5e Character Builder")
+        title_font = QtGui.QFont()
+        title_font.setPointSize(18)
+        title_font.setBold(True)
+        self.title_label.setFont(title_font)
+
+        self.subtitle_label = QtWidgets.QLabel("Craft rich NPCs in seconds")
+        subtitle_font = QtGui.QFont()
+        subtitle_font.setPointSize(11)
+        self.subtitle_label.setFont(subtitle_font)
+        self.subtitle_label.setObjectName("subtitleLabel")
+
+        header_layout.addWidget(self.title_label)
+        header_layout.addStretch(1)
+        header_layout.addWidget(self.subtitle_label)
+
+        layout.addWidget(header)
+
         self.tabs = QtWidgets.QTabWidget(container)
+        self.tabs.setTabPosition(QtWidgets.QTabWidget.North)
+        self.tabs.setDocumentMode(True)
+        self.tabs.setMovable(False)
         layout.addWidget(self.tabs)
         self.setCentralWidget(container)
 
@@ -167,8 +198,10 @@ class MainWindow(QtWidgets.QMainWindow):
         form.setLabelAlignment(QtCore.Qt.AlignRight)
 
         buttons_layout = QtWidgets.QHBoxLayout()
-        self.randomize_button = QtWidgets.QPushButton("Random Character")
-        self.clear_button = QtWidgets.QPushButton("Clear")
+        self.randomize_button = QtWidgets.QPushButton(" Random Character")
+        self.randomize_button.setIcon(self.style().standardIcon(QtWidgets.QStyle.SP_BrowserReload))
+        self.clear_button = QtWidgets.QPushButton(" Clear")
+        self.clear_button.setIcon(self.style().standardIcon(QtWidgets.QStyle.SP_DialogResetButton))
         buttons_layout.addWidget(self.randomize_button)
         buttons_layout.addWidget(self.clear_button)
         buttons_layout.addStretch(1)
@@ -363,8 +396,15 @@ class MainWindow(QtWidgets.QMainWindow):
         layout.addWidget(self.summary_browser)
 
         export_layout = QtWidgets.QHBoxLayout()
+        self.quit_button = QtWidgets.QPushButton(" Quit")
+        self.quit_button.setIcon(self.style().standardIcon(QtWidgets.QStyle.SP_DialogCloseButton))
+        export_layout.addWidget(self.quit_button)
         export_layout.addStretch(1)
-        self.export_button = QtWidgets.QPushButton("Export to Foundry VTT…")
+        self.copy_button = QtWidgets.QPushButton(" Copy NPC Statblock")
+        self.copy_button.setIcon(self.style().standardIcon(QtWidgets.QStyle.SP_FileDialogDetailedView))
+        self.export_button = QtWidgets.QPushButton(" Export NPC Statblock…")
+        self.export_button.setIcon(self.style().standardIcon(QtWidgets.QStyle.SP_ComputerIcon))
+        export_layout.addWidget(self.copy_button)
         export_layout.addWidget(self.export_button)
         layout.addLayout(export_layout)
         return widget
@@ -381,7 +421,9 @@ class MainWindow(QtWidgets.QMainWindow):
         self.background_combo.currentIndexChanged.connect(lambda _: self._on_combo_changed(self.background_combo, self.viewmodel.set_background))
         self.alignment_combo.currentIndexChanged.connect(lambda _: self._on_combo_changed(self.alignment_combo, self.viewmodel.set_alignment))
         self.notes_edit.textChanged.connect(self._on_notes_changed)
-        self.export_button.clicked.connect(self._export_to_foundry)
+        self.copy_button.clicked.connect(self._copy_statblock)
+        self.export_button.clicked.connect(self._export_statblock)
+        self.quit_button.clicked.connect(self._on_quit_clicked)
         self.randomize_button.clicked.connect(self._on_randomize_clicked)
         self.clear_button.clicked.connect(self._on_clear_clicked)
         self.gender_combo.currentIndexChanged.connect(lambda _: self._on_combo_changed(self.gender_combo, self.viewmodel.set_gender))
@@ -598,6 +640,8 @@ class MainWindow(QtWidgets.QMainWindow):
                     equipment_lines.append(name)
         equipment_html = ", ".join(equipment_lines) if equipment_lines else "—"
 
+        biography_html = state.biography.replace("\n", "<br/>") if state.biography else ""
+
         summary_html = f"""
         <h2>{state.name}</h2>
         <p>
@@ -630,6 +674,7 @@ class MainWindow(QtWidgets.QMainWindow):
         <p>{equipment_html}</p>
         <h3>Features</h3>
         <ul>{feature_html}</ul>
+        {f'<h3>Biography</h3><p>{biography_html}</p>' if biography_html else ''}
         """
         self.summary_browser.setHtml(summary_html)
 
@@ -667,18 +712,121 @@ class MainWindow(QtWidgets.QMainWindow):
         return features
 
     # ------------------------------------------------------------------
-    def _export_to_foundry(self) -> None:
-        from ..export.foundry import export_character_to_foundry
+    def _export_statblock(self) -> None:
+        from ..export.statblock import export_character_to_statblock
 
-        path, _ = QtWidgets.QFileDialog.getSaveFileName(self, "Export Foundry Actor", "character.json", "JSON Files (*.json)")
+        path, _ = QtWidgets.QFileDialog.getSaveFileName(
+            self,
+            "Export NPC Statblock",
+            "character-statblock.txt",
+            "Text Files (*.txt)"
+        )
         if not path:
             return
         try:
-            export_character_to_foundry(self.viewmodel, Path(path))
+            export_character_to_statblock(self.viewmodel, Path(path))
         except Exception as exc:  # pragma: no cover - surfacing to UI
             QtWidgets.QMessageBox.critical(self, "Export Failed", str(exc))
         else:
             QtWidgets.QMessageBox.information(self, "Export Complete", f"Saved to {path}")
+
+    def _copy_statblock(self) -> None:
+        from ..export.statblock import build_statblock_text
+
+        statblock = build_statblock_text(self.viewmodel)
+        QtWidgets.QApplication.clipboard().setText(statblock)
+        self.statusBar().showMessage("NPC statblock copied to clipboard.", 5000)
+
+    # ------------------------------------------------------------------
+    def _on_quit_clicked(self) -> None:
+        app = QtWidgets.QApplication.instance()
+        if app is not None:
+            app.quit()
+
+    # ------------------------------------------------------------------
+    def _apply_theme(self) -> None:
+        self.setStyleSheet(
+            """
+            QMainWindow {
+                background-color: #1c1f26;
+            }
+            QWidget {
+                color: #e0e3eb;
+                font-size: 11pt;
+            }
+            QFrame#headerFrame {
+                background-color: #242a35;
+                border-radius: 12px;
+                border: 1px solid #2f3642;
+            }
+            QTabWidget::pane {
+                border: 1px solid #2f3642;
+                border-radius: 12px;
+                background-color: #2a313d;
+            }
+            QTabBar::tab {
+                background: #252b36;
+                padding: 8px 20px;
+                margin: 2px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+            QTabBar::tab:selected {
+                background: #3a4354;
+                color: #f5f7ff;
+            }
+            QPushButton {
+                background-color: #374050;
+                border: 1px solid #455065;
+                border-radius: 6px;
+                padding: 8px 14px;
+            }
+            QPushButton:hover {
+                background-color: #485369;
+            }
+            QPushButton:pressed {
+                background-color: #2f3642;
+            }
+            QComboBox, QSpinBox, QLineEdit, QTextEdit {
+                background-color: #2f3642;
+                border: 1px solid #3b4454;
+                border-radius: 6px;
+                padding: 4px 8px;
+                selection-background-color: #4c5a73;
+            }
+            QTextBrowser {
+                background-color: #232831;
+                border: 1px solid #323a48;
+                border-radius: 12px;
+                padding: 12px;
+            }
+            QListWidget {
+                background-color: #2b313d;
+                border: 1px solid #3b4454;
+                border-radius: 6px;
+            }
+            QGroupBox {
+                border: 1px solid #343c4a;
+                border-radius: 10px;
+                margin-top: 14px;
+                padding: 10px;
+            }
+            QGroupBox::title {
+                subcontrol-origin: margin;
+                subcontrol-position: top left;
+                padding: 0 6px;
+                color: #f0f4ff;
+            }
+            QStatusBar {
+                background-color: #242a34;
+                color: #cfd4e4;
+            }
+            QLabel#subtitleLabel {
+                color: #9aa3bb;
+            }
+            """
+        )
+        self.statusBar().showMessage("Ready", 2000)
 
     # ------------------------------------------------------------------
     def _on_level_spin_changed(self, value: int) -> None:

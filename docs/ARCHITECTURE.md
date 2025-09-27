@@ -11,15 +11,16 @@
 | --- | --- |
 | Data Access (`character_builder.data.loader`) | Load and normalize SRD JSON resources (races, classes, features, spells, equipment, etc.) |
 | Domain (`character_builder.models`, `character_builder.rules`) | Immutable-ish dataclasses that represent SRD concepts, plus helper rules for derived statistics |
+| Narrative (`character_builder.flavor`) | Synthesizes biographies, hooks, and descriptive text for generated NPCs |
 | Application State (`character_builder.state`) | Mutable character draft with reactive hooks for the UI |
 | UI (`character_builder.ui`) | PySide6 widgets composing the character builder workflow |
-| Export (`character_builder.export.foundry`) | Translate the character state into Foundry VTT dnd5e actor JSON |
+| Export (`character_builder.export.statblock`) | Render the character state into a 5e-style NPC statblock text block |
 
 ## Data Flow
 1. `DataRepository` loads JSON into typed registries keyed by index.
 2. `CharacterTemplate` and `CharacterState` leverage registries to present options (dropdowns) and compute derived state.
 3. UI binds to the state through signals (Qt signals/slots). Changes in UI propagate to state, which recomputes derived values and updates summaries.
-4. Export layer maps `CharacterState` to Foundry `system` JSON structure, embedding selected features/items/spells.
+4. Export layer formats `CharacterState` data into a textual 5e statblock that downstream tools (e.g., 5e Statblock Importer) can ingest.
 
 ## UI Flow
 ```
@@ -31,10 +32,10 @@
 - **Detail Pane**: contextual info for highlighted choice (feature text, spell description, etc.).
 - **Summary/Export Pane**: computed stats, hit points, saving throws, skill bonuses, and export controls.
 
-## Foundry Export (dnd5e v11+)
-- Output JSON with `name`, `type="character"`, `system` block containing ability scores, attributes, details, traits, resources.
-- Items array includes class, race, features, equipment, and spells as item entities with their respective system data.
-- Metadata includes flags: `core.sourceId` pointing to SRD index when available for traceability.
+## NPC Statblock Export
+- Output plain-text statblocks that mirror official 5e formatting (name, size/type/alignment, core statistics, traits, and actions).
+- Includes automatic weapon attack summaries and a spellcasting trait when the character knows spells.
+- Designed for easy copy/paste or direct import via Foundry VTT's "5e Statblock Importer" module.
 
 ## Restart Log
 Maintain `CODEx_LOG.md` with checkpoints and next steps so the session can resume seamlessly.

@@ -65,6 +65,7 @@ class CharacterState:
     equipment: List[str] = field(default_factory=list)
     currency: Dict[str, int] = field(default_factory=lambda: {"pp": 0, "gp": 0, "ep": 0, "sp": 0, "cp": 0})
     notes: str = ""
+    biography: str = ""
 
     derived: DerivedStats = field(default_factory=DerivedStats)
     randomization_locks: Set[str] = field(default_factory=set)
@@ -124,5 +125,6 @@ class CharacterState:
         self.equipment.clear()
         self.currency = {"pp": 0, "gp": 0, "ep": 0, "sp": 0, "cp": 0}
         self.notes = ""
+        self.biography = ""
         self.derived = DerivedStats()
         self.randomization_locks.clear()

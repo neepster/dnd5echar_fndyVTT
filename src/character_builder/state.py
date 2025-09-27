@@ -13,6 +13,7 @@ from .data import SRDData
 from .data.srd import ClassData, RaceData, SubraceData
 from .models import CharacterState
 from . import rules
+from .flavor import generate_biography
 
 
 @dataclass(slots=True)
@@ -528,6 +529,8 @@ class CharacterViewModel(QtCore.QObject):
 
         if not self._is_locked("notes"):
             state.notes = ""
+        if not self._is_locked("notes"):
+            state.biography = ""
 
         equipment_list, generated_currency = self._generate_equipment_and_currency(class_data)
 
@@ -551,6 +554,8 @@ class CharacterViewModel(QtCore.QObject):
             if not self._is_locked("spells"):
                 self._auto_assign_spells(class_data)
             self._refresh_derived()
+            if not self._is_locked("notes"):
+                state.biography = generate_biography(state, self.srd)
 
         self._emit_state_changed()
         self.choiceGroupsChanged.emit()
