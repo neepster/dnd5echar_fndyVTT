@@ -793,6 +793,19 @@ class MainWindow(QtWidgets.QMainWindow):
                 border-radius: 6px;
                 padding: 4px 8px;
                 selection-background-color: #4c5a73;
+                color: #e6e9f3;
+            }
+            QComboBox::drop-down {
+                width: 24px;
+                background: #374050;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+            QComboBox QAbstractItemView {
+                background-color: #2a313d;
+                border: 1px solid #3b4454;
+                selection-background-color: #4c5a73;
+                color: #e6e9f3;
             }
             QTextBrowser {
                 background-color: #232831;
