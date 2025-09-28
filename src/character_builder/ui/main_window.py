@@ -178,6 +178,12 @@ class MainWindow(QtWidgets.QMainWindow):
 
         layout.addWidget(header)
 
+        self._menu_bar = self.menuBar()
+        help_menu = self._menu_bar.addMenu("Help")
+        about_action = QtGui.QAction("About D&D 5e Character Builder", self)
+        about_action.triggered.connect(self._show_about_dialog)
+        help_menu.addAction(about_action)
+
         self.tabs = QtWidgets.QTabWidget(container)
         self.tabs.setTabPosition(QtWidgets.QTabWidget.North)
         self.tabs.setDocumentMode(True)
@@ -750,6 +756,21 @@ class MainWindow(QtWidgets.QMainWindow):
         app = QtWidgets.QApplication.instance()
         if app is not None:
             app.quit()
+
+    # ------------------------------------------------------------------
+    def _show_about_dialog(self) -> None:
+        message = (
+            "<h2>D&D 5e Character Builder</h2>"
+            "<p>Create NPCs in seconds—randomize races, classes, and backstories, tweak details manually, and export Foundry-ready statblocks.</p>"
+            "<h3>Quick Tips</h3>"
+            "<ul>"
+            "<li>Basics tab lets you lock choices before randomizing.</li>"
+            "<li>Summary tab offers copy/export buttons and statblock previews.</li>"
+            "<li>Provide race/gender-specific names and hometowns via CSVs in <code>data/custom/</code>.</li>"
+            "</ul>"
+            "<p>See <code>data/custom/README.md</code> for CSV formats, or open the GitHub repository for full documentation.</p>"
+        )
+        QtWidgets.QMessageBox.information(self, "About", message)
 
     # ------------------------------------------------------------------
     def _apply_theme(self) -> None:
