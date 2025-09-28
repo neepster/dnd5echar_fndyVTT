@@ -51,6 +51,7 @@ python main.py
 - `data/custom/names.csv` — format: `race,gender,name`. Provide full names for specific races and genders (use `any` for wildcards). Example entries are included; edit or replace as desired.
 - `data/custom/hometowns.csv` — format: `race,place`. List optional hometowns for each race; `any` acts as a fallback bucket.
 - When these files exist and contain data, the randomizer and biography generator draw from them; otherwise the built-in name tables and origin list are used.
+- Detailed instructions live in `data/custom/README.md`.
 
 ## Testing quick checks
 - `PYTHONPATH=src python -m compileall src`
